@@ -1,0 +1,9 @@
+.page {
+  min-width: 1100px;
+  max-width: 1380px;
+  font-family: 'Golos', sans-serif;
+  padding: 8px 20px 20px;
+  color: #000000;
+  background-color: #E5E5E5;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility; }

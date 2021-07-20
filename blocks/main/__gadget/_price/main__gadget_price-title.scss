@@ -1,0 +1,5 @@
+@import '../../../font/font.scss';
+
+.main__gadget_price-title {
+    @extend %font-size-20;
+}

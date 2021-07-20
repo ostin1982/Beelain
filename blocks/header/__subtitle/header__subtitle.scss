@@ -1,0 +1,12 @@
+@import '../../color/color.scss';
+
+.header__subtitle {
+    position: relative;
+    display: flex;
+    height: 39px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 19px;
+    background-color: $color-white;
+    border-radius: 16px;
+}

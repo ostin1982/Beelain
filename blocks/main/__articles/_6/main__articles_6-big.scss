@@ -1,0 +1,10 @@
+@import '../../../font/font.scss';
+@import '../../../color/color.scss';
+
+.main__articles_6-big {
+    position: absolute;
+    @extend %font-size-40;
+    color: $color-white;
+    width: 400px;
+    margin: 12px 0 0 20px;
+}

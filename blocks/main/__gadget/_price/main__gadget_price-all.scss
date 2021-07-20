@@ -1,0 +1,8 @@
+@import '../../../font/font.scss';
+
+.main__gadget_price-all {
+    @extend %font-size-32;
+    padding: 8px 10px 10px 20px;
+    cursor: pointer;
+    margin: 0;
+}

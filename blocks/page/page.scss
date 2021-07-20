@@ -1,0 +1,12 @@
+@import '../color/color.scss';
+
+.page {
+    min-width: 1100px;
+    max-width: 1380px;
+    font-family: 'Golos', sans-serif;
+    padding: 8px 20px 20px;
+    color: $color-main-black;
+    background-color: $color-main-white;
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+}

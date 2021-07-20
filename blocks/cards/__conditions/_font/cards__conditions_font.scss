@@ -1,0 +1,7 @@
+@import '../../../font/font.scss';
+
+.cards__conditions_font {
+    @extend %font-size-15;
+    margin: 0;
+    opacity: 0.8;
+}

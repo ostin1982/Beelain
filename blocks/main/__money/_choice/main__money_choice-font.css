@@ -1,0 +1,11 @@
+.main__money_choice-font {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px; }
+
+.main__money_choice-font {
+  margin-right: 30px; }
+
+.main__money_choice-font:last-child {
+  margin-right: 335px; }

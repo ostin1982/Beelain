@@ -1,0 +1,14 @@
+.discount_promo {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; }
+
+.discount_promo {
+  width: 140px;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #181818;
+  border-radius: 20px;
+  margin: 0;
+  padding: 1px 0 0 15px; }

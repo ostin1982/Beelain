@@ -1,0 +1,11 @@
+@import '../color/color.scss';
+
+.footer {    
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 30px 60px 30px;
+    background-color: $color-main-black;
+    border-radius: 16px;
+    opacity: 0.9;
+}

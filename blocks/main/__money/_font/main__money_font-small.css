@@ -1,0 +1,12 @@
+.main__money_font-small {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px; }
+
+.main__money_font-small {
+  margin: 10px 0 0 170px;
+  padding: 0;
+  width: 290px;
+  text-align: center;
+  opacity: 0.5; }

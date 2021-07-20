@@ -1,0 +1,16 @@
+@import '../../../color/color.scss';
+@import '../../../font/font.scss';
+
+.header__subtitle_button {
+    color: $color-main-black;
+    background-color: $color-white;
+    @extend %font-size-20;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.header__subtitle_button:hover {
+    opacity: 0.6;
+}

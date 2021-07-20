@@ -1,0 +1,10 @@
+@import '../../font/font.scss';
+@import '../../color/color.scss';
+
+.discount_SIM {
+    background-color: $color-yellow-additional;
+    border-radius: 20px;
+    @extend %font-size-20;
+    padding: 1px 20px;
+    margin: 0;
+}

@@ -1,0 +1,5 @@
+@import '../../../font/font.scss';
+
+.cards__price_font-small {
+    @extend %font-size-20;
+}

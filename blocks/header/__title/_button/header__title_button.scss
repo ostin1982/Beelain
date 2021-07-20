@@ -1,0 +1,15 @@
+@import '../../../color/color.scss';
+@import '../../../font/font.scss';
+
+.header__title_button {
+    color: $color-main-black;
+    background-color: $color-main-white;
+    @extend %font-size-15;
+    padding-right: 23px;
+    border: none;
+    cursor: pointer;
+}
+
+.header__title_button:hover {
+    opacity: 0.6;
+}

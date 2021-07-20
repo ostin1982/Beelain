@@ -1,0 +1,13 @@
+@import '../../color/color.scss';
+@import '../../font/font.scss';
+
+.discount_promo {
+    width: 140px;
+    height: 20px;
+    color: $color-white;
+    background-color: $color-black;
+    @extend %font-size-11;
+    border-radius: 20px;
+    margin: 0;
+    padding: 1px 0 0 15px;
+}

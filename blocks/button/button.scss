@@ -1,0 +1,12 @@
+@import '../font/font.scss';
+
+.button {
+    @extend %font-size-15-500;
+    border-radius: 30px;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.6;
+}

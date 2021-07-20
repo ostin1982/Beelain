@@ -1,0 +1,11 @@
+@import '../../../font/font.scss';
+@import '../../../color/color.scss';
+
+.footer__information_private-span {
+    text-decoration: none;
+    color: $color-white;
+    @extend %font-size-13;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    padding: 0;
+}

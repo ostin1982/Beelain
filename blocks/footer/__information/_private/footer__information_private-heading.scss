@@ -1,0 +1,10 @@
+@import '../../../color/color.scss';
+@import '../../../font/font.scss';
+
+.footer__information_private-heading {
+    display: block;
+    margin: 5px 0 15px 0;
+    @extend %font-size-15-500;
+    color: $color-white;
+    opacity: 0.5;
+}

@@ -1,0 +1,6 @@
+@import '../../../font/font.scss';
+
+.main__numbers_select-small {
+    @extend %font-size-15;
+    opacity: 0.5;
+}

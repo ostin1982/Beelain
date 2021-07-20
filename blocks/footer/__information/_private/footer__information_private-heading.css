@@ -1,0 +1,11 @@
+.footer__information_private-heading {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; }
+
+.footer__information_private-heading {
+  display: block;
+  margin: 5px 0 15px 0;
+  color: #FFFFFF;
+  opacity: 0.5; }

@@ -1,0 +1,10 @@
+@import '../../../color/color.scss';
+@import '../../../font/font.scss';
+
+.main__money_input-nomber {
+    padding: 14px 0 14px 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: $color-main-white;
+    @extend %font-size-20;
+}

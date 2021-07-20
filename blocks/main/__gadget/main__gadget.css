@@ -1,0 +1,7 @@
+.main__gadget {
+  position: relative;
+  margin: 0 auto;
+  height: 515px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; }

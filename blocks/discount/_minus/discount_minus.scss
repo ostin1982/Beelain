@@ -1,0 +1,13 @@
+@import '../../color/color.scss';
+@import '../../font/font.scss';
+
+.discount_minus {
+    background-color: $color-yellow-button;
+    color: $color-main-black;
+    @extend %font-size-30;
+    border-radius: 30px;
+    width: 90px;
+    height: 30px;
+    padding: 2px 0 0 20px;
+    margin: 0;
+}

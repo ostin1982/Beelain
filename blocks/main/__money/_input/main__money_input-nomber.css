@@ -1,0 +1,11 @@
+.main__money_input-nomber {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px; }
+
+.main__money_input-nomber {
+  padding: 14px 0 14px 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #E5E5E5; }

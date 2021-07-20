@@ -1,0 +1,12 @@
+.footer__information_private-span {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px; }
+
+.footer__information_private-span {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  padding: 0; }

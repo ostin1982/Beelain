@@ -1,0 +1,10 @@
+@import '../../../color/color.scss';
+
+.main__numbers_button {
+    position: absolute;
+    background-color: $color-main-white;
+    border: 1px solid $color-main-black;
+    margin: 0;
+    top: 145px;
+    right: 0px;
+}

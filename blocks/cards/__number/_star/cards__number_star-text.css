@@ -1,0 +1,11 @@
+.cards__number_star-text {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; }
+
+.cards__number_star-text {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  left: 15px; }

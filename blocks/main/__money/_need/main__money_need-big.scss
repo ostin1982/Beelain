@@ -1,0 +1,7 @@
+@import '../../../font/font.scss';
+
+.main__money_need-big {
+    @extend %font-size-50;
+    margin: 0;
+    max-width: 500px;
+}

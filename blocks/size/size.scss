@@ -1,0 +1,6 @@
+@import '../font/font.scss';
+
+.size {
+    @extend %font-size-80;
+    margin: 0;
+}

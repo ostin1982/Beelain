@@ -1,0 +1,7 @@
+@import '../../../font/font.scss';
+
+.main__gadget_price-store {
+    @extend %font-size-15-500;
+    padding: 10px 30px 10px 10px;
+    cursor: pointer;
+}

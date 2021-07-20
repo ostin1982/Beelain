@@ -1,0 +1,8 @@
+@import '../../../font/font.scss';
+
+.main__money_input-7 {
+    position: absolute;
+    @extend %font-size-20;
+    margin: 0;
+    padding: 14px 0 14px 18px;
+}

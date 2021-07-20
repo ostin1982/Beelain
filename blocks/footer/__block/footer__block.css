@@ -1,0 +1,6 @@
+.footer__block {
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; }

@@ -1,0 +1,7 @@
+@import '../../../font/font.scss';
+
+.main__money_account-font {
+    @extend %font-size-50;
+    max-width: 390px;
+    margin: 0;
+}
