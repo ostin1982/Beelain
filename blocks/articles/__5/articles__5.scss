@@ -1,0 +1,10 @@
+@import '../../../color/color.scss';
+
+.articles__5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-radius: 16px;
+    background-color: $color-blue;
+}

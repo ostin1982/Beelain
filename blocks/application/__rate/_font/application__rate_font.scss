@@ -1,0 +1,7 @@
+@import '../../../font/font.scss';
+
+.application__rate_font {
+    display: inline-block;
+    @extend %font-size-20-500;
+    margin: 0 0 20px 0;
+}

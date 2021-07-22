@@ -1,9 +1,0 @@
-@import '../../color/color.scss';
-@import '../../font/font.scss';
-
-.footer_font {
-    color: $color-white;
-    @extend %font-size-11-400;
-    opacity: 0.5;
-    margin: 10px 0 0 0;
-}

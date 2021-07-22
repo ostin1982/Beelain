@@ -1,0 +1,5 @@
+@import '../../../font/font.scss';
+
+.bunner__price_700 {
+    @extend %font-size-60;
+}

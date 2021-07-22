@@ -1,0 +1,6 @@
+@import '../../../font/font.scss';
+
+.tarifs__conditions {
+    @extend %font-size-20;
+    margin: 20px 0;
+}

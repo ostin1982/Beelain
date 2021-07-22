@@ -1,0 +1,8 @@
+@import '../../../font/font.scss';
+
+.gadget__megafon_problem {
+    position: absolute;
+    @extend %font-size-50;
+    bottom: 7px;
+    left: 60px;
+}

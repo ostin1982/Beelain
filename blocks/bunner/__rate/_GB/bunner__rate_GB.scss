@@ -1,0 +1,10 @@
+@import '../../../color/color.scss';
+@import '../../../font/font.scss';
+
+.bunner__rate_GB {
+    color: $color-white;
+    @extend %font-size-32;
+    padding-left: 45px;
+    width: 280px;
+    height: 160px;
+}

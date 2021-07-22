@@ -1,0 +1,9 @@
+.application__rate {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  border-left: 1px solid rgba(24, 24, 24, 0.3);
+  left: 950px;
+  bottom: 760px;
+  margin: 0;
+  padding: 0; }

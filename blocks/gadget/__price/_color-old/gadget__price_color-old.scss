@@ -1,0 +1,9 @@
+@import '../../../color/color.scss';
+@import '../../../font/font.scss';
+
+.gadget__price_color-old {
+    color: $color-main-black;
+    @extend %font-size-15;
+    text-decoration: line-through;
+    opacity: 0.3;
+}

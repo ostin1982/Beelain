@@ -1,0 +1,10 @@
+@import '../../../font/font.scss';
+
+.money__choice_font {
+    @extend %font-size-20;
+    margin-right: 30px;
+}
+
+.money__choice_font:last-child {
+    margin-right: 335px;
+}

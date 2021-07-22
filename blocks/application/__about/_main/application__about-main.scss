@@ -1,0 +1,6 @@
+@import '../../../font/font.scss';
+
+.application__about_main {
+    @extend %font-size-20-500;
+    margin: 0 0 10px 0;
+}

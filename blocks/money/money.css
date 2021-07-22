@@ -1,0 +1,8 @@
+.money {
+  position: relative;
+  display: grid;
+  max-width: 1340px;
+  height: 555px;
+  margin: 100px 0 0 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; }

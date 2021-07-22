@@ -1,0 +1,14 @@
+@import '../../color/color.scss';
+@import '../../font/font.scss';
+
+.bunner__slogan {
+    position: relative;
+    color: $color-white;
+    @extend %font-size-70;
+    padding: 0;
+    margin: 0;
+    width: 435px;
+    height: 200px;
+    left: 30px;
+    bottom: 490px;
+}

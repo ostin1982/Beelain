@@ -1,0 +1,10 @@
+@import '../../../font/font.scss';
+
+.numbers__choice_font {
+    @extend %font-size-20;
+    margin-right: 30px;
+}
+
+.numbers__choice_font:last-child {
+    margin-right: 100px;
+}

@@ -1,0 +1,8 @@
+@import '../../../color/color.scss';
+
+.articles__5_button {
+    position: absolute;
+    background-color: $color-blue;
+    border: 1px solid rgba($color-main-black, 0.4);
+    margin: 230px 0 0 20px;
+}

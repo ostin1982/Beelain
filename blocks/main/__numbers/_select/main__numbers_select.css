@@ -1,8 +1,0 @@
-.main__numbers_select {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  -webkit-column-gap: 75px;
-          column-gap: 75px;
-  row-gap: 15px;
-  margin-top: 80px; }

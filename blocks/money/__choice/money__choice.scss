@@ -1,0 +1,8 @@
+@import '../../../color/color.scss';
+
+.money__choice {
+    display: inline;
+    border-bottom: 1px solid rgba($color-main-black, 0.3);
+    margin: 0;
+    padding: 10px 0;
+}

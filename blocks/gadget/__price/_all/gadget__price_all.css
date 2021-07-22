@@ -1,0 +1,10 @@
+.gadget__price_all {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; }
+
+.gadget__price_all {
+  padding: 8px 10px 10px 20px;
+  margin: 0;
+  cursor: pointer; }

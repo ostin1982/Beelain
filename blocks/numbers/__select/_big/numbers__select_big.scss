@@ -1,0 +1,6 @@
+@import '../../../font/font.scss';
+
+.numbers__select_big {
+    @extend %font-size-28;
+    margin-right: 30px;
+}

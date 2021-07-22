@@ -1,0 +1,8 @@
+@import '../../../color/color.scss';
+@import '../../../font/font.scss';
+
+.gadget__price_color {
+    color: $color-pink;
+    @extend %font-size-28;
+    margin-right: 10px;
+}

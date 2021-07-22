@@ -1,0 +1,8 @@
+@import '../../../font/font.scss';
+
+.articles__4_big {
+    position: absolute;
+    @extend %font-size-40;
+    width: 380px;
+    margin: 12px 0 0 20px;
+}

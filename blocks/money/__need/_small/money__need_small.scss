@@ -1,0 +1,7 @@
+@import '../../../font/font.scss';
+
+.money__need_small {
+    @extend %font-size-15;
+    margin: 20px 0 0 0;
+    opacity: 0.6;
+}

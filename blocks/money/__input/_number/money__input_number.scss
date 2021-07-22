@@ -1,0 +1,25 @@
+@import '../../../color/color.scss';
+@import '../../../font/font.scss';
+
+
+::-webkit-input-placeholder {
+    color: $color-grey-light;
+  }
+::-moz-placeholder { /* Firefox 19+ */
+    color: $color-grey-light;
+  }
+:-ms-input-placeholder {
+    color: $color-grey-light;
+  }
+:-moz-placeholder { /* Firefox 18- */
+    color: $color-grey-light;
+  }
+
+.money__input_number {
+    padding: 14px 0 14px 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: $color-main-white;
+    color: $color-grey-light;
+    @extend %font-size-20;
+}

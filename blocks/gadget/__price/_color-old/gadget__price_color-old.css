@@ -1,0 +1,10 @@
+.gadget__price_color-old {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px; }
+
+.gadget__price_color-old {
+  color: #000000;
+  text-decoration: line-through;
+  opacity: 0.3; }
