@@ -1,0 +1,9 @@
+.gadget__megafon_img {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .gadget__megafon_img {
+        height: 200px;
+    }
+}

@@ -8,3 +8,12 @@
     padding: 1px 20px;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    %font-size-20 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+    }
+}

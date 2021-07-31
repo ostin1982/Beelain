@@ -1,0 +1,6 @@
+.numbers__choice_none {
+  display: inline; }
+
+@media screen and (max-width: 375px) {
+  .numbers__choice_none {
+    display: none; } }

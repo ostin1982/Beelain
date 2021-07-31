@@ -1,0 +1,11 @@
+.numbers__select_shop {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 30px;
+  display: none;
+  opacity: 0.5; }
+
+@media screen and (max-width: 768px) {
+  .numbers__select_shop {
+    display: block; } }

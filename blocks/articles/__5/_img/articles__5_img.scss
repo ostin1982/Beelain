@@ -1,5 +1,14 @@
 .articles__5_img {
-    margin: 74px 0 0 404px;
+    margin: 0 auto;
     padding: 0;
     border: none;
+    width: 156px;
+}
+
+@media screen and (max-width: 768px) {
+    .articles__5_img {
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+        width: 118px;
+    }
 }

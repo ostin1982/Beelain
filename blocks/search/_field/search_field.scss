@@ -11,3 +11,9 @@
     opacity: 0.5;
     padding-left: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .search_field {
+        max-width: 100%;
+    }
+}

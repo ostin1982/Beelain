@@ -6,3 +6,10 @@
 
 .tarifs__conditions {
   margin: 20px 0; }
+
+@media screen and (max-width: 768px) {
+  .tarifs__conditions {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px; } }

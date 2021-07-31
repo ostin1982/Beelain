@@ -5,3 +5,11 @@
     gap: 15px;
     margin: 30px 0 0 0;
 }
+
+@media screen and (max-width: 768px) {
+    .money__button_2 {
+        justify-content: inherit;
+        justify-self: stretch;
+        width: 100%;
+    }
+}

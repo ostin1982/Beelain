@@ -1,0 +1,8 @@
+.tarifs__button_none {
+  display: block;
+  top: 210px;
+  right: 20px; }
+
+@media screen and (max-width: 768px) {
+  .tarifs__button_none {
+    display: none; } }

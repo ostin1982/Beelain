@@ -1,0 +1,11 @@
+.articles__3_img {
+    margin: 0 auto;
+    padding: 0 0 0 179px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .articles__3_img {
+        padding: 20px 0 0 0;
+    }
+}

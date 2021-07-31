@@ -1,4 +1,18 @@
 .tarifs__font {
-    top: 140px;
+    top: 30px;
     left: 330px;
+}
+
+@media screen and (max-width: 768px) {
+    .tarifs__font {
+        top: 10px;
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tarifs__font {
+        top: 100px;
+        left: 0px;
+    }
 }

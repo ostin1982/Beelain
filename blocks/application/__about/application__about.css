@@ -1,7 +1,21 @@
 .application__about {
   position: relative;
-  margin: 25px 0 0 0;
-  left: 30px;
-  bottom: 350px;
-  margin: 0;
-  padding: 0; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 0 0 34px 0; }
+
+@media screen and (max-width: 768px) {
+  .application__about {
+    padding: 0; } }
+@media screen and (max-width: 375px) {
+  .application__about {
+    margin: 0; } }

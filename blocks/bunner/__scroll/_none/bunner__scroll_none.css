@@ -1,0 +1,11 @@
+.bunner__scroll_none {
+  display: none; }
+
+@media screen and (max-width: 375px) {
+  .bunner__scroll_none {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0 0 0; } }

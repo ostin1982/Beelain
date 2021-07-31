@@ -1,6 +1,14 @@
 .beelainTV__font {
-    position: absolute;
-    text-align: center;
-    top: 180px;
-    left: 290px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 636px;
+}
+
+@media screen and (max-width: 768px) {
+    .beelainTV__font {
+        height: 400px;
+    }
 }

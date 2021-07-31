@@ -4,3 +4,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px
 }
+
+@media screen and (max-width: 768px) {
+    .money__input_two {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

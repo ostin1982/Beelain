@@ -1,0 +1,9 @@
+.articles__none {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .articles__none {
+        display: none;
+    }
+}

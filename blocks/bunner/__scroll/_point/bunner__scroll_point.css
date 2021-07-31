@@ -1,0 +1,6 @@
+.bunner__scroll_point {
+  padding: 0 10px 0 0;
+  cursor: pointer; }
+
+.bunner__scroll_point:hover {
+  opacity: 0.6; }

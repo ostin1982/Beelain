@@ -1,0 +1,12 @@
+.articles__appeared {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .articles__appeared {
+        display: block;
+        width: 140px;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+    }
+}

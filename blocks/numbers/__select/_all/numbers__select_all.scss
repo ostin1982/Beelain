@@ -1,8 +1,10 @@
 @import '../../../color/color.scss';
 
 .numbers__select_all {
-    width: 290px;
-    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 290px;
     background-color: $color-white;
     border-radius: 10px;
     border: none;

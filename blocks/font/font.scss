@@ -103,9 +103,17 @@
     line-height: 66px;
 };
 
+%font-size-70-calc {
+    font-size: calc((100vw - 769px)/(1340 - 769) * (60 - 50) + 50px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc((100vw - 769px)/(1340 - 769) * (60 - 50) + 50px);
+};
+
 %font-size-80 {
     font-size: 80px;
     font-style: normal;
     font-weight: 600;
     line-height: 74px;
 };
+

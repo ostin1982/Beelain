@@ -6,5 +6,17 @@
 }
 
 .money__choice_font:last-child {
-    margin-right: 335px;
+    margin: 0 335px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .money__choice_font:last-child {
+        margin: 0 50px 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .money__choice_font:last-child {
+        margin: 0;
+    }
 }

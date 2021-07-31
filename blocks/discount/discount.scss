@@ -2,3 +2,9 @@
     position: absolute;
     transform: rotate(-5deg);
 }
+
+@media screen and (max-width: 768px) {
+    .discount {
+        transform: rotate(0deg);
+    }
+}

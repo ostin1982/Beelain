@@ -1,4 +1,13 @@
 .articles__4_img {
-  margin: 88px 0 0 394px;
+  margin: 39px 0 0 0;
   padding: 0;
-  border: none; }
+  border: none;
+  width: 219px;
+  height: 135px; }
+
+@media screen and (max-width: 768px) {
+  .articles__4_img {
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    width: 171px;
+    height: 105px; } }

@@ -1,6 +1,14 @@
 .gadget__megafon_question {
     position: relative;
-    width: 520px;
-    height: 285px;
-    margin: 60px 70px 110px 70px;
+    max-width: 520px;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .gadget__megafon_question {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }

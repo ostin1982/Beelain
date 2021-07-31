@@ -1,2 +1,4 @@
 .beelainTV {
-  position: relative; }
+  position: relative;
+  margin: 100px 0 200px 0;
+  max-width: 1340px; }

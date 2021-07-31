@@ -1,5 +1,5 @@
-@import '../../../color/color.scss';
-@import '../../../font/font.scss';
+@import '../../color/color.scss';
+@import '../../font/font.scss';
 
 .bunner__price {
     width: 260px;
@@ -7,8 +7,14 @@
     @extend %font-size-20;
     border-top: 1px solid $color-white;
     padding: 30px 0 0 0;
-    margin: 0 0 0 45px;
-    width: 280px;
-    height: 100px;
+    margin: 0;
+    max-width: 280px;
     list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    .bunner__price {
+        color: $color-main-black;
+        border-top: 1px solid rgba($color-main-black, 0.2);
+    }
 }

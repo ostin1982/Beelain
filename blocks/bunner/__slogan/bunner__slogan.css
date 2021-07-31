@@ -1,15 +1,24 @@
 .bunner__slogan {
-  font-size: 70px;
+  font-size: calc((100vw - 769px)/(1340 - 769) * (60 - 50) + 50px);
   font-style: normal;
   font-weight: 600;
-  line-height: 66px; }
+  line-height: calc((100vw - 769px)/(1340 - 769) * (60 - 50) + 50px); }
 
 .bunner__slogan {
   position: relative;
   color: #FFFFFF;
   padding: 0;
-  margin: 0;
-  width: 435px;
-  height: 200px;
-  left: 30px;
-  bottom: 490px; }
+  margin: 0; }
+
+@media screen and (min-width: 1381px) {
+  .bunner__slogan {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 66px; } }
+@media screen and (max-width: 768px) {
+  .bunner__slogan {
+    color: #000000; } }
+@media screen and (max-width: 375px) {
+  .bunner__slogan {
+    color: #FFFFFF; } }

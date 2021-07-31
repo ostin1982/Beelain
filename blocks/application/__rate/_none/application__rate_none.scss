@@ -1,0 +1,15 @@
+.application__rate_none {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .application__rate_none {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .application__rate_none {
+        display: none;
+    }
+}

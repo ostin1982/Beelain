@@ -1,3 +1,7 @@
 .application__rate_dashed {
   border-bottom: 2px #000000 dashed;
   opacity: 0.6; }
+
+@media screen and (max-width: 768px) {
+  .application__rate_dashed {
+    border-bottom: none; } }

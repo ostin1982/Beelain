@@ -1,6 +1,14 @@
 .numbers__select_all {
-  width: 290px;
-  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 290px;
   background-color: #FFFFFF;
   border-radius: 10px;
   border: none;

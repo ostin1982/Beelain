@@ -1,7 +1,19 @@
 .main {
     position: relative;
     height: 100%;
-    width: 1340px;
+    max-width: 1340px;
     margin: 0 auto;
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main {
+        max-width: 375px;
+    }
 }

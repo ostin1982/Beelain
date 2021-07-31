@@ -1,3 +1,14 @@
 .search {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        flex-direction: column;
+    }
 }

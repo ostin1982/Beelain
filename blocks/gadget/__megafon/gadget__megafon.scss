@@ -1,7 +1,11 @@
-@import '../../../color/color.scss';
+@import '../../color/color.scss';
 
 .gadget__megafon {
-    position: relative;
     background-color: $color-white;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+

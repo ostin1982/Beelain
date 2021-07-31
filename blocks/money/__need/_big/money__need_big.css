@@ -7,3 +7,13 @@
 .money__need_big {
   margin: 0;
   max-width: 500px; }
+
+@media screen and (max-width: 768px) {
+  .money__need_big {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px; } }
+@media screen and (max-width: 768px) {
+  .money__need_big {
+    max-width: 270px; } }

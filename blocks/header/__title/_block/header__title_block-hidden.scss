@@ -1,0 +1,9 @@
+.header__title_block-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header__title_block-hidden {
+        display: block;
+    }
+}

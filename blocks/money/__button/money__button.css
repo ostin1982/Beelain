@@ -2,3 +2,7 @@
   background-color: #FFDD00;
   border: none;
   margin: 35px 0 0 165px; }
+
+@media screen and (max-width: 768px) {
+  .money__button {
+    margin: 35px 0 0 0; } }

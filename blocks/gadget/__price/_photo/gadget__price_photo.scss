@@ -1,5 +1,13 @@
 .gadget__price_photo {
-    position: relative;
     margin: 0 auto;
-    padding: 35px 70px 40px 70px;
+    padding: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .gadget__price_photo {
+        padding: 20px 0 0 0;
+    }
 }

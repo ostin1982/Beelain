@@ -2,4 +2,15 @@
 
 .gadget__price_title {
     @extend %font-size-20;
+    margin: 0;
+    padding: 40px 0 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+    %font-size-20 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+    }
 }

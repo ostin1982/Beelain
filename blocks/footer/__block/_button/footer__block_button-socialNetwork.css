@@ -5,3 +5,10 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0 10px 0 0;
   padding: 0; }
+
+@media screen and (max-width: 768px) {
+  .footer__block_button-socialNetwork {
+    margin: 0 5px 0 0; } }
+@media screen and (max-width: 375px) {
+  .footer__block_button-socialNetwork {
+    margin: 0 4px 0 0; } }

@@ -1,0 +1,6 @@
+.bunner__button_none {
+  display: block; }
+
+@media screen and (max-width: 768px) {
+  .bunner__button_none {
+    display: none; } }

@@ -1,9 +1,0 @@
-@import '../../../font/font.scss';
-
-.articles__4_small {
-    position: absolute;
-    @extend %font-size-15;
-    width: 310px;
-    margin: 116px 0 0 20px;
-    opacity: 0.7;
-}

@@ -1,0 +1,8 @@
+.application__none {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media screen and (max-width: 768px) {
+  .application__none {
+    display: none; } }

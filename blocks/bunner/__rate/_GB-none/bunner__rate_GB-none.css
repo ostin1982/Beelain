@@ -1,0 +1,6 @@
+.bunner__rate_GB-none {
+  display: block; }
+
+@media screen and (max-width: 375px) {
+  .bunner__rate_GB-none {
+    display: none; } }

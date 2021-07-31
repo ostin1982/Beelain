@@ -1,5 +1,11 @@
 .bunner__button {
-    position: absolute;
-    top: 430px;
-    left: 30px;
+    display: block; 
+    position: relative;
+    padding: 80px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .bunner__button {
+        display: none;
+    }
 }

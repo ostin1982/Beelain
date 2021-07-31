@@ -10,3 +10,7 @@
   width: 290px;
   text-align: center;
   opacity: 0.5; }
+
+@media screen and (max-width: 768px) {
+  .money__font_small {
+    margin: 10px 0 0 0; } }

@@ -1,3 +1,9 @@
 .money_need {
     max-width: 560px;
 }
+
+@media screen and (max-width: 768px) {
+    .money_need {
+        max-width: 335px;
+    }
+}

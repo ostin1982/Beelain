@@ -5,3 +5,9 @@
     margin: 20px 0 0 0;
     opacity: 0.6;
 }
+
+@media screen and (max-width: 768px) {
+    .money__need_small {
+        max-width: 335px;
+    }
+}

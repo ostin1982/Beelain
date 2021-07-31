@@ -5,8 +5,9 @@
   width: 110px;
   height: 55px;
   border-radius: 30px;
-  bottom: 80px;
-  left: 210px;
   padding: 0;
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
   border: none; }
+
+.gadget__megafon_button:last-child {
+  margin: 0; }

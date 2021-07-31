@@ -4,5 +4,18 @@
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 75px;
     row-gap: 15px;
-    margin-top: 80px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .numbers__select {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .numbers__select {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }

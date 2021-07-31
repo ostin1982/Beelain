@@ -1,4 +1,10 @@
 .numbers__select_button {
+  display: block;
+  position: relative;
   padding: 0;
   margin: 0;
   border: none; }
+
+@media screen and (max-width: 768px) {
+  .numbers__select_button {
+    display: none; } }

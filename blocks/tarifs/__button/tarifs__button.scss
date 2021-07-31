@@ -1,9 +1,7 @@
-@import '../../../color/color.scss';
+@import '../../color/color.scss';
 
 .tarifs__button {
     position: absolute;
     background-color: $color-main-white;
     border: 1px solid $color-main-black;
-    top: 210px;
-    right: 20px;
 }

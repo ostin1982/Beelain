@@ -1,0 +1,14 @@
+.bunner__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 435px;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .bunner__title {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.numbers__button_none {
+    position: absolute;
+    display: block;
+    top: 145px;
+    right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .numbers__button_none {
+        display: none;
+    }
+}

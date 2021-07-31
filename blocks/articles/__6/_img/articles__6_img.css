@@ -1,4 +1,12 @@
 .articles__6_img {
-  margin: 23px 0 0 408px;
+  margin: 0 auto;
   padding: 0;
-  border: none; }
+  border: none;
+  width: 202px;
+  height: 258px; }
+
+@media screen and (max-width: 768px) {
+  .articles__6_img {
+    padding: 10px 0 0 0;
+    width: 118px;
+    height: 150px; } }

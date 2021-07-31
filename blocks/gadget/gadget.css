@@ -1,7 +1,20 @@
 .gadget {
   position: relative;
   margin: 0 auto;
-  height: 515px;
+  padding: 90px 0 0 0;
+  max-width: 1380px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px; }
+
+@media screen and (max-width: 768px) {
+  .gadget {
+    max-width: 768px;
+    padding: 40px 0 0 0;
+    gap: 10px; } }
+@media screen and (max-width: 375px) {
+  .gadget {
+    max-width: 375px;
+    padding: 20px 0 0 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; } }

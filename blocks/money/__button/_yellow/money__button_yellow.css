@@ -1,3 +1,7 @@
 .money__button_yellow {
   background-color: #FFDD00;
   border: none; }
+
+@media screen and (max-width: 768px) {
+  .money__button_yellow {
+    max-width: 100%; } }

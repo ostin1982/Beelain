@@ -4,3 +4,18 @@
     @extend %font-size-20-500;
     margin: 0 0 10px 0;
 }
+
+@media screen and (max-width: 768px) {
+    %font-size-20-500 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .application__about_main {
+        margin: 0;
+    }
+}

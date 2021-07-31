@@ -3,6 +3,23 @@
 .gadget__megafon_problem {
     position: absolute;
     @extend %font-size-50;
+    margin: 0;
+    padding: 0;
     bottom: 7px;
     left: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    %font-size-50 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gadget__megafon_problem {
+        position: relative;
+    }
 }

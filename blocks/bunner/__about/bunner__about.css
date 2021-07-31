@@ -5,7 +5,14 @@
   line-height: 25px; }
 
 .bunner__about {
+  display: block;
   color: #FFFFFF;
-  padding: 65px 0 0 45px;
   list-style-type: none;
   opacity: 0.8; }
+
+@media screen and (min-width: 1381px) {
+  .bunner__about {
+    padding: 65px 0 0 0; } }
+@media screen and (max-width: 768px) {
+  .bunner__about {
+    display: none; } }

@@ -9,3 +9,13 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0 45px 0; }
+
+@media screen and (max-width: 768px) {
+  .money__account {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }

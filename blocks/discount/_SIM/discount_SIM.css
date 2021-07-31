@@ -9,3 +9,10 @@
   border-radius: 20px;
   padding: 1px 20px;
   margin: 0; }
+
+@media screen and (max-width: 768px) {
+  .discount_SIM {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px; } }

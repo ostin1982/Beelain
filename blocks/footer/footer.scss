@@ -2,10 +2,22 @@
 
 .footer {    
     position: relative;
-    width: 1340px;
+    max-width: 1340px;
     margin: 0 auto;
     padding: 0;
     background-color: $color-main-black;
     border-radius: 16px;
     opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        max-width: 375px;
+    }
 }

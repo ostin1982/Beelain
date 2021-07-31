@@ -1,0 +1,16 @@
+.application__mini {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .application__mini {
+        display: flex;
+        padding: 50px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .application__mini {
+        flex-direction: column;
+    }
+}

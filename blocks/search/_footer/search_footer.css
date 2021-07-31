@@ -26,4 +26,8 @@
   border-radius: 10px;
   border: none;
   opacity: 0.9;
-  padding-left: 20px; }
+  padding: 0 0 0 20px; }
+
+@media screen and (max-width: 768px) {
+  .search_footer {
+    width: 325px; } }

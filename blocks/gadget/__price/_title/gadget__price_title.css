@@ -3,3 +3,14 @@
   font-style: normal;
   font-weight: normal;
   line-height: 25px; }
+
+.gadget__price_title {
+  margin: 0;
+  padding: 40px 0 30px 0; }
+
+@media screen and (max-width: 768px) {
+  .gadget__price_title {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px; } }

@@ -9,3 +9,7 @@
   right: 30px;
   margin: 5px 0 0 0;
   opacity: 0.5; }
+
+@media screen and (max-width: 768px) {
+  .money__font {
+    left: 30px; } }

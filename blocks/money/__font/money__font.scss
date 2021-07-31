@@ -1,4 +1,4 @@
-@import '../../../font/font.scss';
+@import '../../font/font.scss';
 
 .money__font {
     position: absolute;
@@ -6,4 +6,10 @@
     @extend %font-size-13;
     margin: 5px 0 0 0;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .money__font {
+        left: 30px;
+    }
 }

@@ -1,6 +1,15 @@
-@import '../../../font/font.scss';
+@import '../../font/font.scss';
 
 .tarifs__conditions {
     @extend %font-size-20;
     margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    %font-size-20 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 22px;
+    }
 }

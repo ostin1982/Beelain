@@ -7,3 +7,7 @@
 .application__rate_conditions {
   padding: 105px 0 0 40px;
   opacity: 0.6; }
+
+@media screen and (max-width: 768px) {
+  .application__rate_conditions {
+    padding: 0; } }

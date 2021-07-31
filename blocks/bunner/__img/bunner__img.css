@@ -1,0 +1,17 @@
+.bunner__img {
+  position: absolute;
+  max-width: 100%;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+@media screen and (max-width: 768px) {
+  .bunner__img {
+    position: relative;
+    max-width: 768px;
+    height: 340px; } }
+@media screen and (max-width: 375px) {
+  .bunner__img {
+    position: absolute;
+    max-width: 375px;
+    height: 375px; } }

@@ -1,2 +1,15 @@
 .application__rate_form {
   padding: 0 0 0 40px; }
+
+@media screen and (max-width: 768px) {
+  .application__rate_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0; } }

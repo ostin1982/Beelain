@@ -1,2 +1,6 @@
 .money__input_one {
   margin: 40px 0 0 160px; }
+
+@media screen and (max-width: 768px) {
+  .money__input_one {
+    margin: 40px 0 0 0; } }

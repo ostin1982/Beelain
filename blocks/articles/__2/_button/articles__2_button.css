@@ -1,4 +1,9 @@
 .articles__2_button {
-  position: absolute;
-  margin: 552px 0 0 20px;
+  position: relative;
+  margin: 0 0 30px 0;
   border: 1px solid rgba(0, 0, 0, 0.4); }
+
+@media screen and (max-width: 768px) {
+  .articles__2_button {
+    width: 100%;
+    margin: 95px 0 0 0; } }

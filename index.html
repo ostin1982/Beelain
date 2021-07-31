@@ -12,68 +12,113 @@
             <nav class="header__title">
                 <div class="header__title_edge">                
                     <button class="header__title_button">Частным лицам</button>                
-                    <button class="header__title_button">Бизнесу</button>                    
-                    <div class="header__title_button header__title_button-separator">
+                    <button class="header__title_button header__title_block">Бизнесу</button>                    
+                    <div class="header__title_button header__title_button-separator header__title_block">
                         |
                     </div>                    
-                    <button class="header__title_button">г. Москва</button>
+                    <button class="header__title_button header__title_block">г. Москва</button>
                 </div>
                 <div class="header__title_edge">                    
-                    <button class="header__title_button">Офисы и покрытие</button>                    
-                    <button class="header__title_button">Помощь и поддержка</button>                    
+                    <button class="header__title_button header__title_block">Офисы и покрытие</button>                    
+                    <button class="header__title_button header__title_block">Помощь и поддержка</button>   
+                    <button class="header__title_button header__title_block-hidden">г. Москва</button>                 
                     <button class="header__title_button header__title_button-indent">RU</button>                    
                 </div>
             </nav>
-            <nav class="header__subtitle">                
-                <img src="./images/Beelinу-logo.png" alt="Логотип beeline" class="header__logo">                
-                <button class="header__subtitle_button">Перейти в Билайн</button>                
-                <button class="header__subtitle_button">Тарифы и услуги</button>                
-                <button class="header__subtitle_button">Телефоны и гаджеты</button>                
-                <button class="header__subtitle_button">Акции и бонусы</button>
-                <button class="header__subtitle_button">
-                    <img src="./images/Frame 297.png" alt="Значок поиска" class="header__logo">
-                </button>
-                <button class="header__subtitle_button header__subtitle_button-icon"> 
-                    <img src="./images/Icon user.png" alt="Иконка входа в личный кабинет" class="header__icon">
-                    <p>Личный кабинет</p>
-                </button>
-                <button class="header__subtitle_button">
-                    <img src="./images/search.png" alt="Значок поиска" class="header__subtitle_search">
-                </button>
+            <nav class="header__subtitle"> 
+                <div class="header__subtitle_768">
+                    <div class="header__subtitle_img">
+                        <img src="./images/burger.png" alt="Иконка меню" class="header__subtitle_burger">               
+                        <img src="./images/Beelinу-logo.png" alt="Логотип beeline" class="header__logo">  
+                    </div>            
+                    <button class="header__subtitle_button header__subtitle_none">Перейти в Билайн</button>                
+                    <button class="header__subtitle_button header__subtitle_block">Тарифы и услуги</button>                
+                    <button class="header__subtitle_button header__subtitle_block">Телефоны и гаджеты</button>                
+                    <button class="header__subtitle_button header__subtitle_block">Акции и бонусы</button>
+                    <button class="header__subtitle_button">
+                        <img src="./images/meatball.png" alt="Значок поиска" class="header__logo header__subtitle_block">
+                    </button>
+                </div>
+                <div class="header__subtitle_768">
+                    <button class="header__subtitle_button header__subtitle_button-icon"> 
+                        <img src="./images/Icon user.png" alt="Иконка входа в личный кабинет" class="header__icon">
+                        <p class="header__subtitle_office">Личный кабинет</p>
+                    </button>
+                    <button class="header__subtitle_search"></button>
+                </div>
             </nav>
         </header>
         <main class="main">
-            <section class="bunner">
-                <img src="./images/BANNER.png" alt="Рекламный баннер" class="bunner__img">
-                <p class="bunner__slogan">Близкие общаются бесплатно</p>
-                <button class="button bunner__button_about">ПОДРОБНЕЕ</button>
-                <div class="bunner__button">
-                    <button class="bunner__button_img">
-                        <img src="./images/L.png" alt="Кнопка просмотра следующего баннера" class="bunner__button_image-L">
-                    </button>  
-                    <button class="bunner__button_img">
-                        <img src="./images/R.png" alt="Кнопка просмотра следующего баннера" class="bunner__button_image-R">
-                    </button>  
-                </div>
-                <div class="bunner__rate">
-                    <div class="bunner__rate_GB">
-                        <div class="bunner__rate_GB-about">
-                            <div class="bunner__rate_GB-two">30 ГБ<img src="./images/two.png"></div>
+            <section class="bunner">         
+                <img src="./images/BANNER.svg" alt="Рекламный баннер" class="bunner__img">
+                <ul class="bunner__scroll bunner__scroll_unplug">
+                    <li>
+                        <img src="./images/Ellipse_Yellow.svg" class="bunner__scroll_point">
+                    </li>
+                    <li>
+                        <img src="./images/Ellipse_grey.svg" class="bunner__scroll_point">
+                    </li>
+                    <li>
+                        <img src="./images/Ellipse_grey.svg" class="bunner__scroll_point">
+                    </li>
+                    <li>
+                        <img src="./images/Ellipse_grey.svg" class="bunner__scroll_point">
+                    </li>
+                    <li>
+                        <img src="./images/Ellipse_grey.svg" class="bunner__scroll_point">
+                    </li>
+                </ul>
+                <div class="bunner__text">
+                    <div class="bunner__title">
+                        <p class="bunner__slogan">Близкие общаются бесплатно</p>
+                        <button class="button bunner__button_about bunner__button_none">ПОДРОБНЕЕ</button>
+                        <div class="bunner__button">
+                            <button class="bunner__button_img">
+                                <img src="./images/L.png" alt="Кнопка просмотра следующего баннера" class="bunner__button_image-L">
+                            </button>  
+                            <button class="bunner__button_img">
+                                <img src="./images/R.png" alt="Кнопка просмотра следующего баннера" class="bunner__button_image-R">
+                            </button>  
                         </div>
-                        <p class="bunner__rate_GB-about">700 мин</p>
-                        <p class="bunner__rate_GB-about">Безлимитные мессенджеры</p>
                     </div>
-                    <ul class="bunner__about">
-                        <li>300 СМС</li>
-                        <li>155 ТВ-каналов</li>
-                        <li>100 Мбит/c дом.интернет</li>
+                    <div class="bunner__rate">
+                        <div class="bunner__rate_GB">
+                            <div class="bunner__rate_GB-about">
+                                <div class="bunner__rate_GB-two">30 ГБ<img src="./images/two.png" class="bunner__rate_GB-img"></div>
+                            </div>
+                            <p class="bunner__rate_GB-about">700 мин</p>
+                            <p class="bunner__rate_GB-about">Безлимитные мессенджеры</p>
+                        </div>
+                        <ul class="bunner__about">
+                            <li>300 СМС</li>
+                            <li>155 ТВ-каналов</li>
+                            <li>100 Мбит/c дом.интернет</li>
+                        </ul>
+                        <ul class="bunner__price">
+                            <li class="bunner__price_month">
+                                <span class="bunner__price_700">700</span><span>&#8381;/мес</span></li>
+                            <li class="bunner__price_350">&#8776; 350 &#8381;/мес за абонента</li>
+                        </ul>
+                    </div>
+                    <button class="button bunner__button_about bunner__button_appeared">ПОДРОБНЕЕ</button>
+                </div>                    
+                    <ul class="bunner__scroll bunner__scroll_none">
+                        <li>
+                            <img src="./images/Ellipse_Yellow.svg" class="bunner__scroll_point">
+                        </li>
+                        <li>
+                            <img src="./images/Ellipse_grey.svg" class="bunner__scroll_point">
+                        </li>
+                        <li>
+                            <img src="./images/Ellipse_grey.svg" class="bunner__scroll_point">
+                        </li>
+                        <li>
+                            <img src="./images/Ellipse_grey.svg" class="bunner__scroll_point">
+                        </li>
+                        <li>
+                            <img src="./images/Ellipse_grey.svg" class="bunner__scroll_point">
+                        </li>
                     </ul>
-                    <ul class="bunner__price">
-                        <li class="bunner__price_month">
-                            <span class="bunner__price_700">700</span><span>&#8381;/мес</span></li>
-                        <li class="bunner__price_350">&#8776; 350 &#8381;/мес за абонента</li>
-                    </ul>
-                </div>
             </section>
             <section class="gadget">
                 <div class="gadget__price">
@@ -90,34 +135,41 @@
                         </div>
                         </div>                        
                         <p class="gadget__price_title">Смартфон Honor10 Lite 32GB Sapphire Blue</p>
-                        <span class="gadget__price_color">15 000 &#8381;</span><span class="gadget__price_color-old">17 000&#8381;</span>
+                        <div class="gadget__price_block">
+                            <span class="gadget__price_color">15 000 &#8381;</span><span class="gadget__price_color-old">17 000&#8381;</span>
+                        </div>
                     </div>
                     <div class="gadget__price_shop"> 
                         <div class="gadget__price_photo">
                             <img src="./images/image 56.png">
                         </div>                        
                         <p class="gadget__price_title">Смартфон Samsung Galaxy A10 32GB Black</p>
-                        <span class="gadget__price_color">9 990 &#8381;</span><span class="gadget__price_color-old">13 000&#8381;</span>
+                        <div class="gadget__price_block">
+                            <span class="gadget__price_color">9 990 &#8381;</span><span class="gadget__price_color-old">13 000&#8381;</span>
+                        </div>
                     </div>
                 </div>
                 <div class="gadget__megafon">
                     <div class="gadget__megafon_question"> 
-                        <img src="./images/Mega 2.png" alt="Логотип Мегафон">
+                        <img src="./images/Mega 2.png" alt="Логотип Мегафон" class="gadget__megafon_img">
                         <span class="gadget__megafon_problem">У вас Мегафон?</span>
                     </div>
-                    <button class="button gadget__megafon_button">ДА</button>
-                    <button class="button gadget__megafon_button">НЕТ</button>
+                    
+                    <div class="gadget__megafon_block">
+                        <button class="button gadget__megafon_button">ДА</button>
+                        <button class="button gadget__megafon_button">НЕТ</button>
+                    </div>
                 </div>
             </section>
             <section class="tarifs">
-                <div>
+                <div class="tarifs__heading">
                     <p class="size size_light">Тарифы</p>
                     <p class="size">&laquo;Близкие люди&raquo;</p>
                     <div class="discount tarifs__font">
                         <p class="discount_SIM"> доставим SIM бесплатно&ensp;<img src="images/car.png"></p>                        
                     </div>
                 </div>
-                <button class="button tarifs__button">ВСЕ ТАРИФЫ</button>
+                <button class="button tarifs__button tarifs__button_none">ВСЕ ТАРИФЫ</button>
                 <p class="tarifs__conditions">Коллективные тарифы со специальными условиями</p>
                 <div class="tarifs__all">
                     <div class="cards">
@@ -205,64 +257,120 @@
                         <button class="button cards_button">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
+                <button class="button tarifs__button tarifs__button_appeared">ВСЕ ТАРИФЫ</button>
             </section>
             <section class="numbers">
                 <div>
                     <p class="size size_light">Подберите</p>
                     <p class="size">Красивый номер</p>
                 </div>
-                <button class="button numbers__button">ВСЕ КРАСИВЫЕ НОМЕРА</button>
+                <button class="button numbers__button numbers__button_none">ВСЕ КРАСИВЫЕ НОМЕРА</button>
                 <div class="numbers__all">
                     <form class="search">
-                        <input type="text" placeholder="Поиск номера" class="search_field">
-                        <button class="button search_button">
-                            <img src="./images/search_light.png" alt="Значок поиска">
-                        </button>
+                        <div class="search_position">
+                            <input type="text" placeholder="Поиск номера" class="search_field">
+                            <button class="button search_button">
+                                <img src="./images/search_light.png" alt="Значок поиска">
+                            </button>
+                        </div>
                         <div class="numbers__choice">
                             <span class="numbers__choice_font numbers__choice_underline">Все</span>
                             <span class="numbers__choice_font numbers__choice_opacity">Бесплатные</span>
                             <span class="numbers__choice_font numbers__choice_opacity">Бронзовые</span>
-                            <span class="numbers__choice_font numbers__choice_opacity">Серебрянные</span>
-                            <span class="numbers__choice_font numbers__choice_opacity">Золотые</span>
+                            <span class="numbers__choice_font numbers__choice_opacity numbers__choice_none">Серебрянные</span>
+                            <span class="numbers__choice_font numbers__choice_opacity numbers__choice_none">Золотые</span>
                         </div>
                     </form>
-                    <div class="numbers__select">
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">Бесплатно</span></div>
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">10 000 &#8381;</span></div>
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">20 000 &#8381;</span></div>
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">Бесплатно</span></div>
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">10 000 &#8381;</span></div>
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">20 000 &#8381;</span></div>
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">Бесплатно</span></div> 
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">10 000 &#8381;</span></div>                        
-                        <div class="numbers__select_all"><span class="numbers__select_big">968 0433328</span><span class="numbers__select_small">20 000 &#8381;</span></div>                        
+                    <div class="numbers__block">
+                        <button class="button numbers__select_button"><img src="./images/L.png"></button>
+                        <div class="numbers__select">
+                            <div class="numbers__select_all">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">Бесплатно</span>
+                                <button class="button numbers__select_shop"><img src="./images/shop.svg" alt="Тележка из супермаркета"></button>
+                            </div>
+                            <div class="numbers__select_all">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">10 000 &#8381;</span>
+                                <button class="button numbers__select_shop"><img src="./images/shop.svg" alt="Тележка из супермаркета"></button>
+                            </div>
+                            <div class="numbers__select_all numbers__select_all-none">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">20 000 &#8381;</span>
+                            </div>
+                            <div class="numbers__select_all">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">Бесплатно</span>
+                                <button class="button numbers__select_shop"><img src="./images/shop.svg" alt="Тележка из супермаркета"></button>
+                            </div>
+                            <div class="numbers__select_all">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">10 000 &#8381;</span>
+                                <button class="button numbers__select_shop"><img src="./images/shop.svg" alt="Тележка из супермаркета"></button>
+                            </div>
+                            <div class="numbers__select_all numbers__select_all-none">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">20 000 &#8381;</span>
+                            </div>
+                            <div class="numbers__select_all">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">Бесплатно</span>
+                                <button class="button numbers__select_shop"><img src="./images/shop.svg" alt="Тележка из супермаркета"></button>
+                            </div> 
+                            <div class="numbers__select_all">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">10 000 &#8381;</span>
+                                <button class="button numbers__select_shop"><img src="./images/shop.svg" alt="Тележка из супермаркета"></button>
+                            </div>                        
+                            <div class="numbers__select_all numbers__select_all-none">
+                                <span class="numbers__select_big">968 0433328</span>
+                                <span class="numbers__select_small">20 000 &#8381;</span>
+                            </div>                        
+                        </div>                    
+                        <button class="button numbers__select_button"><img src="./images/R.png"></button>
                     </div>
-                    <button class="button numbers__select_button numbers__select_button-L"><img src="./images/L.png"></button>
-                    <button class="button numbers__select_button numbers__select_button-R"><img src="./images/R.png"></button>
                 </div>
+                <button class="button numbers__button numbers__button_appeared">ВСЕ КРАСИВЫЕ НОМЕРА</button>
             </section>
             <section class="application">
-                <img src="./images/picture.png" alt="iPhone" class="application__img">
-                <p class="application__beelain">Приложение &laquo;Мой Билайн&raquo;</p>
-                <button class="application__button">
-                    <img src="./images/appstore 1.png">
-                </button>
-                <button class="application__button">
-                    <img src="./images/googleplay 1.png">
-                </button>
-                <div class="application__about">
-                    <p class="application__about_main">Скачать по SMS</p>
-                    <p class="application__about_main">Подробнее о приложении</p>
-                </div>                
+                <div class="application__conditions">
+                    <p class="application__beelain">Приложение &laquo;Мой Билайн&raquo;</p>
+                    <div class="application__block application__none">
+                        <button class="application__button">
+                            <img src="./images/appstore 1.png">
+                        </button>
+                        <button class="application__button">
+                            <img src="./images/googleplay 1.png">
+                        </button>
+                    </div>
+                    <div class="application__about application__none">
+                        <p class="application__about_main">Скачать по SMS</p>
+                        <p class="application__about_main">Подробнее о приложении</p>
+                    </div>  
+                </div>              
                 <div class="application__rate"> 
                     <form class="application__rate_form">
                         <p class="application__rate_font">Подбор тарифа</p>
                         <p class="application__rate_font application__rate_dashed">Помощь и поддрежка</p>
-                        <p class="application__rate_font application__rate_dashed">Спецпредложения</p>
-                        <p class="application__rate_font application__rate_dashed">Виртуальная карта</p>
-                        <p class="application__rate_font application__rate_dashed">Гиги за шаги</p>
+                        <p class="application__rate_font application__rate_dashed application__rate_none">Спецпредложения</p>
+                        <p class="application__rate_font application__rate_dashed application__rate_none">Виртуальная карта</p>
+                        <p class="application__rate_font application__rate_dashed application__rate_none">Гиги за шаги</p>
                     </form>
                     <p class="application__rate_conditions">Мгновенно оформите бесплатную карту для безопасных покупок в интернете</p>
+                </div>
+                <div class="application__mini">
+                    <div class="application__block">
+                        <button class="application__button">
+                            <img src="./images/appstore 1.png">
+                        </button>
+                        <button class="application__button">
+                            <img src="./images/googleplay 1.png">
+                        </button>
+                    </div>
+                    <div class="application__about">
+                        <p class="application__about_main">Скачать по SMS</p>
+                        <p class="application__about_main">Подробнее о приложении</p>
+                    </div>
                 </div>
             </section>
             <section class="money">
@@ -280,7 +388,7 @@
                             <p class="money__input_7">+7</p>
                             <input type="number" placeholder="Номер телефона" class="money__input_number">
                         </div>
-                        <input type="text" placeholder="500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;рублей" class="money__input_number">                        
+                        <input type="number" placeholder="500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;рублей" class="money__input_number">                        
                     </div>
                     <p class="money__font">100–15 000 ₽, без комиссии</p>
                     <div class="money__button_2">
@@ -302,57 +410,86 @@
                 </div>
             </section>
             <section class="beelainTV">
-                <img src="./images/Mefafon_cable_2 1.png" class="beelainTV__img">
+                <img src="./images/Mefafon_cable_2.svg" class="beelainTV__img">
                 <div class="beelainTV__font">
                     <p class="size size_light">Подключите</p>
-                    <p class="size">Домашний интернет</p>
-                    <p class="size">от Билайн</p>
+                    <p class="size beelainTV__size">домашний интернет от Билайн</p>
                     <button class="button beelainTV__button">ПЕРЕЙТИ К ТАРИФАМ</button>
                 </div>                
             </section>
             <section class="articles">
                 <div class="articles__1">
-                    <p class="articles__1_big">Примерить яркую сторону</p>
-                    <p class="articles__1_small">Лимитированная коллекция</p>
-                    <button class="button articles__1_button">ПОДРОБНЕЕ</button>
-                    <img src="./images/image 60.png" class="articles__1_img">
+                    <div class="articles__block">
+                        <img src="./images/image 60.png" class="articles__1_img articles__appeared">
+                        <div class="articles__text">
+                            <p class="articles__big">Примерить яркую сторону</p>
+                            <p class="articles__small">Лимитированная коллекция</p>
+                        </div>                        
+                        <button class="button articles__1_button">ПОДРОБНЕЕ</button>
+                    </div>
+                    <img src="./images/image 60.png" class="articles__1_img articles__none">
                 </div>
                 <div class="articles__2">
-                    <p class="articles__2_big">Короновирус.нет</p>
-                    <p class="articles__2_small">Защитите себя и своих на случай заболевания COVID-19</p>
-                    <button class="button articles__2_button">УЗНАТЬ О ЗАЩИТЕ</button>
-                    <img src="./images/Group 448.png" class="articles__2_img">
+                    <div class="articles__block">
+                        <img src="./images/Group 448.png" class="articles__2_img articles__appeared">
+                        <div class="articles__text">
+                            <p class="articles__big">Короновирус.нет</p>
+                            <p class="articles__small">Защитите себя и своих на случай заболевания COVID-19</p>
+                        </div>
+                        <img src="./images/Group 448.png" class="articles__2_img articles__none">
+                        <button class="button articles__2_button">УЗНАТЬ О ЗАЩИТЕ</button>
+                    </div>
                 </div>
                 <div class="articles__3">
-                    <p class="articles__3_big">Карта Билайн World Masterclass</p>
-                    <p class="articles__3_small">20 главных каналов страны бесплатно для любого абонента Билайн.Сервис доступен на мобильных устройствах, компьютерах, ТВ-приставках и Smart TV</p>
-                    <button class="button articles__3_button">ПОЛУЧИТЬ КАРТУ</button>
-                    <img src="./images/image 61.png" class="articles__3_img">
+                    <div class="articles__block">
+                        <img src="./images/image 61.png" class="articles__3_img articles__appeared">
+                        <div class="articles__text">
+                            <p class="articles__big">Карта Билайн World Masterclass</p>
+                            <p class="articles__small">20 главных каналов страны бесплатно для любого абонента Билайн.Сервис доступен на мобильных устройствах, компьютерах, ТВ-приставках и Smart TV</p>
+                        </div>
+                        <img src="./images/image 61.png" class="articles__3_img articles__none">
+                        <button class="button articles__3_button">ПОЛУЧИТЬ КАРТУ</button>                        
+                    </div>
                 </div>
                 <div class="articles__4">
-                    <p class="articles__4_big">Смотри бесплатно с Билайн ТВ</p>
-                    <p class="articles__4_small">20 главных каналов страны бесплатно для любого абонента Билайн.Сервис доступен на мобильных устройствах, компьютерах, ТВ-приставках и Smart TV</p>
-                    <button class="button articles__4_button">ПОДКЛЮЧИТЬСЯ</button>
-                    <img src="./images/beeline_tv_2 1.png" class="articles__4_img">
+                    <div class="articles__block">
+                        <img src="./images/beeline_tv_2 1.png" class="articles__4_img articles__appeared">
+                        <div class="articles__text">
+                            <p class="articles__big">Смотри бесплатно с Билайн ТВ</p>
+                            <p class="articles__small">20 главных каналов страны бесплатно для любого абонента Билайн.Сервис доступен на мобильных устройствах, компьютерах, ТВ-приставках и Smart TV</p>
+                        </div>
+                        <button class="button articles__4_button">ПОДКЛЮЧИТЬСЯ</button>
+                    </div>
+                    <img src="./images/beeline_tv_2 1.png" class="articles__4_img articles__none">
                 </div>
                 <div class="articles__5">
-                    <p class="articles__5_big">Таргетированные SMS-рассылки</p>
-                    <p class="articles__5_small">Отправляйте SMS абонентам, которые готовы стать вашими клиентами</p>
-                    <button class="button articles__5_button">ПОДРОБНЕЕ</button>
-                    <img src="./images/image 62.png" class="articles__5_img">
+                    <img src="./images/image 62.png" class="articles__5_img articles__appeared">
+                    <div class="articles__block">
+                        <div class="articles__text">
+                            <p class="articles__big">Таргетированные SMS-рассылки</p>
+                            <p class="articles__small">Отправляйте SMS абонентам, которые готовы стать вашими клиентами</p>
+                        </div>
+                        <button class="button articles__5_button">ПОДРОБНЕЕ</button>
+                    </div>
+                    <img src="./images/image62.svg" class="articles__5_img articles__none">
                 </div>
                 <div class="articles__6">
-                    <p class="articles__6_big">Боитесь разбить экран смартфона?</p>
-                    <p class="articles__6_small">Крутые предложения банков: вернем до 10% бонусами и до 5,65% на остаток каждый месяц</p>
-                    <button class="button articles__6_button">ПОДРОБНЕЕ</button>
-                    <img src="./images/image 63.png" class="articles__6_img">
+                    <img src="./images/image 63.png" class="articles__6_img articles__appeared">
+                    <div class="articles__block">
+                        <div class="articles__text">
+                            <p class="articles__big articles__white">Боитесь разбить экран смартфона?</p>
+                            <p class="articles__small articles__white">Крутые предложения банков: вернем до 10% бонусами и до 5,65% на остаток каждый месяц</p>
+                        </div>
+                        <button class="button articles__6_button">ПОДРОБНЕЕ</button>
+                    </div>
+                    <img src="./images/image 63.png" class="articles__6_img articles__none">
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="footer__block">
                 <div class="footer__block_padding">
-                    <form class="search">
+                    <form class="search footer__search">
                         <input type="text" placeholder="Поиск по сайту" class="search_footer">
                         <button class="button search_button-footer">
                             <img src="./images/seach_dark.png" alt="Значок поиска">

@@ -5,4 +5,11 @@
   line-height: 25px; }
 
 .numbers__select_big {
-  margin-right: 30px; }
+  margin: 0 30px 0 0; }
+
+@media screen and (max-width: 768px) {
+  .numbers__select_big {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px; } }

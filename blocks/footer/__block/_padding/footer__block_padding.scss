@@ -1,3 +1,19 @@
 .footer__block_padding {
-    padding: 60px 0 0 30px;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__block_padding {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer__block_padding {
+        flex-direction: column;
+    }
 }

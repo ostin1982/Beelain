@@ -7,3 +7,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 13px; }
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    padding-bottom: 6px; } }

@@ -4,11 +4,28 @@
 .bunner__slogan {
     position: relative;
     color: $color-white;
-    @extend %font-size-70;
+    @extend %font-size-70-calc;
     padding: 0;
     margin: 0;
-    width: 435px;
-    height: 200px;
-    left: 30px;
-    bottom: 490px;
+}
+
+@media screen and (min-width: 1381px) {
+    %font-size-70-calc {
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 66px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bunner__slogan {
+        color: $color-main-black;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bunner__slogan {
+        color: $color-white;
+    }
 }

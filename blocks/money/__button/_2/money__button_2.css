@@ -6,3 +6,11 @@
           justify-content: center;
   gap: 15px;
   margin: 30px 0 0 0; }
+
+@media screen and (max-width: 768px) {
+  .money__button_2 {
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    justify-self: stretch;
+    width: 100%; } }

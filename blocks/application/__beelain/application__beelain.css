@@ -6,9 +6,16 @@
 
 .application__beelain {
   position: relative;
-  width: 380px;
-  height: 180px;
+  max-width: 380px;
   margin: 0;
-  padding: 0;
-  left: 30px;
-  bottom: 470px; }
+  padding: 0; }
+
+@media screen and (max-width: 768px) {
+  .application__beelain {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px; } }
+@media screen and (max-width: 768px) {
+  .application__beelain {
+    max-width: 310px; } }

@@ -6,6 +6,11 @@
 
 .bunner__rate_GB {
   color: #FFFFFF;
-  padding-left: 45px;
-  width: 280px;
-  height: 160px; }
+  padding: 0;
+  max-width: 280px; }
+
+@media screen and (max-width: 768px) {
+  .bunner__rate_GB {
+    color: #000000;
+    max-width: 100%;
+    padding: 0 22px 0 0; } }

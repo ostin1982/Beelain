@@ -1,5 +1,10 @@
 .articles__4_button {
-  position: absolute;
+  position: relative;
   background-color: #FFDD00;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  margin: 230px 0 0 20px; }
+  margin: 0 0 30px 0; }
+
+@media screen and (max-width: 768px) {
+  .articles__4_button {
+    width: 100%;
+    margin: 5px 0 0 0; } }

@@ -6,3 +6,9 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .gadget__price {
+        gap: 10px;
+    }
+}

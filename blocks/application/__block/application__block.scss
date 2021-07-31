@@ -1,0 +1,18 @@
+.application__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 180px 0 25px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .application__block {
+        padding: 0 100px 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .application__block {
+        padding:  0 0 10px 0;
+    }
+}
