@@ -8,6 +8,5 @@
   padding: 0;
   margin: 0 15px 0 0;
   border: none; }
-
-.gadget__megafon_button:last-child {
-  margin: 0; }
+  .gadget__megafon_button:last-child {
+    margin: 0; }

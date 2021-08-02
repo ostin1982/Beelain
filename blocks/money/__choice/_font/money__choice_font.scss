@@ -3,10 +3,10 @@
 .money__choice_font {
     @extend %font-size-20;
     margin-right: 30px;
-}
 
-.money__choice_font:last-child {
-    margin: 0 335px 0 0;
+    &:last-child {
+        margin: 0 335px 0 0;
+    }
 }
 
 @media screen and (max-width: 768px) {

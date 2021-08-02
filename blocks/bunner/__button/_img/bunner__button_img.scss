@@ -6,12 +6,12 @@
     border: none;
     padding: 0;
     cursor: pointer;
-}
 
-.bunner__button_img:hover {
-    opacity: 0.6;
-}
+    &:hover {
+        opacity: 0.6;
+    }
 
-.bunner__button_image:last-child {
-    left: 10px;
+    &:last-child {
+        left: 10px;
+    }
 }

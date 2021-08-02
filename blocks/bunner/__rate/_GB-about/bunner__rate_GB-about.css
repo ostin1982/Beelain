@@ -1,6 +1,5 @@
 .bunner__rate_GB-about {
   padding-bottom: 15px;
   margin: 0; }
-
-.bunner__rate_GB-about:last-child {
-  padding-bottom: 0; }
+  .bunner__rate_GB-about:last-child {
+    padding-bottom: 0; }

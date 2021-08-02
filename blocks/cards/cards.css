@@ -25,9 +25,8 @@
   margin: 0 20px 0 0; }
   .cards::-webkit-scrollbar {
     display: none; }
-
-.cards:last-child {
-  margin: 0; }
+  .cards:last-child {
+    margin: 0; }
 
 @media screen and (max-width: 768px) {
   .cards {

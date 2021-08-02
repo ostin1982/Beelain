@@ -6,9 +6,8 @@
 
 .numbers__choice_font {
   margin: 0 30px 0 0; }
-
-.numbers__choice_font:last-child {
-  margin: 0 100px 0 0; }
+  .numbers__choice_font:last-child {
+    margin: 0 100px 0 0; }
 
 @media screen and (max-width: 1182px) {
   .numbers__choice_none:last-child {

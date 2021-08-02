@@ -12,7 +12,6 @@
   border: none;
   cursor: pointer;
 }
-
 .header__title_button:hover {
   opacity: 0.6;
 }

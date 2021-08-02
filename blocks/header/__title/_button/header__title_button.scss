@@ -8,10 +8,10 @@
     padding-right: 23px;
     border: none;
     cursor: pointer;
-}
 
-.header__title_button:hover {
-    opacity: 0.6;
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 @media screen and (max-width: 768px) {
