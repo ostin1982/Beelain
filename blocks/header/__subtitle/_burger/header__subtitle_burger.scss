@@ -1,3 +1,5 @@
+@import '../../../mixin/mixin.scss';
+
 .header__subtitle_burger {
     display: none;
     width: 20px;
@@ -6,7 +8,7 @@
     cursor: pointer;
 
     &:hover {
-        opacity: 0.6;
+        @include opacity();
     }
 }
 

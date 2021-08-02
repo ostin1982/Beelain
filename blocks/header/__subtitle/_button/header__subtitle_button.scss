@@ -1,5 +1,6 @@
 @import '../../../color/color.scss';
 @import '../../../font/font.scss';
+@import '../../../mixin/mixin.scss';
 
 .header__subtitle_button {
     color: $color-main-black;
@@ -11,7 +12,7 @@
     margin: 0;
 
     &:hover {
-        opacity: 0.6;
+        @include opacity();
     }
 }
 

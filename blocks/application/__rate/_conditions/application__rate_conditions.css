@@ -5,8 +5,8 @@
   line-height: 20px; }
 
 .application__rate_conditions {
-  padding: 105px 0 0 40px;
-  opacity: 0.6; }
+  opacity: 0.6;
+  padding: 105px 0 0 40px; }
 
 @media screen and (max-width: 768px) {
   .application__rate_conditions {

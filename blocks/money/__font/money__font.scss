@@ -1,11 +1,12 @@
 @import '../../font/font.scss';
+@import '../../mixin/mixin.scss';
 
 .money__font {
     position: absolute;
     right: 30px;
     @extend %font-size-13;
+    @include opacity();
     margin: 5px 0 0 0;
-    opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {

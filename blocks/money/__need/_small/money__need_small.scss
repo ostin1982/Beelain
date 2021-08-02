@@ -1,9 +1,10 @@
 @import '../../../font/font.scss';
+@import '../../../mixin/mixin.scss';
 
 .money__need_small {
     @extend %font-size-15;
+    @include opacity();
     margin: 20px 0 0 0;
-    opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {

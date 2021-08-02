@@ -1,4 +1,5 @@
 @import '../../../color/color.scss';
+@import '../../../mixin/mixin.scss';
 
 .header__subtitle_search {
     position: relative;
@@ -15,7 +16,7 @@
     cursor: pointer;
 
     &:hover {
-        opacity: 0.6;
+        @include opacity();
     }
 }
 

@@ -5,8 +5,8 @@
   line-height: 25px; }
 
 .money__need_small {
-  margin: 20px 0 0 0;
-  opacity: 0.6; }
+  opacity: 0.6;
+  margin: 20px 0 0 0; }
 
 @media screen and (max-width: 768px) {
   .money__need_small {

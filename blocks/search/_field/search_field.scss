@@ -1,14 +1,15 @@
 @import '../../color/color.scss';
 @import '../../font/font.scss';
+@import '../../mixin/mixin.scss';
 
 .search_field {
     background-color: $color-white;
     @extend %font-size-20;
+    @include opacity();
     width: 320px;
     height: 55px;
     border-radius: 10px;
     border: none;
-    opacity: 0.5;
     padding-left: 20px;
 }
 

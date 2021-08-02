@@ -7,8 +7,8 @@
 .bunner__about {
   display: block;
   color: #FFFFFF;
-  list-style-type: none;
-  opacity: 0.8; }
+  opacity: 0.6;
+  list-style-type: none; }
 
 @media screen and (min-width: 1381px) {
   .bunner__about {

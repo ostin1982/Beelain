@@ -1,5 +1,6 @@
 @import '../../../color/color.scss';
 @import '../../../font/font.scss';
+@import '../../../mixin/mixin.scss';
 
 .header__title_button {
     color: $color-main-black;
@@ -10,7 +11,7 @@
     cursor: pointer;
 
     &:hover {
-        opacity: 0.6;
+        @include opacity();
     }
 }
 

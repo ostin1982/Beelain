@@ -1,8 +1,10 @@
+@import '../../../mixin/mixin.scss';
+
 .bunner__scroll_point {
     padding: 0 10px 0 0;
     cursor: pointer;
 
     &:hover {
-        opacity: 0.6;
+        @include opacity();
     }
 }

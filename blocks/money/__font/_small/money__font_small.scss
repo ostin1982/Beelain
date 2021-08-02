@@ -1,12 +1,13 @@
 @import '../../../font/font.scss';
+@import '../../../mixin/mixin.scss';
 
 .money__font_small {
     @extend %font-size-13;
+    @include opacity();
     margin: 10px 0 0 170px;
     padding: 0;
     width: 290px;
     text-align: center;
-    opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {

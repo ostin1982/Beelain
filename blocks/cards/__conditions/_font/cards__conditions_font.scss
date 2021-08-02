@@ -1,7 +1,8 @@
 @import '../../../font/font.scss';
+@import '../../../mixin/mixin.scss';
 
 .cards__conditions_font {
     @extend %font-size-15;
+    @include opacity();
     margin: 0;
-    opacity: 0.8;
 }

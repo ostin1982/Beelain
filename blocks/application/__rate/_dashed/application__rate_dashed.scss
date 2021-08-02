@@ -1,8 +1,9 @@
 @import '../../../color/color.scss';
+@import '../../../mixin/mixin.scss';
 
 .application__rate_dashed {
     border-bottom: 2px $color-main-black dashed;
-    opacity: 0.6;
+    @include opacity();
 }
 
 @media screen and (max-width: 768px) {

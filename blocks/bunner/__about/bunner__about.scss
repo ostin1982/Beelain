@@ -1,12 +1,13 @@
 @import '../../color/color.scss';
 @import '../../font/font.scss';
+@import '../../mixin/mixin.scss';
 
 .bunner__about {   
     display: block; 
     color: $color-white;
     @extend %font-size-15;
-    list-style-type: none;
-    opacity: 0.8;
+    @include opacity();
+    list-style-type: none;    
 }
 
 @media screen and (min-width: 1381px) {
