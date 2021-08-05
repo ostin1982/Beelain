@@ -1,0 +1,9 @@
+.gadget__price_img {
+    max-width: 138px;
+}
+
+@media screen and (max-width: 768px) {
+    .gadget__price_img {
+        max-width: 100px;
+    }
+}

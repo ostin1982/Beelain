@@ -5,7 +5,7 @@
   margin: 0 15px 0 0;
   float: left; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
   .footer__information_private {
     width: 47%; } }
 @media screen and (max-width: 375px) {

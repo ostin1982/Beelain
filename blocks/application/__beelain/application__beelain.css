@@ -1,5 +1,4 @@
 .application__beelain {
-  font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: 58px; }
@@ -7,6 +6,7 @@
 .application__beelain {
   position: relative;
   max-width: 380px;
+  font-size: 50px;
   margin: 0;
   padding: 0; }
 

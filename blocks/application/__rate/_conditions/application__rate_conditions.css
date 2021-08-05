@@ -8,6 +8,6 @@
   opacity: 0.6;
   padding: 105px 0 0 40px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .application__rate_conditions {
     padding: 0; } }

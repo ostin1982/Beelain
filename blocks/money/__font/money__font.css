@@ -7,8 +7,9 @@
 .money__font {
   position: absolute;
   right: 30px;
+  bottom: 190px;
   opacity: 0.6;
-  margin: 5px 0 0 0; }
+  margin: 0; }
 
 @media screen and (max-width: 768px) {
   .money__font {

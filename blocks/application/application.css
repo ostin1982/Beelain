@@ -22,7 +22,12 @@
   -o-object-fit: cover;
      object-fit: cover; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
+  .application {
+    background-image: url(../../images/Phone2.svg);
+    background-position-y: 130px;
+    padding: 20px; } }
+@media screen and (max-width: 980px) {
   .application {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -31,11 +36,12 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    max-width: 768px;
-    height: 695px;
-    background-image: url(../../images/Phone2.svg);
-    background-position-y: 130px;
-    padding: 20px; } }
+    max-width: 980px;
+    height: 750px; } }
+@media screen and (max-width: 765px) {
+  .application {
+    max-width: 765px;
+    height: 695px; } }
 @media screen and (max-width: 375px) {
   .application {
     max-width: 375px;

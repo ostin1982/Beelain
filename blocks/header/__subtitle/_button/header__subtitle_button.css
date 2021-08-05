@@ -14,6 +14,12 @@
   .header__subtitle_button:hover {
     opacity: 0.6; }
 
+@media screen and (max-width: 882px) {
+  .header__subtitle_button {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px; } }
 @media screen and (max-width: 768px) {
   .header__subtitle_button {
     font-size: 15px;

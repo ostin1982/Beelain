@@ -16,6 +16,15 @@
     }
 }
 
+@media screen and (max-width: 882px) {
+    %font-size-20 {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     %font-size-20 {
         font-size: 15px;

@@ -1,25 +1,27 @@
+@import '../../../mixin/mixin.scss';
 @import '../../../font/font.scss';
 
 .gadget__megafon_problem {
     position: absolute;
+    @include adaptiv-font(41, 30);
     @extend %font-size-50;
     margin: 0;
     padding: 0;
     bottom: 7px;
-    left: 60px;
-}
-
-@media screen and (max-width: 768px) {
-    %font-size-50 {
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 40px;
-    }
+    left: 50px;
+    right: 50px;
 }
 
 @media screen and (max-width: 768px) {
     .gadget__megafon_problem {
-        position: relative;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .gadget__megafon_problem {
+        font-size: 30px;
+        left: 60px;
+        right: 60px;
     }
 }

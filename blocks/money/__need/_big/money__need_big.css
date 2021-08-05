@@ -1,10 +1,10 @@
 .money__need_big {
-  font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: 58px; }
 
 .money__need_big {
+  font-size: calc(30px + 10 * ((100vw - 768px) / 572));
   margin: 0;
   max-width: 500px; }
 

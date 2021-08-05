@@ -6,10 +6,12 @@
     margin: 30px 0 0 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
     .money__button_2 {
-        justify-content: inherit;
+        justify-content: center;
         justify-self: stretch;
+        align-self: stretch;
+        align-content: stretch;
         width: 100%;
     }
 }

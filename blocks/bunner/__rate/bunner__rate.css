@@ -1,6 +1,18 @@
 .bunner__rate {
-  display: block;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   max-width: 325px;
   border-left: 1px solid #FFFFFF;
   padding: 0 0 0 calc((100vw - 769px)/(1340 - 769) * (20 - 5) + 5px); }
@@ -8,7 +20,7 @@
 @media screen and (min-width: 1381px) {
   .bunner__rate {
     padding: 0 0 0 40px; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .bunner__rate {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,9 +28,13 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     max-width: 100%;
     padding: 30px 0 30px 0;
     border: none; } }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .bunner__rate {
     display: none; } }

@@ -1,0 +1,6 @@
+.application__button_img {
+  max-width: 177px; }
+
+@media screen and (max-width: 980px) {
+  .application__button_img {
+    max-width: 163px; } }

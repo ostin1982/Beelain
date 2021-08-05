@@ -7,7 +7,7 @@
   margin: 0;
   border: none; }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .bunner__button_about {
-    margin: 245px 0 0 0;
+    margin: 24vh 0 0 0;
     width: 100%; } }

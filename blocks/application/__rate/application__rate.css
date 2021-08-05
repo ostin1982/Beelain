@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .application__rate {
     display: -webkit-box;
     display: -ms-flexbox;

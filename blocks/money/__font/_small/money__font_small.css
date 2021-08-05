@@ -6,11 +6,7 @@
 
 .money__font_small {
   opacity: 0.6;
-  margin: 10px 0 0 170px;
+  margin: 0;
   padding: 0;
   width: 290px;
   text-align: center; }
-
-@media screen and (max-width: 768px) {
-  .money__font_small {
-    margin: 10px 0 0 0; } }

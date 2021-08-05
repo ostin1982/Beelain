@@ -1,31 +1,25 @@
 @import '../../color/color.scss';
 @import '../../font/font.scss';
+@import '../../mixin/mixin.scss';
 
 .bunner__slogan {
     position: relative;
     color: $color-white;
-    @extend %font-size-70-calc;
+    @include adaptiv-font(55, 40);
+    @extend %font-size-70;
     padding: 0;
     margin: 0;
 }
 
-@media screen and (min-width: 1381px) {
-    %font-size-70-calc {
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 66px;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     .bunner__slogan {
         color: $color-main-black;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .bunner__slogan {
         color: $color-white;
+        font-size: 40px;
     }
 }

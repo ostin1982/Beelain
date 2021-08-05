@@ -18,3 +18,19 @@
         display: none;
     }
 }
+
+//rubber font
+$maxWidth: 1340;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 768;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 768px) / #{$maxWidth}));
+}
+
+//rubber line
+$maxWidth: 1340;
+@mixin adaptiv-line($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 768;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 768px) / #{$maxWidth}));
+}

@@ -1,13 +1,13 @@
 .money__input_two {
-    display: grid;
+    display: flex;
     margin: 40px 0 0 0;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1160px) {
     .money__input_two {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
     }
 }

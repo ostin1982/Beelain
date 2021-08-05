@@ -9,12 +9,12 @@
   margin: 0;
   padding: 0; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1230px) {
   .articles__big {
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; } }
-@media screen and (max-width: 768px) {
+    line-height: 30px; }
+
   .articles__big {
     margin: 40px 0 0 0; } }

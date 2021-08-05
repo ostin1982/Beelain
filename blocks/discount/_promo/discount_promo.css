@@ -12,3 +12,7 @@
   border-radius: 20px;
   margin: 0;
   padding: 1px 0 0 15px; }
+
+@media screen and (max-width: 768px) {
+  .discount_promo {
+    width: 127px; } }

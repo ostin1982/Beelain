@@ -5,6 +5,6 @@
   margin: 0;
   padding: 0; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
   .footer__information {
-    max-width: 680px; } }
+    max-width: 790px; } }

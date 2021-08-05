@@ -10,3 +10,9 @@
     border: none;
     padding: 10px 20px;
 }
+
+@media screen and (max-width: 570px) {
+    .numbers__select_all {
+        max-width: 550px;
+    }
+}

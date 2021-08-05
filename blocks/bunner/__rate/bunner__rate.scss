@@ -1,8 +1,11 @@
 @import '../../color/color.scss';
 
 .bunner__rate {
-    display: block;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start;
     max-width: 325px;
     border-left: 1px solid $color-white;
     padding: 0 0 0 calc((100vw - 769px)/(1340 - 769) * (20 - 5) + 5px);
@@ -14,17 +17,18 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     .bunner__rate {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         max-width: 100%;
         padding: 30px 0 30px 0;
         border: none;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .bunner__rate {
         display: none;
     }

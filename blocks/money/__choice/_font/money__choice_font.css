@@ -9,7 +9,10 @@
   .money__choice_font:last-child {
     margin: 0 335px 0 0; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1370px) {
+  .money__choice_font:last-child {
+    margin: 0 100px 0 0; } }
+@media screen and (max-width: 925px) {
   .money__choice_font:last-child {
     margin: 0 50px 0 0; } }
 @media screen and (max-width: 375px) {

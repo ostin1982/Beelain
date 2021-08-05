@@ -1,6 +1,7 @@
 .bunner__rate_GB-img {
-  display: block; }
+  display: block;
+  position: relative; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .bunner__rate_GB-img {
     display: none; } }

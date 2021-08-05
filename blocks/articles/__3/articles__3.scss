@@ -8,13 +8,12 @@
     grid-row-end: 4;
     border-radius: 16px;
     background-color: $color-white;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     padding: 15px 20px 0 20px;
     max-width: 620px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1230px) {
     .articles__3 {
         @include switching_to_flex();
     }

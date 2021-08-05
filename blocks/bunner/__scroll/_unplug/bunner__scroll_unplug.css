@@ -1,11 +1,11 @@
 .bunner__scroll_unplug {
   display: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .bunner__scroll_unplug {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .bunner__scroll_unplug {
     display: none; } }

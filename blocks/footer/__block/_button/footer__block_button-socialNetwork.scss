@@ -9,14 +9,18 @@
     padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
     .footer__block_button-socialNetwork {
         margin: 0 5px 0 0;
+        width: 45px;
+        height: 45px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .footer__block_button-socialNetwork {
         margin: 0 4px 0 0;
+        width: 43px;
+        height: 43px;
     }
 }

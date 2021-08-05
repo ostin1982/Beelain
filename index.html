@@ -36,7 +36,7 @@
                     <button class="header__subtitle_button header__subtitle_block">Телефоны и гаджеты</button>                
                     <button class="header__subtitle_button header__subtitle_block">Акции и бонусы</button>
                     <button class="header__subtitle_button">
-                        <img src="./images/meatball.png" alt="Значок поиска" class="header__logo header__subtitle_block">
+                        <img src="./images/meatball.png" alt="Значок поиска" class="header__subtitle_block">
                     </button>
                 </div>
                 <div class="header__subtitle_768">
@@ -84,7 +84,8 @@
                     <div class="bunner__rate">
                         <div class="bunner__rate_GB">
                             <div class="bunner__rate_GB-about">
-                                <div class="bunner__rate_GB-two">30 ГБ<img src="./images/two.png" class="bunner__rate_GB-img"></div>
+                                <div class="bunner__rate_GB-two">30 ГБ</div>
+                                <img src="./images/two.png" class="bunner__rate_GB-img">
                             </div>
                             <p class="bunner__rate_GB-about">700 мин</p>
                             <p class="bunner__rate_GB-about">Безлимитные мессенджеры</p>
@@ -128,7 +129,7 @@
                     </div>
                     <div class="gadget__price_shop"> 
                         <div class="gadget__price_photo">
-                            <img src="./images/image 55.png">
+                            <img src="./images/image 55.png" class="gadget__price_img">
                             <div class="discount gadget__price_location">
                                 <p class="discount_minus">-20%</p>
                                 <p class="discount_promo">АБОНЕНТАМ БИЛАЙН</p>
@@ -141,7 +142,7 @@
                     </div>
                     <div class="gadget__price_shop"> 
                         <div class="gadget__price_photo">
-                            <img src="./images/image 56.png">
+                            <img src="./images/image 56.png" class="gadget__price_img">
                         </div>                        
                         <p class="gadget__price_title">Смартфон Samsung Galaxy A10 32GB Black</p>
                         <div class="gadget__price_block">
@@ -151,7 +152,7 @@
                 </div>
                 <div class="gadget__megafon">
                     <div class="gadget__megafon_question"> 
-                        <img src="./images/Mega 2.png" alt="Логотип Мегафон" class="gadget__megafon_img">
+                        <img src="./images/Mega2.svg" alt="Логотип Мегафон" class="gadget__megafon_img">
                         <span class="gadget__megafon_problem">У вас Мегафон?</span>
                     </div>
                     
@@ -163,8 +164,8 @@
             </section>
             <section class="tarifs">
                 <div class="tarifs__heading">
-                    <p class="size size_light">Тарифы</p>
-                    <p class="size">&laquo;Близкие люди&raquo;</p>
+                    <h1 class="size size_light">Тарифы</h1>
+                    <h1 class="size">&laquo;Близкие люди&raquo;</h1>
                     <div class="discount tarifs__font">
                         <p class="discount_SIM"> доставим SIM бесплатно&ensp;<img src="images/car.png"></p>                        
                     </div>
@@ -261,8 +262,8 @@
             </section>
             <section class="numbers">
                 <div>
-                    <p class="size size_light">Подберите</p>
-                    <p class="size">Красивый номер</p>
+                    <h1 class="size size_light">Подберите</h1>
+                    <h1 class="size">Красивый номер</h1>
                 </div>
                 <button class="button numbers__button numbers__button_none">ВСЕ КРАСИВЫЕ НОМЕРА</button>
                 <div class="numbers__all">
@@ -334,7 +335,7 @@
             </section>
             <section class="application">
                 <div class="application__conditions">
-                    <p class="application__beelain">Приложение &laquo;Мой Билайн&raquo;</p>
+                    <h2 class="application__beelain">Приложение &laquo;Мой Билайн&raquo;</h2>
                     <div class="application__block application__none">
                         <button class="application__button">
                             <img src="./images/appstore 1.png">
@@ -361,10 +362,10 @@
                 <div class="application__mini">
                     <div class="application__block">
                         <button class="application__button">
-                            <img src="./images/appstore 1.png">
+                            <img src="./images/appstore 1.png" class="application__button_img">
                         </button>
                         <button class="application__button">
-                            <img src="./images/googleplay 1.png">
+                            <img src="./images/googleplay 1.png" class="application__button_img">
                         </button>
                     </div>
                     <div class="application__about">
@@ -376,7 +377,7 @@
             <section class="money">
                 <div class="money__pay">
                     <div class="money__account">
-                        <p class="money__account_font">Поплнение счёта</p>
+                        <h2 class="money__account_font">Пополнение счёта</h2>
                         <img src="./images/logos.png" alt="Логотипы Visa и MasterCard">
                     </div>
                     <div class="money__choice">
@@ -388,7 +389,9 @@
                             <p class="money__input_7">+7</p>
                             <input type="number" placeholder="Номер телефона" class="money__input_number">
                         </div>
-                        <input type="number" placeholder="500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;рублей" class="money__input_number">                        
+                        <div class="money__input">
+                            <input type="number" placeholder="500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;рублей" class="money__input_number">   
+                        </div>                    
                     </div>
                     <p class="money__font">100–15 000 ₽, без комиссии</p>
                     <div class="money__button_2">
@@ -399,7 +402,7 @@
                     </div>
                 <div class="money__pay">
                     <div class="money__need">
-                        <p class="money__need_big">Нужно позвонить, но нет денег?</p>
+                        <h2 class="money__need_big">Нужно позвонить, но нет денег?</h2>
                         <p class="money__need_small">Размер Доверительного платежа и платы за услугу зависят от вашего тарифа и средних расходов на связь за последние три месяца.</p>
                     </div>
                     <div class="money__input money__input_one">
@@ -419,6 +422,7 @@
             </section>
             <section class="articles">
                 <div class="articles__1">
+                    
                     <div class="articles__block">
                         <img src="./images/image 60.png" class="articles__1_img articles__appeared">
                         <div class="articles__text">
@@ -463,19 +467,19 @@
                     <img src="./images/beeline_tv_2 1.png" class="articles__4_img articles__none">
                 </div>
                 <div class="articles__5">
-                    <img src="./images/image 62.png" class="articles__5_img articles__appeared">
                     <div class="articles__block">
+                    <img src="./images/image 62.png" class="articles__5_img articles__appeared">                    
                         <div class="articles__text">
                             <p class="articles__big">Таргетированные SMS-рассылки</p>
                             <p class="articles__small">Отправляйте SMS абонентам, которые готовы стать вашими клиентами</p>
                         </div>
                         <button class="button articles__5_button">ПОДРОБНЕЕ</button>
                     </div>
-                    <img src="./images/image62.svg" class="articles__5_img articles__none">
+                    <img src="./images/image 62.png" class="articles__5_img articles__none">
                 </div>
                 <div class="articles__6">
-                    <img src="./images/image 63.png" class="articles__6_img articles__appeared">
                     <div class="articles__block">
+                    <img src="./images/image 63.png" class="articles__6_img articles__appeared">                    
                         <div class="articles__text">
                             <p class="articles__big articles__white">Боитесь разбить экран смартфона?</p>
                             <p class="articles__small articles__white">Крутые предложения банков: вернем до 10% бонусами и до 5,65% на остаток каждый месяц</p>

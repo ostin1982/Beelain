@@ -54,6 +54,7 @@
 @import url(../blocks/gadget/__price/gadget__price.css);
 @import url(../blocks/gadget/__price/_navigation/gadget__price_navigation.css);
 @import url(../blocks/gadget/__price/_shop/gadget__price_shop.css);
+@import url(../blocks/gadget/__price/_img/gadget__price_img.css);
 @import url(../blocks/gadget/__price/_all/gadget__price_all.css);
 @import url(../blocks/gadget/__price/_store/gadget__price_store.css);
 @import url(../blocks/gadget/__price/_color/gadget__price_color.css);
@@ -128,6 +129,7 @@
 @import url(../blocks/application/__beelain/application__beelain.css);
 @import url(../blocks/application/__block/application__block.css);
 @import url(../blocks/application/__button/application__button.css);
+@import url(../blocks/application/__button/_img/application__button_img.css);
 @import url(../blocks/application/__about/application__about.css);
 @import url(../blocks/application/__about/_main/application__about-main.css);
 @import url(../blocks/application/__rate/application__rate.css);

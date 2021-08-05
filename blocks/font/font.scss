@@ -20,7 +20,6 @@
 }
 
 %font-size-15 {
-    font-size: 15px;
     font-style: normal;
     font-weight: normal;
     line-height: 25px;
@@ -48,7 +47,6 @@
 }
 
 %font-size-28 {
-    font-size: 28px;
     font-style: normal;
     font-weight: normal;
     line-height: 25px;
@@ -83,31 +81,21 @@
 };
 
 %font-size-50 {
-    font-size: 50px;
     font-style: normal;
     font-weight: 500;
     line-height: 58px;
 };
 
 %font-size-60 {
-    font-size: 60px;
     font-style: normal;
     font-weight: 500;
     line-height: 45px;
 };
 
 %font-size-70 {
-    font-size: 70px;
     font-style: normal;
     font-weight: 600;
     line-height: 66px;
-};
-
-%font-size-70-calc {
-    font-size: calc((100vw - 769px)/(1340 - 769) * (60 - 50) + 50px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: calc((100vw - 769px)/(1340 - 769) * (60 - 50) + 50px);
 };
 
 %font-size-80 {

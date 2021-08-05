@@ -1,7 +1,7 @@
 .bunner__scroll_none {
   display: none; }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .bunner__scroll_none {
     position: relative;
     display: -webkit-box;

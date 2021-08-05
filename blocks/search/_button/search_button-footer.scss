@@ -11,8 +11,20 @@
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
     .search_button-footer {
         left: 300px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .search_button-footer {
+        left: 230px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .search_button-footer {
+        left: 260px;
     }
 }

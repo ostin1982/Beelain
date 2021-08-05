@@ -1,9 +1,17 @@
 @import '../../../color/color.scss';
+@import '../../../mixin/mixin.scss';
 @import '../../../font/font.scss';
 
 .gadget__price_color-old {
     color: $color-main-black;
+    @include adaptiv-font(15, 12);
     @extend %font-size-15;
     text-decoration: line-through;
     opacity: 0.3;
+}
+
+@media screen and (max-width: 768px) {
+    .gadget__price_color-old {
+        font-size: 15px;
+    }
 }

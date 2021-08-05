@@ -1,5 +1,13 @@
 @import '../../../font/font.scss';
+@import '../../../mixin/mixin.scss';
 
 .bunner__price_700 {
+    @include adaptiv-font(44, 20);
     @extend %font-size-60;
+}
+
+@media screen and (max-width: 1100px) {
+    .bunner__price_700 {
+        font-size: 40px;
+    }
 }

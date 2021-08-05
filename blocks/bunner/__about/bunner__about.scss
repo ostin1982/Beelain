@@ -7,16 +7,12 @@
     color: $color-white;
     @extend %font-size-15;
     @include opacity();
-    list-style-type: none;    
+    list-style-type: none;  
+    padding: 3vw 0 0 0;  
+    margin: 0;
 }
 
-@media screen and (min-width: 1381px) {
-    .bunner__about { 
-    padding: 65px 0 0 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     .bunner__about {
         display: none;
     }

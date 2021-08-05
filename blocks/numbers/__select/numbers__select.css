@@ -10,7 +10,11 @@
 @media screen and (max-width: 768px) {
   .numbers__select {
     grid-template-columns: 1fr 1fr; } }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 630px) {
+  .numbers__select {
+    -webkit-column-gap: 15px;
+            column-gap: 15px; } }
+@media screen and (max-width: 570px) {
   .numbers__select {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; } }

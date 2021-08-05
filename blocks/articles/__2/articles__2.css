@@ -5,16 +5,10 @@
   grid-row-end: 3;
   border-radius: 16px;
   background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 15px 20px 0 20px;
-  max-width: 620px; }
+  display: grid; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1230px) {
   .articles__2 {
     position: relative;
     -webkit-box-flex: 0;

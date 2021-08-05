@@ -5,10 +5,13 @@
   padding: 0;
   border-radius: 16px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .bunner {
-    max-width: 768px;
+    max-width: 1100px;
     background-color: #FFFFFF; } }
+@media screen and (max-width: 500px) {
+  .bunner {
+    max-width: 470px; } }
 @media screen and (max-width: 375px) {
   .bunner {
     max-width: 375px; } }

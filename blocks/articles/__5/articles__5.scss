@@ -13,7 +13,7 @@
     padding: 15px 20px 0 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1230px) {
     .articles__5 {
         @include switching_to_flex();
     }

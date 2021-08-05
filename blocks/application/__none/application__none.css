@@ -3,6 +3,6 @@
   display: -ms-flexbox;
   display: flex; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .application__none {
     display: none; } }

@@ -1,11 +1,11 @@
 .application__rate_none {
-  display: block; }
+  display: inline-block; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .application__rate_none {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 575px) {
   .application__rate_none {
     display: none; } }

@@ -13,7 +13,7 @@
   margin: 0 auto;
   padding: 0 0 34px 0; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .application__about {
     padding: 0; } }
 @media screen and (max-width: 375px) {

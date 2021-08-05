@@ -1,7 +1,7 @@
 .articles__appeared {
   display: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1230px) {
   .articles__appeared {
     display: block;
     width: 140px;

@@ -1,6 +1,8 @@
 @import '../../../font/font.scss';
+@import '../../../mixin/mixin.scss';
 
 .money__need_big {
+    @include adaptiv-font(40, 30);
     @extend %font-size-50;
     margin: 0;
     max-width: 500px;

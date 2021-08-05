@@ -1,8 +1,16 @@
 @import '../../../color/color.scss';
+@import '../../../mixin/mixin.scss';
 @import '../../../font/font.scss';
 
 .gadget__price_color {
     color: $color-pink;
+    @include adaptiv-font(28, 18);
     @extend %font-size-28;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .gadget__price_color {
+        font-size: 24px;
+    }
 }

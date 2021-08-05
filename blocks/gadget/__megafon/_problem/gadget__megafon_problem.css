@@ -1,22 +1,22 @@
 .gadget__megafon_problem {
-  font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: 58px; }
 
 .gadget__megafon_problem {
   position: absolute;
+  font-size: calc(30px + 11 * ((100vw - 768px) / 572));
   margin: 0;
   padding: 0;
   bottom: 7px;
-  left: 60px; }
+  left: 50px;
+  right: 50px; }
 
 @media screen and (max-width: 768px) {
   .gadget__megafon_problem {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 40px; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 530px) {
   .gadget__megafon_problem {
-    position: relative; } }
+    font-size: 30px;
+    left: 60px;
+    right: 60px; } }

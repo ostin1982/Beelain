@@ -26,8 +26,20 @@
     padding: 0 0 0 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
   .search_footer {
       width: 325px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .search_footer {
+      width: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .search_footer {
+      width: 285px;
   }
 }

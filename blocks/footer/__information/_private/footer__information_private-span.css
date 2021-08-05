@@ -11,7 +11,7 @@
   cursor: pointer;
   padding: 0; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
   .footer__information_private-span {
     font-size: 15px;
     font-style: normal;

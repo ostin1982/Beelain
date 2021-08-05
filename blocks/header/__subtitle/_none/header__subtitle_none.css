@@ -1,6 +1,6 @@
 .header__subtitle_none {
   display: block; }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .header__subtitle_none {
     display: none; } }

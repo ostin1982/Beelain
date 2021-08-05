@@ -18,15 +18,27 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
     .application {
-        flex-direction: column;
-        align-items: flex-start;
-        max-width: 768px;
-        height: 695px;
         background-image: url(../../images/Phone2.svg);
         background-position-y: 130px;
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .application {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 980px;
+        height: 750px;  
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .application {
+        max-width: 765px;
+        height: 695px;  
     }
 }
 

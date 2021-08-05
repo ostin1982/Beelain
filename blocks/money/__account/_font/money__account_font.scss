@@ -1,6 +1,8 @@
 @import '../../../font/font.scss';
+@import '../../../mixin/mixin.scss';
 
 .money__account_font {
+    @include adaptiv-font(40, 30);
     @extend %font-size-50;
     max-width: 390px;
     margin: 0;

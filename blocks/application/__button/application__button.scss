@@ -1,19 +1,22 @@
+@import '../../color/color.scss';
+
 .application__button {
     position: relative;
     padding: 0;
     margin: 0 20px 0 0;
     cursor: pointer;
-    width: 177px;
+    max-width: 177px;
     height: 60px;
     border: 0;
     border-radius: 16px;
+    background-color: $color-yellow-additional;
 
     &:last-child {
         margin: 0;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
     .application__button {
         width: 163px;
         margin: 0 10px 0 0;
