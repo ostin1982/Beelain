@@ -1,9 +1,0 @@
-@import '../../../font/font.scss';
-
-.cards__number_star-text {
-    position: absolute;
-    margin: 0;
-    top: 10px;
-    left: 15px;
-    @extend %font-size-32;
-}

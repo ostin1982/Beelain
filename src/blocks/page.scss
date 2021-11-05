@@ -1,0 +1,18 @@
+@import "color";
+
+.page {
+    max-width: 1380px;
+    min-width: 250px;
+    font-family: 'Golos', sans-serif;
+    padding: 8px 20px 20px;
+    color: $color-main-black;
+    background-color: $color-main-white;
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 6px 10px 10px;
+    }
+}

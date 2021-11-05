@@ -1,0 +1,233 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.gadget {
+    position: relative;
+    margin: 0 auto;
+    padding: 90px 0 0 0;
+    max-width: 1340px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .gadget__price {
+        position: relative;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .gadget__price_navigation {
+        position: relative;
+        background-color: $color-white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0;
+        padding: 0;
+        border-radius: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gadget__price_shop {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        max-width: 320px;
+        border-radius: 16px;
+        background-color: $color-white;
+        padding: 20px;
+    }
+
+    .gadget__price_img {
+        max-width: 138px;
+    }
+
+    .gadget__price_all {
+        @extend %font-size-32;
+        padding: 8px 10px 10px 20px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .gadget__price_store {
+        @extend %font-size-15-500;
+        padding: 10px 30px 10px 10px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .gadget__price_color {
+        color: $color-pink;
+        @include adaptiv-font(28, 18);
+        @extend %font-size-28;
+        margin-right: 10px;
+    }
+
+    .gadget__price_block {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .gadget__price_color-old {
+        color: $color-main-black;
+        @include adaptiv-font(15, 12);
+        @extend %font-size-15;
+        text-decoration: line-through;
+        opacity: 0.3;
+    }
+
+    .gadget__price_title {
+        @extend %font-size-20;
+        margin: 0;
+        padding: 40px 0 30px 0;
+    }
+
+    .gadget__price_photo {
+        margin: 0 auto;
+        padding: 40px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gadget__megafon {
+        background-color: $color-white;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .gadget__megafon_img {
+        object-fit: cover;
+        max-width: 100%;
+        
+    }
+
+    .gadget__megafon_question {
+        position: relative;
+        max-width: 520px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .gadget__megafon_problem {
+        position: absolute;
+        @include adaptiv-font(41, 30);
+        @extend %font-size-50;
+        margin: 0;
+        padding: 0;
+        bottom: 7px;
+        left: 50px;
+        right: 50px;
+    }
+
+    .gadget__megafon_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 100px 0;
+    }
+
+    .gadget__megafon_button {
+        position: relative;
+        background-color: $color-yellow-button;
+        color: $color-main-black;
+        border-radius: 30px;
+        padding: 17px 43px;
+        margin: 0 15px 0 0;
+        border: none;
+    
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    %font-size-20 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+    }
+
+    .gadget {
+        max-width: 728px;
+        padding: 40px 0 0 0;
+        gap: 10px;
+    }
+
+    .gadget__price {
+        gap: 10px;
+    }
+
+    .gadget__price_img {
+        max-width: 100px;
+    }
+
+    .gadget__price_color {
+        font-size: 24px;
+    }
+
+    .gadget__price_block {
+        flex-direction: column;
+    }
+
+    .gadget__price_color-old {
+        font-size: 15px;
+    }
+
+    .gadget__price_photo {
+        padding: 20px 0 0 0;
+    }
+
+    .gadget__megafon_img {
+        height: 200px;
+    }
+
+    .gadget__megafon_question {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .gadget__megafon_problem {
+        line-height: 40px;
+    }
+
+    .gadget__megafon_block {
+        padding: 0 0 50px 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .gadget {
+        max-width: 530px;
+        padding: 20px 0 0 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .gadget__megafon_problem {
+        font-size: 30px;
+        left: 60px;
+        right: 60px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .gadget {
+        max-width: 375px;
+        padding: 30px 0 0 0;
+    }
+}

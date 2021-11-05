@@ -1,0 +1,110 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.cards {
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 280px;
+    border-radius: 16px;
+    background-color: $color-white;
+    padding: 25px 20px;
+    cursor: grab;
+    margin: 0 20px 0 0;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &:last-child {
+        margin: 0;
+    }
+
+    .cards__number {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cards__number_circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: $color-black;
+        color: $color-white;
+        border-radius: 30px;
+        @extend %font-size-32-500;
+    }
+
+    .cards__number_star {
+        position: relative;
+    }
+
+    .cards__rate {
+        padding-top: 40px;
+    }
+
+    .cards__rate_font {
+        @extend %font-size-32;
+        margin: 0;
+        padding-top: 15px;
+    }
+
+    .cards__conditions {
+        padding: 35px 0 20px 0;
+    }
+
+    .cards__conditions_small {
+        padding-top: 10px;
+    }
+
+    .cards__conditions_font {
+        @extend %font-size-15;
+        @include opacity();
+        margin: 0;
+    }
+
+    .cards__price {
+        padding: 25px 0;
+        margin: 0;
+        border-top: 1px solid rgba($color-main-black, 0.2);    
+    }
+
+    .cards__price_font {
+        @extend %font-size-60;
+    }
+
+    .cards__price_font-small {
+        @extend %font-size-20;
+    }
+
+    .cards_button {
+        background-color: $color-yellow-button;
+        position: relative;
+        border: none;
+    }
+}
+
+.cards_color {
+    background-color: $color-yellow-additional;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        padding: 20px 10px;
+        margin: 0 10px 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cards {
+        width: 270px;
+    }
+}
