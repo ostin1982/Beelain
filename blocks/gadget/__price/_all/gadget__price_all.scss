@@ -1,9 +1,0 @@
-@import '../../../font/font.scss';
-@import '../../../mixin/mixin.scss';
-
-.gadget__price_all {
-    @extend %font-size-32;
-    padding: 8px 10px 10px 20px;
-    margin: 0;
-    cursor: pointer;
-}

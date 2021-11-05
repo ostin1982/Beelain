@@ -1,0 +1,87 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.tarifs {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 110px;
+    max-width: 1380px;
+
+    .tarifs__heading {
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tarifs__button {
+        position: absolute;
+        background-color: $color-main-white;
+        border: 1px solid $color-main-black;
+    }
+
+    .tarifs__button_appeared {
+        display: none;
+    }
+
+    .tarifs__button_none {
+        display: block;
+        top: 210px;
+        right: 20px;
+    }
+
+    .tarifs__conditions {
+        @extend %font-size-20;
+        margin: 20px 0;
+    }
+
+    .tarifs__all {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .tarifs__font {
+        top: 30px;
+        left: 330px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .tarifs__button_appeared {
+        display: block;
+        position: relative;
+        margin: 30px 0 0 0;
+        width: 100%;
+    }
+
+    .tarifs__button_none {
+        display: none;
+    }
+}
+    
+@media screen and (max-width: 768px) {
+    %font-size-20 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 22px;
+    }
+
+    .tarifs__font {
+        top: 10px;
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tarifs__heading {
+        padding: 0 0 50px 0;
+    }
+
+    .tarifs__font {
+        top: 100px;
+        left: 0px;
+    }
+}

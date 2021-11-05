@@ -1,0 +1,255 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.money {
+    position: relative;
+    display: grid;
+    max-width: 1340px;
+    margin: 100px 0 0 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .money__pay {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        background-color: $color-white;
+        padding: 30px;
+    }
+
+    .money__account {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 45px 0;
+    }
+
+    .money__account_font {
+        @include adaptiv-font(40, 30);
+        @extend %font-size-50;
+        max-width: 390px;
+        margin: 0;
+    }
+
+    .money_need {
+        max-width: 560px;
+    }
+
+    .money__need_big {
+        @include adaptiv-font(40, 30);
+        @extend %font-size-50;
+        margin: 0;
+        max-width: 500px;
+    }
+
+    .money__need_small {
+        @extend %font-size-15;
+        @include opacity();
+        margin: 20px 0 0 0;
+    }
+
+    .money__input {
+        position: relative;
+    
+        &:last-child {
+            margin: 0 0 0 20px;
+        }
+    }
+
+    .money__input_7 {
+        position: absolute;
+        @extend %font-size-20;
+        margin: 0;
+        padding: 14px 0 14px 18px;
+    }
+
+    ::-webkit-input-placeholder {
+        color: $color-grey-light;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: $color-grey-light;
+    }
+    :-ms-input-placeholder {
+        color: $color-grey-light;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: $color-grey-light;
+    }
+    
+    .money__input_number {
+        padding: 14px 20px 14px 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: $color-main-white;
+        color: $color-grey-light;
+        @extend %font-size-20;
+    }
+
+    .money__input_one {
+        margin: 0;
+    }
+
+    .money__input_two {
+        display: flex;
+        margin: 40px 0 0 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .money__font {
+        position: absolute;
+        right: 30px;
+        bottom: 190px;
+        @extend %font-size-13;
+        @include opacity();
+        margin: 0;
+    }
+
+    .money__font_small {
+        @extend %font-size-13;
+        @include opacity();
+        margin: 0;
+        padding: 0;
+        width: 290px;
+        text-align: center;
+    }
+
+    .money__button {
+        background-color: $color-yellow-button;
+        border: none;
+        margin: 0;
+    }
+
+    .money__button_2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        gap: 15px;
+        margin: 30px 0 0 0;
+    }
+
+    .money__button_yellow {
+        background-color: $color-yellow-button;
+        border: none;
+    }
+
+    .money__button_black {
+        background-color: $color-main-black;
+        color: $color-white;
+        border: none;
+    }
+
+    .money__choice {
+        display: inline;
+        border-bottom: 1px solid rgba($color-main-black, 0.3);
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .money__choice_font {
+        @extend %font-size-20;
+        margin-right: 30px;
+    
+        &:last-child {
+            margin: 0 335px 0 0;
+        }
+    }
+
+    .money__choice_underline {
+        padding-bottom: 9px;
+        border-bottom: 3px solid $color-main-black;
+    }
+
+    .money__choice_opacity {
+        @include opacity();
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .money__choice_font:last-child {
+        margin: 0 100px 0 0;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .money__input:last-child {
+        margin: 20px 0 0 0;
+    }
+
+    .money__input_two {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .money__choice_font:last-child {
+        margin: 0 50px 0 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .money {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .money__button_2 {
+        justify-content: center;
+        justify-self: stretch;
+        align-self: stretch;
+        align-content: stretch;
+        width: 100%;
+    }
+
+    .money__button_yellow {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    %font-size-50 {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .money__account {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .money__account_font {
+        max-width: 250px;
+        padding: 0 0 20px 0;
+    }
+
+    .money_need {
+        max-width: 335px;
+    }
+
+    .money__need_big {
+        max-width: 270px;
+    }
+
+    .money__need_small {
+        max-width: 335px;
+    }
+
+    .money__font {
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .money__choice_font:last-child {
+        margin: 0;
+    }
+}

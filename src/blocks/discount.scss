@@ -1,0 +1,55 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.discount {
+    position: absolute;
+    transform: rotate(-5deg);
+
+    .discount_minus {
+        background-color: $color-yellow-button;
+        color: $color-main-black;
+        @extend %font-size-30;
+        border-radius: 30px;
+        width: 90px;
+        height: 30px;
+        padding: 2px 0 0 20px;
+        margin: 0;
+    }
+
+    .discount_promo {
+        width: 140px;
+        height: 20px;
+        color: $color-white;
+        background-color: $color-black;
+        @extend %font-size-11;
+        border-radius: 20px;
+        margin: 0;
+        padding: 1px 0 0 15px;
+    }
+
+    .discount_SIM {
+        background-color: $color-yellow-additional;
+        border-radius: 20px;
+        @extend %font-size-20;
+        padding: 1px 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    %font-size-20 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+    }
+
+    .discount {
+        transform: rotate(0deg);
+    }
+
+    .discount_promo {
+        width: 127px;
+    }
+}

@@ -1,9 +1,0 @@
-.discount {
-  position: absolute;
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg); }
-
-@media screen and (max-width: 768px) {
-  .discount {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }

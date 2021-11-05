@@ -1,9 +1,0 @@
-.tarifs__button_appeared {
-  display: none; }
-
-@media screen and (max-width: 880px) {
-  .tarifs__button_appeared {
-    display: block;
-    position: relative;
-    margin: 30px 0 0 0;
-    width: 100%; } }

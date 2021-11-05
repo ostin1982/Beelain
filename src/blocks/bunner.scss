@@ -1,0 +1,353 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.bunner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1340px;
+    height: 510px;
+    padding: 0;
+    border-radius: 16px;
+    background-color: $color-pink;
+
+    .bunner__button {
+        display: block; 
+        position: relative;
+        padding: 80px 0 0 0;
+    }
+
+    .bunner__button_about {
+        position: relative;
+        background-color: $color-yellow-button;
+        width: 217px;
+        height: 55px;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .bunner__button_none {
+        display: block; 
+    }
+
+    .bunner__button_img {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    
+        &:hover {
+            @include opacity();
+        }
+    
+        &:last-child {
+            left: 10px;
+        }
+    }
+
+    .bunner__button_appeared {
+        display: none;
+    }
+
+    .bunner__img {
+        position: absolute;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 16px;
+        object-fit: cover;
+        left: 0;
+        right: 0;
+    }
+    
+    .bunner__scroll {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+        bottom: 25px;
+    }
+
+    .bunner__scroll_unplug {
+        display: none;
+    }
+
+    .bunner__scroll_point {
+        padding: 0 10px 0 0;
+        cursor: pointer;
+    
+        &:hover {
+            @include opacity();
+        }
+    }
+
+    .bunner__scroll_none {
+        display: none;
+    }
+
+    .bunner__text {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 30px;
+        height: 450px;
+    }
+
+    .bunner__title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 435px;
+        padding: 0;
+    }
+
+    .bunner__slogan {
+        position: relative;
+        color: $color-white;
+        @include adaptiv-font(55, 40);
+        @extend %font-size-70;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bunner__rate {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: flex-start;
+        max-width: 325px;
+        border-left: 1px solid $color-white;
+        padding: 0 0 0 calc((100vw - 769px)/(1340 - 769) * (20 - 5) + 5px);
+    }
+
+    .bunner__rate_people {
+        display: flex;
+    }
+
+    .bunner__rate_GB {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: $color-white;
+        @include adaptiv-font(28, 16);
+        @extend %font-size-32;
+        padding: 0;
+        max-width: 280px;
+    }
+
+    .bunner__rate_GB-about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 15px 0;
+        margin: 0;
+        width: 278px;
+    
+        &:last-child {
+            padding: 0;
+        }
+    }
+
+    .bunner__rate_GB-img {
+        display: block; 
+        position: relative;
+
+        &:last-child {
+            padding-left: 4px;
+        }
+    }
+
+    .bunner__rate_GB-none {
+        display: block;
+    }
+
+    .bunner__rate_GB-two {
+        position: relative;
+    }
+
+    .bunner__about {   
+        display: block; 
+        color: $color-white;
+        @extend %font-size-15;
+        @include opacity();
+        list-style-type: none;  
+        padding: 3vw 0 0 0;  
+        margin: 0;
+    }
+
+    .bunner__price {
+        width: 260px;
+        color: $color-white;
+        @extend %font-size-20;
+        border-top: 1px solid $color-white;
+        padding: 1.5vw 0 0 0;
+        margin: 0;
+        max-width: 280px;
+        list-style-type: none;
+    }
+
+    .bunner__price_350 {
+        @include opacity();
+    }
+
+    .bunner__price_700 {
+        @include adaptiv-font(44, 20);
+        @extend %font-size-60;
+    }
+
+    .bunner__price_month {
+        padding: 0 0 0.5vw 0;
+    }
+}
+
+@media screen and (min-width: 1381px) {
+    .bunner__rate {
+    padding: 0 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .bunner {
+        max-width: 1100px;
+        background-color: $color-white;
+
+        .bunner__button {
+            display: none;
+        }
+
+        .bunner__button_none {
+            display: none;
+        }
+
+        .bunner__button_appeared {
+            display: block;
+        }
+
+        .bunner__img {
+            position: relative;
+            width: 1100px;
+            height: 486px;        
+        }
+
+        .bunner__scroll_unplug {
+            display: flex; 
+        }
+
+        .bunner__text {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .bunner__title {
+            max-width: 100%;
+        }
+
+        .bunner__slogan {
+            color: $color-main-black;
+        }
+
+        .bunner__rate {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            max-width: 100%;
+            padding: 30px 0 30px 0;
+            border: none;
+        }
+
+        .bunner__rate_GB {
+            color: $color-main-black;
+            max-width: 100%;
+            padding: 0 22px 0 0;
+            font-size: 20px;
+        }
+
+        .bunner__rate_GB-img {
+            display: none;
+        }
+
+        .bunner__about {
+            display: none;
+        }
+
+        .bunner__price {
+            color: $color-main-black;
+            border-top: 1px solid rgba($color-main-black, 0.2);
+        }  
+
+        .bunner__price_700 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bunner {
+        max-width: 470px;
+
+        .bunner__button {
+
+            .bunner__button_about {
+            margin: 24vh 0 0 0;
+            width: 100%;
+            }
+        }
+
+        .bunner__img {
+            position: absolute;
+            width: 470px;
+            height: 470px;
+        }
+
+        .bunner__scroll {
+
+            .bunner__scroll_unplug {
+                display: none;
+            }
+
+            .bunner__scroll_none {
+                position: relative;
+                display: flex;
+                margin: 0 auto; 
+                padding: 30px 0 0 0;
+            }
+        }
+
+        .bunner__slogan {
+            color: $color-white;
+            font-size: 40px;
+        }
+
+        .bunner__rate {
+            display: none;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .bunner {
+        max-width: 375px;
+
+        .bunner__text {
+            padding: 10px;
+        }
+
+        .bunner__rate {
+
+            .bunner__rate_GB-none {
+                display: none;
+            }
+        }
+    }
+}

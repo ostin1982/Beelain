@@ -1,0 +1,265 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.application {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-yellow-additional;
+    background-image: url(../images/Phone1.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    max-width: 1340px;
+    height: 485px;
+    margin: 90px 0 0 0;
+    padding: 30px 30px 0 30px;
+    border-radius: 16px;
+    object-fit: cover;
+
+    .application__conditions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .application__beelain {
+        position: relative;
+        max-width: 380px;
+        font-size: 50px;
+        @extend %font-size-50;
+        margin: 0;
+        padding: 0;
+    }
+
+    .application__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 180px 0 25px 0;
+    }
+
+    .application__button {
+        position: relative;
+        padding: 0;
+        margin: 0 20px 0 0;
+        cursor: pointer;
+        max-width: 177px;
+        height: 60px;
+        border: 0;
+        border-radius: 16px;
+        background-color: $color-yellow-additional;
+    
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    .application__button_img {
+        max-width: 177px;
+    }
+
+    .application__about {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 0 34px 0;
+    }
+
+    .application__about_main {
+        @extend %font-size-20-500;
+        margin: 0 0 10px 0;
+    }
+
+    .application__rate {
+        position: relative;
+        width: 320px;
+        height: 420px;
+        border-left: 1px solid rgba( $color-black, 0.3);
+        margin: 0;
+        padding: 0;
+    }
+
+    .application__rate_form {
+        padding: 0 0 0 40px;
+    }
+
+    .application__rate_font {
+        display: inline-block;
+        @extend %font-size-20-500;
+        margin: 0 0 20px 0;
+    }
+
+    .application__rate_dashed {
+        border-bottom: 2px $color-main-black dashed;
+        @include opacity();
+    }
+
+    .application__rate_conditions {
+        @extend %font-size-15-500;
+        @include opacity();
+        padding: 105px 0 0 40px;
+    }
+
+    .application__rate_none {
+        display: inline-block;
+    }
+
+    .application__none {
+        display: flex;
+    }
+
+    .application__mini {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .application {
+        background-image: url(../images/Phone2.svg);
+        background-position-y: 130px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    %font-size-20-500 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .application {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 980px;
+        height: 750px;  
+    }
+
+    .application__block {
+        padding: 0 100px 0 0;
+    }
+
+    .application__button {
+        width: 163px;
+        margin: 0 10px 0 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    .application__button_img {
+        max-width: 163px;
+    }
+
+    .application__about {
+        padding: 0;
+    }
+
+    .application__rate {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 310px 0 0 0;
+        border-left: none;
+        border-bottom: 1px solid rgba( $color-black, 0.3);
+    }
+
+    .application__rate_form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .application__rate_conditions {
+        padding: 0 ;
+    }
+
+    .application__rate_none {
+        display: flex;
+    }
+
+    .application__none {
+        display: none;
+    }
+
+    .application__mini {
+        display: flex;
+        padding: 50px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    %font-size-50 {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    %font-size-20-500 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .application__beelain {
+        max-width: 310px;
+    }
+
+    .application__rate_dashed {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .application {
+        max-width: 765px;
+        height: 695px;  
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .application__block {
+        padding: 0 0 10px 0;
+    }
+
+    .application__rate_none {
+        display: none;
+    }
+
+    .application__mini {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .application {
+        max-width: 375px;
+        background-position-y: 110px;
+        padding: 10px;
+    }
+
+    .application__about {
+        margin: 0;
+    }
+
+    .application__about_main {
+        margin: 0;
+    }
+}

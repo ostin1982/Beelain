@@ -1,0 +1,34 @@
+@mixin opacity {
+    opacity: 0.6;
+}
+
+@mixin switching_to_flex {
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 280px;
+    padding: 20px;
+    cursor: grab;
+    margin: 0 10px 0 0;
+    flex-direction: column;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+$maxWidth: 1340;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 768;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 768px) / #{$maxWidth}));
+}
+
+$maxWidth: 1340;
+@mixin adaptiv-line($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 768;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 768px) / #{$maxWidth}));
+}
