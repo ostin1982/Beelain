@@ -8,144 +8,154 @@
     padding-top: 50px;
     max-width: 1340px;
 
-    .numbers__all {
+    &__all {
         position: relative;
         display: flex;
         flex-direction: column;
         margin: 60px 0 0 0;
     }
 
-    .numbers__button {
+    &__button {
         background-color: $color-main-white;
         border: 1px solid $color-main-black;
         margin: 0;
+        
+        &_none {
+            position: absolute;
+            display: block;
+            top: 145px;
+            right: 0px;
+        }
+
+        &_appeared {
+            display: none;
+        }
     }
 
-    .numbers__button_none {
-        position: absolute;
-        display: block;
-        top: 145px;
-        right: 0px;
-    }
-
-    .numbers__button_appeared {
-        display: none;
-    }
-
-    .numbers__choice {
+    &__choice {
         position: relative;
         display: inline;
         border-bottom: 1px solid rgba($color-main-black, 0.3);
         margin: 0 0 0 80px;
         padding: 10px 0;
-    }
+        
+        &_font {
+            @extend %font-size-20;
+            margin: 0 30px 0 0;
+        
+            &:last-child {
+                margin: 0 100px 0 0;
+            }
+        }
 
-    .numbers__choice_font {
-        @extend %font-size-20;
-        margin: 0 30px 0 0;
-    
-        &:last-child {
-            margin: 0 100px 0 0;
+        &_opacity {
+            @include opacity();
+        }
+
+        &_underline {
+            padding: 0 0 9px 0;
+            border-bottom: 3px solid $color-main-black;
+        }
+
+        &_none {
+            display: inline;
         }
     }
 
-    .numbers__choice_opacity {
-        @include opacity();
-    }
-
-    .numbers__choice_underline {
-        padding: 0 0 9px 0;
-        border-bottom: 3px solid $color-main-black;
-    }
-
-    .numbers__choice_none {
-        display: inline;
-    }
-
-    .numbers__block {
+    &__block {
         position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .numbers__select {
+    &__select {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         column-gap: 75px;
         row-gap: 15px;
         margin: 0;
-    }
+        
+        &_all {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 290px;
+            background-color: $color-white;
+            border-radius: 10px;
+            border: none;
+            padding: 10px 20px;
+        }
 
-    .numbers__select_all {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 290px;
-        background-color: $color-white;
-        border-radius: 10px;
-        border: none;
-        padding: 10px 20px;
-    }
+        &_all-none {
+            display: flex;
+        }
 
-    .numbers__select_all-none {
-        display: flex;
-    }
+        &_big {
+            @extend %font-size-28;
+            margin: 0 30px 0 0;
+        }
 
-    .numbers__select_big {
-        @extend %font-size-28;
-        margin: 0 30px 0 0;
-    }
+        &_small {
+            @extend %font-size-15;
+            @include opacity();
+        }
 
-    .numbers__select_small {
-        @extend %font-size-15;
-        @include opacity();
-    }
+        &_shop {
+            background-color: $color-white;
+            @include opacity();
+            border: none;
+            padding: 0;
+            margin: 0 0 0 30px;
+            display: none;
+        }
 
-    .numbers__select_shop {
-        background-color: $color-white;
-        @include opacity();
-        border: none;
-        padding: 0;
-        margin: 0 0 0 30px;
-        display: none;
-    }
-
-    .numbers__select_button {
-        display: block;
-        position: relative;
-        padding: 0;
-        margin: 0;
-        border: none;
+        &_button {
+            display: block;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
     }
 }
 
 @media screen and (max-width: 1182px) {
-    .numbers__choice_font:last-child {
-        @include adaptiv-font(20, 10);
-        margin: 0;
+    .numbers {
+        &__choice {
+            &_font:last-child {
+                @include adaptiv-font(20, 10);
+                margin: 0;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 960px) {
-    .numbers__button_none {
-        display: none;
-    }
+    .numbers {
+        &__button {
+            &_none {
+                display: none;
+            }
 
-    .numbers__button_appeared {
-        position: relative;
-        display: block;
-        width: 100%;
-        margin: 30px 0 0 0;
-    }
+            &_appeared {
+                position: relative;
+                display: block;
+                width: 100%;
+                margin: 30px 0 0 0;
+            }
+        }
 
-    .numbers__choice {
-        margin: 0 0 0 10px;
-    }
+        &__choice {
+            margin: 0 0 0 10px;
+        }
 
-    .numbers__select_button {
-        display: none;
+        &__select {
+            &_button {
+                display: none;
+            }
+        }
     }
 }
 
@@ -156,71 +166,91 @@
         font-weight: normal;
         line-height: 30px;
     }
+}
 
-    .numbers__all {
-        margin: 30px 0 0 0;
-    }
-
-    .numbers__choice {
-        margin: 30px 0 0 0;
-    }
-
-    .numbers__choice_font {
-        font-size: 15px;
-
-        &:last-child {
-            margin: 0 100px 0 0;
+@media screen and (max-width: 768px) {
+    .numbers {
+        &__all {
+            margin: 30px 0 0 0;
         }
-    }
 
-    .numbers__select {
-        grid-template-columns: 1fr 1fr;
-    }
+        &__choice {
+            margin: 30px 0 0 0;    
+            
+            &_font {
+                font-size: 15px;
 
-    .numbers__select_all-none {
-        display: none;
-    }
+                &:last-child {
+                    margin: 0 100px 0 0;
+                }
+            }
+        }
 
-    .numbers__select_shop {
-        display: block;
+        &__select {
+            grid-template-columns: 1fr 1fr;
+            
+            &_all-none {
+                display: none;
+            }
+
+            &_shop {
+                display: block;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 640px) {
-    .numbers__choice_font:last-child {
-        margin: 0;
+    .numbers {
+        &__choice {
+            &_font:last-child {
+                margin: 0;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 630px) {
-    .numbers__select {
-        column-gap: 15px;
+    .numbers {
+        &__select {
+            column-gap: 15px;
+        }
     }
 }
 
 @media screen and (max-width: 570px) {
-    .numbers__select {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+    .numbers {
+        &__select {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-    .numbers__select_all {
-        max-width: 550px;
+            &_all {
+                max-width: 550px;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 550px) {
-    .numbers__choice_none {
-        display: none;
+    .numbers {
+        &__choice {
+            &_none {
+                display: none;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 375px) {
-    .numbers__all {
-        margin: 30px 0 0 0;
-    }
+    .numbers {
+        &__all {
+            margin: 30px 0 0 0;
+        }
 
-    .numbers__button_appeared {
-        margin: 20px 0 0 0;
+        &__button {
+            &_appeared {
+                margin: 20px 0 0 0;
+            }
+        }
     }
 }

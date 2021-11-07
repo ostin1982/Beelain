@@ -19,14 +19,14 @@
     border-radius: 16px;
     object-fit: cover;
 
-    .application__conditions {
+    &__conditions {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
     }
 
-    .application__beelain {
+    &__beelain {
         position: relative;
         max-width: 380px;
         font-size: 50px;
@@ -35,14 +35,14 @@
         padding: 0;
     }
 
-    .application__block {
+    &__block {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 180px 0 25px 0;
     }
 
-    .application__button {
+    &__button {
         position: relative;
         padding: 0;
         margin: 0 20px 0 0;
@@ -56,65 +56,65 @@
         &:last-child {
             margin: 0;
         }
+
+        &_img {
+            max-width: 177px;
+        }
     }
 
-    .application__button_img {
-        max-width: 177px;
-    }
-
-    .application__about {
+    &__about {
         position: relative;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         margin: 0 auto;
         padding: 0 0 34px 0;
+
+        &_main {
+            @extend %font-size-20-500;
+            margin: 0 0 10px 0;
+        }
     }
 
-    .application__about_main {
-        @extend %font-size-20-500;
-        margin: 0 0 10px 0;
-    }
-
-    .application__rate {
+    &__rate {
         position: relative;
         width: 320px;
         height: 420px;
         border-left: 1px solid rgba( $color-black, 0.3);
         margin: 0;
         padding: 0;
+
+        &_form {
+            padding: 0 0 0 40px;
+        }
+
+        &_font {
+            display: inline-block;
+            @extend %font-size-20-500;
+            margin: 0 0 20px 0;
+        }
+
+        &_dashed {
+            border-bottom: 2px $color-main-black dashed;
+            @include opacity();
+        }
+
+        &_conditions {
+            @extend %font-size-15-500;
+            @include opacity();
+            padding: 105px 0 0 40px;
+        }
+
+        &_none {
+            display: inline-block;
+        }
     }
 
-    .application__rate_form {
-        padding: 0 0 0 40px;
-    }
-
-    .application__rate_font {
-        display: inline-block;
-        @extend %font-size-20-500;
-        margin: 0 0 20px 0;
-    }
-
-    .application__rate_dashed {
-        border-bottom: 2px $color-main-black dashed;
-        @include opacity();
-    }
-
-    .application__rate_conditions {
-        @extend %font-size-15-500;
-        @include opacity();
-        padding: 105px 0 0 40px;
-    }
-
-    .application__rate_none {
-        display: inline-block;
-    }
-
-    .application__none {
+    &__none {
         display: flex;
     }
 
-    .application__mini {
+    &__mini {
         display: none;
     }
 }
@@ -141,61 +141,61 @@
         flex-direction: column;
         align-items: flex-start;
         max-width: 980px;
-        height: 750px;  
-    }
-
-    .application__block {
-        padding: 0 100px 0 0;
-    }
-
-    .application__button {
-        width: 163px;
-        margin: 0 10px 0 0;
-
-        &:last-child {
-            margin: 0;
+        height: 750px;
+        
+        &__block {
+            padding: 0 100px 0 0;
         }
-    }
 
-    .application__button_img {
-        max-width: 163px;
-    }
+        &__button {
+            width: 163px;
+            margin: 0 10px 0 0;
 
-    .application__about {
-        padding: 0;
-    }
+            &:last-child {
+                margin: 0;
+            }
+            
+            &_img {
+                max-width: 163px;
+            }
+        }    
+        
+        &__about {
+            padding: 0;
+        }
 
-    .application__rate {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 310px 0 0 0;
-        border-left: none;
-        border-bottom: 1px solid rgba( $color-black, 0.3);
-    }
+        &__rate {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 310px 0 0 0;
+            border-left: none;
+            border-bottom: 1px solid rgba( $color-black, 0.3);    
+            
+            &_form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+            }
 
-    .application__rate_form {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-    }
+            &_conditions {
+                padding: 0 ;
+            }
 
-    .application__rate_conditions {
-        padding: 0 ;
-    }
+            &_none {
+                display: flex;
+            }
+        }
 
-    .application__rate_none {
-        display: flex;
-    }
+        &__none {
+            display: none;
+        }
 
-    .application__none {
-        display: none;
-    }
-
-    .application__mini {
-        display: flex;
-        padding: 50px 0 30px 0;
+        &__mini {
+            display: flex;
+            padding: 50px 0 30px 0;
+        }
     }
 }
 
@@ -218,12 +218,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .application__beelain {
-        max-width: 310px;
-    }
+    .application {
+        &__beelain {
+            max-width: 310px;
+        }
 
-    .application__rate_dashed {
-        border-bottom: none;
+        &__rate {
+            &_dashed {
+                border-bottom: none;
+            }
+        }
     }
 }
 
@@ -235,16 +239,20 @@
 }
 
 @media screen and (max-width: 575px) {
-    .application__block {
-        padding: 0 0 10px 0;
-    }
+    .application {
+        &__block {
+            padding: 0 0 10px 0;
+        }
 
-    .application__rate_none {
-        display: none;
-    }
+        &__rate {
+            &_none {
+                display: none;
+            }
+        }
 
-    .application__mini {
-        flex-direction: column;
+        &__mini {
+            flex-direction: column;
+        }
     }
 }
 
@@ -253,13 +261,13 @@
         max-width: 375px;
         background-position-y: 110px;
         padding: 10px;
-    }
 
-    .application__about {
-        margin: 0;
-    }
+        &__about {
+            margin: 0;
 
-    .application__about_main {
-        margin: 0;
+            &_main {
+                margin: 0;
+            }
+        }
     }
 }

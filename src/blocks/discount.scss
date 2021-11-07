@@ -6,7 +6,7 @@
     position: absolute;
     transform: rotate(-5deg);
 
-    .discount_minus {
+    &_minus {
         background-color: $color-yellow-button;
         color: $color-main-black;
         @extend %font-size-30;
@@ -17,7 +17,7 @@
         margin: 0;
     }
 
-    .discount_promo {
+    &_promo {
         width: 140px;
         height: 20px;
         color: $color-white;
@@ -28,7 +28,7 @@
         padding: 1px 0 0 15px;
     }
 
-    .discount_SIM {
+    &_SIM {
         background-color: $color-yellow-additional;
         border-radius: 20px;
         @extend %font-size-20;
@@ -44,12 +44,14 @@
         font-weight: normal;
         line-height: 20px;
     }
+}
 
+@media screen and (max-width: 768px) {
     .discount {
         transform: rotate(0deg);
-    }
-
-    .discount_promo {
-        width: 127px;
+        
+        &_promo {
+            width: 127px;
+        }
     }
 }

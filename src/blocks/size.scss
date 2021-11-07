@@ -6,7 +6,7 @@
     @extend %font-size-80;
     margin: 0;
 
-    .size_light {
+    &_light {
         color: $color-main-white;
         -webkit-text-stroke: 1.5px rgba($color-main-black, 0.4);
     }

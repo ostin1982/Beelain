@@ -11,49 +11,49 @@
     border-radius: 16px;
     background-color: $color-pink;
 
-    .bunner__button {
+    &__button {
         display: block; 
         position: relative;
         padding: 80px 0 0 0;
-    }
 
-    .bunner__button_about {
-        position: relative;
-        background-color: $color-yellow-button;
-        width: 217px;
-        height: 55px;
-        padding: 0;
-        margin: 0;
-        border: none;
-    }
-
-    .bunner__button_none {
-        display: block; 
-    }
-
-    .bunner__button_img {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-    
-        &:hover {
-            @include opacity();
+        &_about {
+            position: relative;
+            background-color: $color-yellow-button;
+            width: 217px;
+            height: 55px;
+            padding: 0;
+            margin: 0;
+            border: none;
         }
     
-        &:last-child {
-            left: 10px;
+        &_none {
+            display: block; 
+        }
+    
+        &_img {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        
+            &:hover {
+                @include opacity();
+            }
+        
+            &:last-child {
+                left: 10px;
+            }
+        }
+    
+        &_appeared {
+            display: none;
         }
     }
 
-    .bunner__button_appeared {
-        display: none;
-    }
-
-    .bunner__img {
+    &__img {
         position: absolute;
         max-width: 100%;
         margin: 0 auto;
@@ -63,7 +63,7 @@
         right: 0;
     }
     
-    .bunner__scroll {
+    &__scroll {
         position: relative;
         display: flex;
         justify-content: center;
@@ -72,26 +72,26 @@
         margin: 0;
         z-index: 10;
         bottom: 25px;
-    }
 
-    .bunner__scroll_unplug {
-        display: none;
-    }
-
-    .bunner__scroll_point {
-        padding: 0 10px 0 0;
-        cursor: pointer;
+        &_unplug {
+            display: none;
+        }
     
-        &:hover {
-            @include opacity();
+        &_point {
+            padding: 0 10px 0 0;
+            cursor: pointer;
+        
+            &:hover {
+                @include opacity();
+            }
+        }
+    
+        &_none {
+            display: none;
         }
     }
 
-    .bunner__scroll_none {
-        display: none;
-    }
-
-    .bunner__text {
+    &__text {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
@@ -99,7 +99,7 @@
         height: 450px;
     }
 
-    .bunner__title {
+    &__title {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -108,7 +108,7 @@
         padding: 0;
     }
 
-    .bunner__slogan {
+    &__slogan {
         position: relative;
         color: $color-white;
         @include adaptiv-font(55, 40);
@@ -117,7 +117,7 @@
         margin: 0;
     }
 
-    .bunner__rate {
+    &__rate {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -126,55 +126,55 @@
         max-width: 325px;
         border-left: 1px solid $color-white;
         padding: 0 0 0 calc((100vw - 769px)/(1340 - 769) * (20 - 5) + 5px);
-    }
 
-    .bunner__rate_people {
-        display: flex;
-    }
-
-    .bunner__rate_GB {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        color: $color-white;
-        @include adaptiv-font(28, 16);
-        @extend %font-size-32;
-        padding: 0;
-        max-width: 280px;
-    }
-
-    .bunner__rate_GB-about {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 0 15px 0;
-        margin: 0;
-        width: 278px;
+        &_people {
+            display: flex;
+        }
     
-        &:last-child {
+        &_GB {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            color: $color-white;
+            @include adaptiv-font(28, 16);
+            @extend %font-size-32;
             padding: 0;
+            max-width: 280px;
+        }
+    
+        &_GB-about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0 15px 0;
+            margin: 0;
+            width: 278px;
+        
+            &:last-child {
+                padding: 0;
+            }
+        }
+    
+        &_GB-img {
+            display: block; 
+            position: relative;
+    
+            &:last-child {
+                padding-left: 4px;
+            }
+        }
+    
+        &_GB-none {
+            display: block;
+        }
+    
+        &_GB-two {
+            position: relative;
         }
     }
 
-    .bunner__rate_GB-img {
-        display: block; 
-        position: relative;
-
-        &:last-child {
-            padding-left: 4px;
-        }
-    }
-
-    .bunner__rate_GB-none {
-        display: block;
-    }
-
-    .bunner__rate_GB-two {
-        position: relative;
-    }
-
-    .bunner__about {   
+    &__about {   
         display: block; 
         color: $color-white;
         @extend %font-size-15;
@@ -184,7 +184,7 @@
         margin: 0;
     }
 
-    .bunner__price {
+    &__price {
         width: 260px;
         color: $color-white;
         @extend %font-size-20;
@@ -193,99 +193,100 @@
         margin: 0;
         max-width: 280px;
         list-style-type: none;
-    }
 
-    .bunner__price_350 {
-        @include opacity();
-    }
-
-    .bunner__price_700 {
-        @include adaptiv-font(44, 20);
-        @extend %font-size-60;
-    }
-
-    .bunner__price_month {
-        padding: 0 0 0.5vw 0;
+        &_350 {
+            @include opacity();
+        }
+    
+        &_700 {
+            @include adaptiv-font(44, 20);
+            @extend %font-size-60;
+        }
+    
+        &_month {
+            padding: 0 0 0.5vw 0;
+        }
     }
 }
 
 @media screen and (min-width: 1381px) {
     .bunner__rate {
-    padding: 0 0 0 40px;
+        padding: 0 0 0 40px;
     }
 }
 
 @media screen and (max-width: 1100px) {
     .bunner {
         max-width: 1100px;
+        height: 1010px;
         background-color: $color-white;
 
-        .bunner__button {
+        &__button {
             display: none;
+            
+            &_none {
+                display: none;
+            }
+
+            &_appeared {
+                display: block;
+            }
         }
 
-        .bunner__button_none {
-            display: none;
-        }
-
-        .bunner__button_appeared {
-            display: block;
-        }
-
-        .bunner__img {
+        &__img {
             position: relative;
             width: 1100px;
             height: 486px;        
         }
 
-        .bunner__scroll_unplug {
+        &__scroll_unplug {
             display: flex; 
         }
 
-        .bunner__text {
+        &__text {
             flex-direction: column;
             padding: 20px;
         }
 
-        .bunner__title {
+        &__title {
             max-width: 100%;
         }
 
-        .bunner__slogan {
+        &__slogan {
             color: $color-main-black;
         }
 
-        .bunner__rate {
+        &__rate {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
             max-width: 100%;
             padding: 30px 0 30px 0;
             border: none;
+            
+            &_GB {
+                color: $color-main-black;
+                max-width: 100%;
+                padding: 0 22px 0 0;
+                font-size: 20px;
+            }
+
+            &_GB-img {
+                display: none;
+            }
         }
 
-        .bunner__rate_GB {
-            color: $color-main-black;
-            max-width: 100%;
-            padding: 0 22px 0 0;
-            font-size: 20px;
-        }
-
-        .bunner__rate_GB-img {
+        &__about {
             display: none;
         }
 
-        .bunner__about {
-            display: none;
-        }
-
-        .bunner__price {
+        &__price {
             color: $color-main-black;
             border-top: 1px solid rgba($color-main-black, 0.2);
-        }  
 
-        .bunner__price_700 {
-            font-size: 40px;
+            &_700 {
+                font-size: 40px;
+            }
         }
     }
 }
@@ -293,59 +294,65 @@
 @media screen and (max-width: 500px) {
     .bunner {
         max-width: 470px;
+        height: 581px;
 
-        .bunner__button {
+        &__button {
 
-            .bunner__button_about {
+            &_about {
             margin: 24vh 0 0 0;
             width: 100%;
             }
+
+            &_appeared {
+                top: 70px;
+            }
         }
 
-        .bunner__img {
+        &__img {
             position: absolute;
             width: 470px;
             height: 470px;
         }
 
-        .bunner__scroll {
+        &__scroll {
 
-            .bunner__scroll_unplug {
+            &_unplug {
                 display: none;
             }
 
-            .bunner__scroll_none {
-                position: relative;
+            &_none {
+                position: absolute;
                 display: flex;
                 margin: 0 auto; 
                 padding: 30px 0 0 0;
+                right: 0;
+                left: 0;
+                bottom: 14px;
             }
         }
 
-        .bunner__slogan {
+        &__slogan {
             color: $color-white;
             font-size: 40px;
         }
 
-        .bunner__rate {
+        &__rate {
             display: none;
         }
     }
-
-
 }
 
 @media screen and (max-width: 375px) {
     .bunner {
         max-width: 375px;
 
-        .bunner__text {
+        &__text {
             padding: 10px;
         }
 
-        .bunner__rate {
+        &__rate {
 
-            .bunner__rate_GB-none {
+            &_GB-none {
                 display: none;
             }
         }

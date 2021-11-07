@@ -8,56 +8,60 @@
     padding-top: 110px;
     max-width: 1380px;
 
-    .tarifs__heading {
+    &__heading {
         position: relative;
         padding: 0;
         margin: 0;
     }
 
-    .tarifs__button {
+    &__button {
         position: absolute;
         background-color: $color-main-white;
         border: 1px solid $color-main-black;
+
+        &_appeared {
+            display: none;
+        }
+
+        &_none {
+            display: block;
+            top: 210px;
+            right: 20px;
+        }
     }
 
-    .tarifs__button_appeared {
-        display: none;
-    }
-
-    .tarifs__button_none {
-        display: block;
-        top: 210px;
-        right: 20px;
-    }
-
-    .tarifs__conditions {
+    &__conditions {
         @extend %font-size-20;
         margin: 20px 0;
     }
 
-    .tarifs__all {
+    &__all {
         position: relative;
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
     }
 
-    .tarifs__font {
+    &__font {
         top: 30px;
         left: 330px;
     }
 }
 
 @media screen and (max-width: 880px) {
-    .tarifs__button_appeared {
-        display: block;
-        position: relative;
-        margin: 30px 0 0 0;
-        width: 100%;
-    }
+    .tarifs {
+        &__button {
+            &_appeared {
+                display: block;
+                position: relative;
+                margin: 30px 0 0 0;
+                width: 100%;
+            }
 
-    .tarifs__button_none {
-        display: none;
+            &_none {
+                display: none;
+            }
+        }
     }
 }
     
@@ -68,20 +72,26 @@
         font-weight: normal;
         line-height: 22px;
     }
+}
 
-    .tarifs__font {
-        top: 10px;
-        left: 180px;
+@media screen and (max-width: 768px) {
+    .tarifs {
+        &__font {
+            top: 10px;
+            left: 180px;
+        }
     }
 }
 
 @media screen and (max-width: 375px) {
-    .tarifs__heading {
-        padding: 0 0 50px 0;
-    }
+    .tarifs {
+        &__heading {
+            padding: 0 0 50px 0;
+        }
 
-    .tarifs__font {
-        top: 100px;
-        left: 0px;
+        &__font {
+            top: 100px;
+            left: 0px;
+        }
     }
 }

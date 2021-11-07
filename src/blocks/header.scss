@@ -3,23 +3,21 @@
 @import 'mixin';
 
 .header {
-    position: relative;
     height: 100%;
     max-width: 1340px;
     margin: 0 auto;
 
-    .header__title {
+    &__title {
         display: flex;
         justify-content: space-between;
         padding-bottom: 13px;
 
-        .header__title_edge {
-            position: relative;
+        &_edge {
             display: flex;
             justify-content: space-between;
         }
 
-        .header__title_button {
+        &_button {
             color: $color-main-black;
             background-color: $color-main-white;
             @extend %font-size-15;
@@ -32,7 +30,7 @@
             }
         }
 
-        .header__title_button-separator {
+        &_button-separator {
             cursor: default;
         
             &:hover {
@@ -40,20 +38,20 @@
             }
         }
 
-        .header__title_button-indent {
+        &_button-indent {
             padding-right: 41px;
         }
 
-        .header__title_block {
+        &_block {
             display: block;
         }
         
-        .header__title_block-hidden {
+        &_block-hidden {
             display: none;
         }
     }
 
-    .header__subtitle {
+    &__subtitle {
         display: flex;
         height: 39px;
         justify-content: space-between;
@@ -62,14 +60,13 @@
         background-color: $color-white;
         border-radius: 16px;
 
-        .header__subtitle_768 {
-            position: relative;
+        &_768 {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .header__subtitle_burger {
+        &_burger {
             display: none;
             width: 20px;
             height: 20px;
@@ -81,7 +78,7 @@
             }
         }
 
-        .header__subtitle_button {
+        &_button {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -98,39 +95,38 @@
             }
         }
 
-        .header__subtitle_button-icon {
+        &_button-icon {
             @extend %font-size-15;
             padding: 0;
             margin: 0;
         }
 
-        .header__subtitle_img {
+        &_img {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .header__subtitle_block {
+        &_block {
             display: block;
         }
 
-        .header__subtitle_none {
+        &_none {
             display: block;
         }
 
-        .header__subtitle_user {
+        &_user {
             display: flex;
             justify-content: space-between;
         }
 
-        .header__subtitle_office {
+        &_office {
             @extend %font-size-15;
             padding: 0 30px 0 0;
             margin: 0;
         }
 
-        .header__subtitle_search {
-            position: relative;
+        &_search {
             background-color: $color-main-black;
             width: 35px;
             height: 35px;
@@ -138,7 +134,7 @@
             margin: 0 auto;
             border-radius: 30px;
             border: none;
-            background-image: url(../images/search_dark.png);
+            background-image: url(../images/search_dark.svg);
             background-repeat: no-repeat;
             background-position: center;
             cursor: pointer;
@@ -149,14 +145,14 @@
         }
     }
 
-    .header__logo {
+    &__logo {
         width: 39px; 
         height: 39px;
         padding: 0 30px 0 0;
         margin: 0;
     }
 
-    .header__icon {
+    &__icon {
         width: 24px;
         height: 24px;
         left: 1123px;
@@ -181,48 +177,49 @@
         font-weight: normal;
         line-height: 25px;
     }
+}
 
+@media screen and (max-width: 768px) {
     .header {
         max-width: 768px;
 
-        .header__title {
+        &__title {
         padding-bottom: 6px;
 
-            .header__title_button {
+            &_button {
             padding-right: 17px;
             }
 
-            .header__title_block {
+            &_block {
                 display: none;
             }
 
-            .header__title_block-hidden {
+            &_block-hidden {
                 display: block;
             }
         }
 
-        .header__subtitle {
+        &__subtitle {
 
-            .header__subtitle_burger {
+            &_burger {
             display: block;
             }
 
-            .header__subtitle_block {
+            &_block {
                 display: none;
             }
 
-            .header__subtitle_search {
+            &_search {
                 background-color: $color-white;
-                background-image: url(../images/search_light.png);
+                background-image: url(../images/search_light.svg);
             }        
         }
 
-        .header__logo {
+        &__logo {
             width: 30px; 
             height: 30px;
         }
     }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -234,13 +231,13 @@
 @media screen and (max-width: 375px) {
     .header {
         max-width: 375px;
-    }
 
-    .header__subtitle_office {
+        &__subtitle_office {
         padding: 0 10px 0 0;
     }
 
-    .header__logo {
-        padding: 0 10px 0 0;
+        &__logo {
+            padding: 0 10px 0 0;
+        }
     }
 }

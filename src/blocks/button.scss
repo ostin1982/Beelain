@@ -10,9 +10,10 @@
 
     &:hover {
         @include opacity();
-    }    
+    } 
+    
+    &_border {
+        border: 1px solid $color-main-black;
+    }
 }
 
-.button_border {
-    border: 1px solid $color-main-black;
-}
