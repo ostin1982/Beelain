@@ -30,7 +30,9 @@
         position: relative;
         max-width: 380px;
         font-size: 50px;
-        @extend %font-size-50;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 58px;
         margin: 0;
         padding: 0;
     }
@@ -71,7 +73,10 @@
         padding: 0 0 34px 0;
 
         &_main {
-            @extend %font-size-20-500;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 25px;
             margin: 0 0 10px 0;
         }
     }
@@ -90,7 +95,10 @@
 
         &_font {
             display: inline-block;
-            @extend %font-size-20-500;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 25px;
             margin: 0 0 20px 0;
         }
 
@@ -128,15 +136,6 @@
 }
 
 @media screen and (max-width: 980px) {
-    %font-size-20-500 {
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 25px;
-    }
-}
-
-@media screen and (max-width: 980px) {
     .application {
         flex-direction: column;
         align-items: flex-start;
@@ -162,6 +161,13 @@
         
         &__about {
             padding: 0;
+
+            &_main {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 25px;
+            }
         }
 
         &__rate {
@@ -186,6 +192,13 @@
             &_none {
                 display: flex;
             }
+
+            &_font {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 25px;
+            }
         }
 
         &__none {
@@ -200,27 +213,13 @@
 }
 
 @media screen and (max-width: 768px) {
-    %font-size-50 {
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 42px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    %font-size-20-500 {
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .application {
         &__beelain {
             max-width: 310px;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 42px;
         }
 
         &__rate {

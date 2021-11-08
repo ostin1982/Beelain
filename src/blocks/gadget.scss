@@ -118,7 +118,9 @@
         &_problem {
             position: absolute;
             @include adaptiv-font(41, 30);
-            @extend %font-size-50;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 58px;
             margin: 0;
             padding: 0;
             bottom: 7px;
@@ -155,15 +157,6 @@
         font-weight: 500;
         font-size: 28px;
         line-height: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    %font-size-20 {
-        font-size: 15px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 20px;
     }
 }
 
@@ -210,6 +203,10 @@
 
             &_problem {
                 line-height: 40px;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 20px;
             }
 
             &_block {

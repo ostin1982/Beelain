@@ -26,10 +26,13 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 0 45px 0;
+        width: 100%;
         
         &_font {
             @include adaptiv-font(40, 30);
-            @extend %font-size-50;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 58px;
             max-width: 390px;
             margin: 0;
         }
@@ -40,7 +43,9 @@
         
         &_big {
             @include adaptiv-font(40, 30);
-            @extend %font-size-50;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 58px;
             margin: 0;
             max-width: 500px;
         }
@@ -226,15 +231,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    %font-size-50 {
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 42px;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .money {
         &__account {
             flex-direction: column;
@@ -243,6 +239,10 @@
             &_font {
                 max-width: 250px;
                 padding: 0 0 20px 0;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 42px;
             }
         }
         
@@ -251,6 +251,10 @@
             
             &_big {
                 max-width: 270px;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 42px;
             }
 
             &_small {

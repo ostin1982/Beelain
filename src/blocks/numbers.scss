@@ -93,7 +93,9 @@
         }
 
         &_big {
-            @extend %font-size-28;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 25px;
             margin: 0 30px 0 0;
         }
 
@@ -160,15 +162,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    %font-size-28 {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 30px;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .numbers {
         &__all {
             margin: 30px 0 0 0;
@@ -195,6 +188,13 @@
 
             &_shop {
                 display: block;
+            }
+
+            &_big {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 30px;
             }
         }
     }

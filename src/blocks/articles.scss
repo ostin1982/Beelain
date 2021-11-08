@@ -12,20 +12,26 @@
     gap: 20px;
 
     &__1 {
+        position: relative;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
         border-radius: 16px;
         background-color: $color-white;
-        display: grid;
+        display: flex;
         justify-content: space-between;
         padding: 15px 20px 0 20px;
         
         &_img {
+            position: absolute;
             margin: 0 auto;
             padding: 0;
             border: none;
+            width: 244px;
+            height: 250px;
+            right: 20px;
+            bottom: 0;
         }
 
         &_button {
@@ -184,7 +190,10 @@
 
     &__big {
         position: relative;
-        @extend %font-size-40;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 42px;
         margin: 0;
         padding: 0;
     }
@@ -203,15 +212,6 @@
 }
 
 @media screen and (max-width: 1230px) {
-    %font-size-40 {
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
-    }
-}
-
-@media screen and (max-width: 1230px) {
     .articles {
         display: flex;
         flex-wrap: nowrap;
@@ -224,6 +224,11 @@
             &_button {
                 width: 100%;
                 margin: 90px 0 0 0;
+            }
+
+            &_img {
+                position: static;
+                height: 100%;
             }
         }
         
@@ -312,6 +317,10 @@
         
         &__big {
             margin: 40px 0 0 0;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
         }
     }
 }

@@ -31,18 +31,12 @@
     &_SIM {
         background-color: $color-yellow-additional;
         border-radius: 20px;
-        @extend %font-size-20;
-        padding: 1px 20px;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    %font-size-20 {
-        font-size: 15px;
+        font-size: 20px;
         font-style: normal;
         font-weight: normal;
-        line-height: 20px;
+        line-height: 25px;
+        padding: 1px 20px;
+        margin: 0;
     }
 }
 
@@ -52,6 +46,13 @@
         
         &_promo {
             width: 127px;
+        }
+
+        &_SIM {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 20px; 
         }
     }
 }

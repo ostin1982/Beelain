@@ -3,7 +3,10 @@
 
 .size {
     position: relative;
-    @extend %font-size-80;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 74px;
     margin: 0;
 
     &_light {
@@ -13,7 +16,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    %font-size-80 {
+    .size {
         font-size: 40px;
         font-style: normal;
         font-weight: 500;

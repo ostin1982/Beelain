@@ -90,7 +90,10 @@
         &_private-span {
             text-decoration: none;
             color: $color-white;
-            @extend %font-size-13;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 20px;
             margin: 0 0 10px 0;
             cursor: pointer;
             padding: 0;
@@ -124,15 +127,6 @@
 }
 
 @media screen and (max-width: 890px) {
-    %font-size-13 {
-        font-size: 15px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 25px;
-    }
-}
-
-@media screen and (max-width: 890px) {
     .footer {
         &__font {
             padding: 0 15px 40px 15px;
@@ -159,6 +153,13 @@
             &_private {
                 width: 47%;
             }
+
+            &_private-span {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 25px;
+            }
         }
 
             &__lang {
@@ -184,16 +185,16 @@
 
         &__block {
             padding: 30px 15px 40px 15px;
-        }
-        
-        &_button-socialNetwork {
-            margin: 0 4px 0 0;
-            width: 43px;
-            height: 43px;
-        }
+            
+            &_button-socialNetwork {
+                margin: 0 4px 0 0;
+                width: 43px;
+                height: 43px;
+            }
 
-        &_padding {
-            flex-direction: column;
+            &_padding {
+                flex-direction: column;
+            }
         }
 
         &__information {
