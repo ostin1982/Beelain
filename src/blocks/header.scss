@@ -62,6 +62,7 @@
 
         &_768 {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
@@ -78,13 +79,16 @@
             }
         }
 
+        &_block-menu {
+            position: relative;
+        }
+
         &_button {
-            display: flex;
             justify-content: space-between;
             align-items: center;
             color: $color-main-black;
             background-color: $color-white;
-            font-size: 20px;
+            font-size: 19px;
             font-style: normal;
             font-weight: normal;
             line-height: 25px;
@@ -98,7 +102,48 @@
             }
         }
 
+        &_text {
+            margin: 0;
+            padding: 0;
+        }
+
+        &_arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding-left: 6px;
+        }
+
+        &_menu {
+            display: none;
+            position: absolute;           
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            padding: 0 0 0 6px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background-color: $color-white;
+            z-index: 100;            
+        }
+
+        &_active {
+            display: block;
+        }
+
+        &_item {
+            padding-top: 10px;
+            @extend %font-size-15;
+            cursor: pointer;
+
+            &:hover {
+                @include opacity();
+            }
+        }
+
         &_button-icon {
+            display: flex;
             @extend %font-size-15;
             padding: 0;
             margin: 0;
@@ -111,7 +156,7 @@
         }
 
         &_block {
-            display: block;
+            display: flex;
         }
 
         &_none {
