@@ -108,11 +108,18 @@
         }
 
         &_arrow {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding-left: 6px;
+            position: relative;
+            display: inline-block;
+            border: solid $color-main-black;
+            border-width: 0 2px 2px 0;
+            padding: 4px;
+            margin-left: 10px;
+            transform: rotate(45deg) translateX(-3px);
+            animation: 0.3s ease;
+        }
+
+        &_arrow-active {
+            transform: rotate(225deg) translateX(-3px);
         }
 
         &_menu {
