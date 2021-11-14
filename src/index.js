@@ -1,5 +1,5 @@
 import './blocks/index.scss';
 
-import isActiveDropdown from './scripts/dropdown';
+import dropdownWorks from './scripts/dropdown';
 
-isActiveDropdown();
+dropdownWorks();
