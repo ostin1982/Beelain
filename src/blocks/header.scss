@@ -62,6 +62,7 @@
 
         &_768 {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
@@ -78,13 +79,16 @@
             }
         }
 
+        &_block-menu {
+            position: relative;
+        }
+
         &_button {
-            display: flex;
             justify-content: space-between;
             align-items: center;
             color: $color-main-black;
             background-color: $color-white;
-            font-size: 20px;
+            font-size: 19px;
             font-style: normal;
             font-weight: normal;
             line-height: 25px;
@@ -98,7 +102,62 @@
             }
         }
 
+        &_button-text {
+            @include link();
+        }
+
+        &_text {
+            margin: 0;
+            padding: 0;
+        }
+
+        &_arrow {
+            position: relative;
+            display: inline-block;
+            border: solid $color-main-black;
+            border-width: 0 2px 2px 0;
+            padding: 4px;
+            margin-left: 10px;
+            transform: rotate(45deg) translateX(-3px);
+        }
+
+        &_arrow-active {
+            transform: rotate(225deg) translateX(-3px);
+        }
+
+        &_menu {
+            display: none;
+            position: absolute;           
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            padding: 0 0 0 6px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background-color: $color-white;
+            z-index: 100;            
+        }
+
+        &_active {
+            display: block;
+        }
+
+        &_item {
+            padding-top: 10px;
+            cursor: pointer;
+
+            &:hover {
+                @include opacity();                
+            }
+        }
+
+        &_link {
+            @extend %font-size-15;
+            @include link();
+        }
+
         &_button-icon {
+            display: flex;
             @extend %font-size-15;
             padding: 0;
             margin: 0;
@@ -111,7 +170,7 @@
         }
 
         &_block {
-            display: block;
+            display: flex;
         }
 
         &_none {
