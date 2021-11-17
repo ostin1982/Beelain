@@ -1,5 +1,6 @@
 const dropdown = document.querySelectorAll('.header__subtitle_button');
 const dropdownMenu = document.querySelectorAll('.header__subtitle_menu');
+const dropdownArrow = document.querySelectorAll('.header__subtitle_arrow');
 
 let intervalId;
 
@@ -8,7 +9,7 @@ const dropdownWorks = () => {
     event.addEventListener('click', (event) => {
       const menu = event.currentTarget.dataset.path;
       const list = document.querySelector(`[data-target=${menu}]`);
-      const arrow = document.querySelector(`[data-index-number=${menu}]`);
+      const arrow = document.querySelector(`[data-index=${menu}]`);
       const parent = document.querySelector(`[data-parent=${menu}]`);
 
       dropdownMenu.forEach((event) => {
@@ -17,6 +18,14 @@ const dropdownWorks = () => {
           event.classList.remove('open');
           list.classList.add('header__subtitle_active');
           arrow.classList.add('header__subtitle_arrow-active');
+
+          dropdownArrow.forEach((event) => {
+            if (!list.classList.contains('open')) {
+              event.classList.remove('header__subtitle_arrow-active');
+              event.classList.remove('open');
+              arrow.classList.add('header__subtitle_arrow-active');
+            }
+          });
 
           intervalId = setTimeout(() => {
             list.classList.add('open');

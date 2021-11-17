@@ -2,6 +2,11 @@
     opacity: 0.6;
 }
 
+@mixin link {
+    text-decoration: none;
+    color: $color-main-black;
+}
+
 @mixin switching_to_flex {
     position: relative;
     flex: 0 0 auto;
