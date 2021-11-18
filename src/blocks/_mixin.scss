@@ -7,6 +7,18 @@
     color: $color-main-black;
 }
 
+@mixin dropdown_menu {
+    display: none;
+    position: absolute;           
+    list-style: none;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 6px 6px 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 100;   
+}
+
 @mixin switching_to_flex {
     position: relative;
     flex: 0 0 auto;

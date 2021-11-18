@@ -1,5 +1,7 @@
 import './blocks/index.scss';
 
-import dropdownWorks from './scripts/dropdown';
+import dropdown from './scripts/dropdown';
+import dropdownMenu from './scripts/dropdownmenu';
 
-dropdownWorks();
+dropdown();
+dropdownMenu();
