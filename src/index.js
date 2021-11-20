@@ -1,7 +1,9 @@
 import './blocks/index.scss';
 
-import dropdown from './scripts/dropdown';
-import dropdownMenu from './scripts/dropdownmenu';
+import selectCity from './scripts/selects/selectСity';
+import selectLang from './scripts/selects/selectLang';
+import dropdown from './scripts/dropdown/dropdown';
 
+selectCity();
+selectLang();
 dropdown();
-dropdownMenu();

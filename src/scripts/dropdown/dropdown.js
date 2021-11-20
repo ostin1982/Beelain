@@ -4,7 +4,7 @@ const dropdownArrow = document.querySelectorAll('.header__subtitle_arrow');
 
 let intervalId;
 
-const dropdownMenu = () => {
+const dropdown = () => {
   dropdownButton.forEach((event) => {
     event.addEventListener('click', (event) => {
       const menu = event.currentTarget.dataset.path;
@@ -55,4 +55,4 @@ const dropdownMenu = () => {
   });
 };
 
-export default dropdownMenu;
+export default dropdown;

@@ -50,13 +50,22 @@
             display: none;
         }
 
-        &__dropdown-town {
+        &__dropdown-city {
             position: relative;
         }
 
         &_menu {
             @include dropdown_menu();
             background-color: $color-main-white;      
+        }
+
+        &_list {
+            @include dropdown_menu();
+            background-color: $color-main-white;      
+        }
+
+        &_visible {
+            display: block;
         }
 
         &_item {
@@ -67,6 +76,17 @@
                 @include opacity();                
             }
         }
+
+        &_items {
+            padding-top: 10px;
+            cursor: pointer;
+
+            &:hover {
+                @include opacity();                
+            }
+        }
+
+
     }
 
     &__subtitle {
@@ -120,10 +140,6 @@
             }
         }
 
-        &_button-text {
-            @include link();
-        }
-
         &_text {
             margin: 0;
             padding: 0;
@@ -159,11 +175,6 @@
             &:hover {
                 @include opacity();                
             }
-        }
-
-        &_link {
-            @extend %font-size-15;
-            @include link();
         }
 
         &_button-icon {

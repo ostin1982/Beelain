@@ -11,24 +11,36 @@
         <header class="header">
             <nav class="header__title">
                 <div class="header__title_edge">                
-                    <button class="header__title_button">Частным лицам</button>                
-                    <button class="header__title_button header__title_block">Бизнесу</button>                    
+                    <button class="header__title_button">
+                        <a class="link" href="#">Частным лицам</a>
+                    </button>                
+                    <button class="header__title_button header__title_block">
+                        <a class="link" href="#">Бизнесу</a>
+                    </button>                    
                     <div class="header__title_button header__title_button-separator header__title_block">
                         |
                     </div>
                     <div class="header__title_dropdown" id="dropdownLabel">
-                        <button class="header__title_button header__title_dropdown-town header__title_block"></button>
+                        <button class="header__title_button header__title_dropdown-city header__title_block"></button>
                         <ul class="header__title_menu"></ul>
                     </div>
                 </div>
                 <div class="header__title_edge">                    
-                    <button type="button" class="header__title_button header__title_block">Офисы и покрытие</button>                    
-                    <button type="button" class="header__title_button header__title_block">Помощь и поддержка</button>
+                    <button type="button" class="header__title_button header__title_block">
+                        <a class="link" href="#">Офисы и покрытие</a>
+                    </button>                    
+                    <button type="button" class="header__title_button header__title_block">
+                        <a class="link" href="#">Помощь и поддержка</a>
+                    </button>
                     <div>
                         <button type="button" class="header__title_button header__title_block-hidden">г. Москва</button>
                     </div>
-                    <div>
-                        <button type="button" class="header__title_button header__title_button-indent">RU</button>
+                    <div class="header__title_dropdown">
+                        <button type="button" class="header__title_button header__title_dropdown-lang header__title_button-indent">RU</button>
+                        <ul class="header__title_list">
+                            <li class="header__title_items" data-value="ru">RU</li>
+                            <li class="header__title_items" data-value="eng">ENG</li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -38,7 +50,7 @@
                         <svg class="header__subtitle_burger" alt="Иконка меню" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1h20M0 9h20M0 17h20" stroke="#000" stroke-width="2"/></svg>
                         <svg class="header__logo" alt="Логотип beeline" fill="none" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"><circle cx="19.5" cy="19.5" r="19.5" vector-effect="non-scaling-stroke" fill="#C4C4C4"/></mask><g mask="url(#a)"><path d="M39 32.035H0v-8.343h39v8.343Zm0-25.037H0v8.343h39V6.998Z" fill="url(#b)"/><path d="M39 6.998H0V0h39v6.998Zm0 25.037H0v6.957h39v-6.957Zm0-16.694H0v8.343h39V15.34Z" fill="#020203"/><path opacity=".3" d="M35.905 13.393c0-6.527-5.297-11.825-11.825-11.825S12.255 6.866 12.255 13.393c0 6.528 5.29 11.826 11.825 11.826 6.528 0 11.825-5.29 11.825-11.826Z" fill="url(#c)"/></g><defs><radialGradient id="c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24.08 13.395) scale(11.8245)"><stop offset=".2" stop-color="#fff"/><stop offset=".95" stop-color="#fff" stop-opacity="0"/></radialGradient><linearGradient id="b" x1="0" y1="19.516" x2="39.002" y2="19.516" gradientUnits="userSpaceOnUse"><stop offset=".1" stop-color="#F7A521"/><stop offset=".9" stop-color="#FFE109"/></linearGradient></defs></svg>
                     </div>            
-                    <button type="button" class="header__subtitle_button header__subtitle_none"><a href="#" class="header__subtitle_button-text">Перейти в Билайн</a></button> 
+                    <button type="button" class="header__subtitle_button header__subtitle_none"><a href="#" class="link">Перейти в Билайн</a></button> 
                     <div class="header__subtitle_block-menu">               
                         <button data-path="one" class="header__subtitle_button header__subtitle_block">
                             <p data-parent="one" class="header__subtitle_text">Тарифы и услуги</p>
@@ -46,19 +58,19 @@
                         </button>
                         <ul data-target="one" class="header__subtitle_menu">
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Домашний Интернет</a>
+                                <a class="link" href="#">Домашний Интернет</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Домашний Интернет + ТВ</a>
+                                <a class="link" href="#">Домашний Интернет + ТВ</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Интернет на дачу</a>
+                                <a class="link" href="#">Интернет на дачу</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">билайн ТВ</a>
+                                <a class="link" href="#">билайн ТВ</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Тарифы для умных устройств</a>
+                                <a class="link" href="#">Тарифы для умных устройств</a>
                             </li>
                         </ul>   
                     </div>
@@ -69,16 +81,16 @@
                         </button>
                         <ul data-target="two" class="header__subtitle_menu">
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Телефоны</a>
+                                <a class="link" href="#">Телефоны</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Смартфоны</a>
+                                <a class="link" href="#">Смартфоны</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Чехлы</a>
+                                <a class="link" href="#">Чехлы</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Защитные стёкла и плёнки</a>
+                                <a class="link" href="#">Защитные стёкла и плёнки</a>
                             </li>
                         </ul>  
                     </div>
@@ -89,16 +101,16 @@
                         </button>
                         <ul data-target="three" class="header__subtitle_menu">
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Выгодное подключение</a>
+                                <a class="link" href="#">Выгодное подключение</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Платежи и переводы</a>
+                                <a class="link" href="#">Платежи и переводы</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Бонусы и подарки</a>
+                                <a class="link" href="#">Бонусы и подарки</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Скидки на оборудование</a>
+                                <a class="link" href="#">Скидки на оборудование</a>
                             </li>
                         </ul>  
                     </div>
@@ -109,10 +121,10 @@
                         </button>
                         <ul data-target="four" class="header__subtitle_menu">
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Новости</a>
+                                <a class="link" href="#">Новости</a>
                             </li>
                             <li class="header__subtitle_item">
-                                <a class="header__subtitle_link" href="#">Контакты</a>
+                                <a class="link" href="#">Контакты</a>
                             </li>
                         </ul>  
                     </div>

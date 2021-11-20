@@ -1,13 +1,13 @@
-const dropdown = () => {
+const selectCity = () => {
   class Dropdown {
     constructor(selector, options) {
       this.element = document.querySelector(selector);
       this.items = options.items;
 
-      this.element.querySelector('.header__title_dropdown-town')
+      this.element.querySelector('.header__title_dropdown-city')
           .textContent = this.items[0].label;
       this.element.addEventListener('click', (event) => {
-        if (event.target.classList.contains('header__title_dropdown-town')) {
+        if (event.target.classList.contains('header__title_dropdown-city')) {
           if (this.element.classList.contains('open')) {
             this.close();
           } else {
@@ -30,14 +30,13 @@ const dropdown = () => {
 
     select(id) {
       const item = this.items.find((i) => i.id === id);
-      this.element.querySelector('.header__title_dropdown-town')
+      this.element.querySelector('.header__title_dropdown-city')
           .textContent = item.label;
       this.close();
     }
 
     open() {
       this.element.classList.add('open');
-      console.log('open');
     }
 
     close() {
@@ -50,10 +49,12 @@ const dropdown = () => {
       {label: 'г. Москва', id: 'msk'},
       {label: 'г. Санкт-Петербург', id: 'spb'},
       {label: 'г. Новосибирск', id: 'nsk'},
-      {label: 'г. Краснодар', id: 'krdr'},
+      {label: 'г. Казань', id: 'kzn'},
       {label: 'г. Чебоксары', id: 'cheb'},
+      {label: 'г. Владивосток', id: 'vlad'},
+      {label: 'г. Калининград', id: 'klg'},
     ],
   });
 };
 
-export default dropdown;
+export default selectCity;
