@@ -7,6 +7,7 @@
 * Резиновая вёрстка сайта (**desktop first**)
 * Select menu для выбора города и языка
 * Dropdown menu
+* Search bar
 ***
 ### Используемые технологии:
 * HTML (**БЭМ Nested**)
