@@ -234,7 +234,7 @@
         margin: 0 auto;
         border-radius: 30px;
         cursor: pointer;
-        transition: 0.5s ease-in-out;
+        transition: step-end;
         overflow: hidden;
         right: 16px;
         top: 15px;
@@ -273,7 +273,7 @@
 
         &_clear {
             position: absolute;
-            right: -80px;
+            right: -90px;
             top: 50%;
             transform: translate(-50%, -50%);
             cursor: pointer;
@@ -287,7 +287,7 @@
 }
 
 .header__search.open {
-    width: 93%;
+    width: calc(100% - 100px);
     background: $color-white;
 }
 
@@ -333,11 +333,6 @@
             &_block {
                 display: none;
             }
-
-            &_search {
-                background-color: $color-white;
-                background-image: url(../images/search_light.svg);
-            } 
             
             &_button {
                 font-size: 15px;
@@ -351,6 +346,15 @@
             width: 30px; 
             height: 30px;
         }
+        &__search {
+            background-color: $color-white;
+
+            &_pictogram {
+                path {
+                    fill: #11263A;
+                }
+            }
+        } 
     }
 }
 
