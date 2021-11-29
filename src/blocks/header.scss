@@ -85,11 +85,10 @@
                 @include opacity();                
             }
         }
-
-
     }
 
     &__subtitle {
+        position: relative;
         display: flex;
         height: 39px;
         justify-content: space-between;
@@ -103,6 +102,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            padding: 0 20px 0 0;
         }
 
         &_burger {
@@ -208,24 +208,6 @@
             padding: 0 30px 0 0;
             margin: 0;
         }
-
-        &_search {
-            background-color: $color-main-black;
-            width: 35px;
-            height: 35px;
-            padding: 0;
-            margin: 0 auto;
-            border-radius: 30px;
-            border: none;
-            background-image: url(../images/search_dark.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            cursor: pointer;
-        
-            &:hover {
-                @include opacity();
-            }
-        }
     }
 
     &__logo {
@@ -242,10 +224,71 @@
         top: 67px;
         padding-right: 10px;
     }
+
+    &__search {
+        position: absolute;
+        background-color: $color-main-black;
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: step-end;
+        overflow: hidden;
+        right: 16px;
+        top: 15px;
+
+        &_icon {
+            position: absolute;
+            left: 9px;
+            top: 27%;
+            width: 17px;
+            height: 17px;
+        }
+
+        &_pictogram {
+            cursor: pointer;
+        }
+
+        &_input {
+            position: relative;
+            width: 88%;
+            height: 35px;
+            left: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_seek {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 18px;
+            outline: none;
+        }
+
+        &_clear {
+            position: absolute;
+            right: -90px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
 }
 
 .header__title_dropdown.open .header__title_menu {
     display: block;
+}
+
+.header__search.open {
+    width: 93%;
+    background: $color-white;
 }
 
 @media screen and (max-width: 882px) {
@@ -258,6 +301,16 @@
                 line-height: 20px;
             }
         }
+
+            &__search {
+                &_clear {
+                    right: -35px;
+                }
+            }
+    }
+
+    .header__search.open {
+        width: 90%;
     }
 }
 
@@ -290,11 +343,6 @@
             &_block {
                 display: none;
             }
-
-            &_search {
-                background-color: $color-white;
-                background-image: url(../images/search_light.svg);
-            } 
             
             &_button {
                 font-size: 15px;
@@ -308,12 +356,45 @@
             width: 30px; 
             height: 30px;
         }
+        &__search {
+            background-color: $color-white;
+
+            &_pictogram {
+                path {
+                    fill: #11263A;
+                }
+            }
+        }
+
+        &__search {
+            &_input {
+                width: 85%;
+            }
+        }
+    }
+
+    .header__search.open {
+        width: 85%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .header__subtitle_none {
-        display: none;
+    .header {
+        &__subtitle {
+            &_none {
+                display: none;
+            }
+        }
+
+        &__search {
+            &_input {
+                width: 75%;
+            }
+        }
+    }
+
+    .header__search.open {
+        width: 75%;
     }
 }
 
@@ -328,5 +409,15 @@
         &__logo {
             padding: 0 10px 0 0;
         }
+
+        &__search {
+            &_input {
+                width: 60%;
+            }
+        }
+    }
+
+    .header__search.open {
+        width: 65%;
     }
 }
