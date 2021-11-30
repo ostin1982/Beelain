@@ -6,18 +6,13 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     background-color: $color-yellow-additional;
-    background-image: url(../images/Phone1.svg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
     max-width: 1340px;
     height: 485px;
     margin: 90px 0 0 0;
     padding: 30px 30px 0 30px;
     border-radius: 16px;
-    object-fit: cover;
 
     &__conditions {
         display: flex;
@@ -125,22 +120,36 @@
     &__mini {
         display: none;
     }
+
+    &__picture {
+        display: block;
+    }
+
+    &__image {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1150px) {
     .application {
-        background-image: url(../images/Phone2.svg);
-        background-position-y: 130px;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1042px) {
     .application {
         flex-direction: column;
-        align-items: flex-start;
-        max-width: 980px;
+        align-items: center;
+        max-width: 1042px;
         height: 750px;
+
+        &__conditions {
+            padding-bottom: 30px;
+        }
+
+        &__beelain {
+            max-width: 100%;
+        }
         
         &__block {
             padding: 0 100px 0 0;
@@ -173,8 +182,8 @@
         &__rate {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            padding: 310px 0 0 0;
+            min-width: 100%;
+            padding: 30px 0 0 0;
             border-left: none;
             border-bottom: 1px solid rgba( $color-black, 0.3);    
             
@@ -186,7 +195,7 @@
             }
 
             &_conditions {
-                padding: 0 ;
+                padding: 0;
             }
 
             &_none {
@@ -207,15 +216,28 @@
 
         &__mini {
             display: flex;
-            padding: 50px 0 30px 0;
+            padding: 20px 0 10px 0;
+        }
+
+        &__picture {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        &__image {
+            display: block;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .application {
+        &__conditions {
+            padding-bottom: 20px;
+        }
+
         &__beelain {
-            max-width: 310px;
             font-size: 40px;
             font-style: normal;
             font-weight: 500;
@@ -239,6 +261,10 @@
 
 @media screen and (max-width: 575px) {
     .application {
+        &__beelain {
+            max-width: 310px;
+        }
+
         &__block {
             padding: 0 0 10px 0;
         }
@@ -251,6 +277,12 @@
 
         &__mini {
             flex-direction: column;
+        }
+
+        &__image {
+            &_none {
+                display: none;
+            }
         }
     }
 }
@@ -267,6 +299,10 @@
             &_main {
                 margin: 0;
             }
+        }
+
+        &__image {
+            display: none;
         }
     }
 }

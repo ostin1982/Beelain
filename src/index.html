@@ -481,8 +481,23 @@
                     <div class="application__about application__none">
                         <p class="application__about_main">Скачать по SMS</p>
                         <p class="application__about_main">Подробнее о приложении</p>
-                    </div>  
-                </div>              
+                    </div>
+                </div>
+                <div class="application__picture">
+                    <picture>
+                        <source srcset="<%=require('./images/Phone1.png')%>" type="image/jpeg" media="(min-width: 1042px)">
+                        <source srcset="<%=require('./images/Phone2.png')%>" type="image/png" media="(max-width: 1042px)">
+                        <img class="application__source" src="./images/Phone1.png" alt="photo smarfon">
+                    </picture>
+                    <picture class="application__image" >
+                        <source srcset="<%=require('./images/Phone2.png')%>" type="image/png" media="(max-width: 1042px)">
+                        <img class="application__source" src="./images/Phone1.png" alt="photo smarfon">
+                    </picture>
+                    <picture class="application__image application__image_none" >
+                        <source srcset="<%=require('./images/Phone2.png')%>" type="image/png" media="(max-width: 1042px)">
+                        <img class="application__source" src="./images/Phone1.png" alt="photo smarfon">
+                    </picture>
+                </div>
                 <div class="application__rate"> 
                     <form class="application__rate_form">
                         <p class="application__rate_font">Подбор тарифа</p>
