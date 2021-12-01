@@ -291,22 +291,58 @@
     background: $color-white;
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 1340px) {
     .header {
         &__subtitle {
             &_button {
-                font-size: 14px;
+                font-size: 12px;
+            }
+
+            &_item {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .header {
+        &__subtitle {
+            &_button {
+                font-size: 10px;
+            }
+
+            &_item {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 933px) {
+    .header {
+        &__subtitle {
+            &_button {
+                font-size: 8px;
                 font-style: normal;
                 font-weight: normal;
                 line-height: 20px;
             }
-        }
 
-            &__search {
-                &_clear {
-                    right: -35px;
-                }
+            &_item {
+                font-size: 8px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 882px) {
+    .header {
+        &__search {
+            &_clear {
+                right: -35px;
+            }
+        }
     }
 
     .header__search.open {

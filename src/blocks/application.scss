@@ -95,11 +95,15 @@
             font-weight: 500;
             line-height: 25px;
             margin: 0 0 20px 0;
-        }
-
-        &_dashed {
-            border-bottom: 2px $color-main-black dashed;
+            text-decoration: underline dashed $color-main-black;
+            text-underline-offset: 3px;
+            color: $color-main-black;
             @include opacity();
+
+            &:hover {
+                text-decoration: none;
+                opacity: 1;
+            }
         }
 
         &_conditions {
