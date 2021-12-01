@@ -226,7 +226,7 @@
                 <div class="gadget__price">
                     <div class="gadget__price_navigation">
                         <p class="gadget__price_all">Гаджеты</p>
-                        <p class="gadget__price_store">В МАГАЗИН</p>
+                        <a href="#" class="gadget__price_store">В МАГАЗИН</a>
                     </div>
                     <div class="gadget__price_shop"> 
                         <div class="gadget__price_photo">
@@ -393,11 +393,11 @@
                             </button>
                         </div>
                         <div class="numbers__choice">
-                            <span class="numbers__choice_font numbers__choice_underline">Все</span>
-                            <span class="numbers__choice_font numbers__choice_opacity">Бесплатные</span>
-                            <span class="numbers__choice_font numbers__choice_opacity">Бронзовые</span>
-                            <span class="numbers__choice_font numbers__choice_opacity numbers__choice_none">Серебрянные</span>
-                            <span class="numbers__choice_font numbers__choice_opacity numbers__choice_none">Золотые</span>
+                            <a href="#" class="numbers__choice_font numbers__choice_opacity">Все</a>
+                            <a href="#" class="numbers__choice_font numbers__choice_opacity">Бесплатные</a>
+                            <a href="#" class="numbers__choice_font numbers__choice_opacity">Бронзовые</a>
+                            <a href="#" class="numbers__choice_font numbers__choice_opacity numbers__choice_none">Серебрянные</a>
+                            <a href="#" class="numbers__choice_font numbers__choice_opacity numbers__choice_none">Золотые</a>
                         </div>
                     </form>
                     <div class="numbers__block">
@@ -481,15 +481,30 @@
                     <div class="application__about application__none">
                         <p class="application__about_main">Скачать по SMS</p>
                         <p class="application__about_main">Подробнее о приложении</p>
-                    </div>  
-                </div>              
+                    </div>
+                </div>
+                <div class="application__picture">
+                    <picture>
+                        <source srcset="<%=require('./images/Phone1.png')%>" type="image/png" media="(min-width: 1042px)">
+                        <source srcset="<%=require('./images/Phone2.png')%>" type="image/png" media="(max-width: 1041px)">
+                        <img class="application__source" src="./images/Phone1.png" alt="photo smarfon">
+                    </picture>
+                    <picture class="application__image" >
+                        <source srcset="<%=require('./images/Phone2.png')%>" type="image/png" media="(max-width: 1041px)">
+                        <img class="application__source" src="./images/Phone1.png" alt="photo smarfon">
+                    </picture>
+                    <picture class="application__image application__image_none" >
+                        <source srcset="<%=require('./images/Phone2.png')%>" type="image/png" media="(max-width: 1041px)">
+                        <img class="application__source" src="./images/Phone1.png" alt="photo smarfon">
+                    </picture>
+                </div>
                 <div class="application__rate"> 
                     <form class="application__rate_form">
-                        <p class="application__rate_font">Подбор тарифа</p>
-                        <p class="application__rate_font application__rate_dashed">Помощь и поддрежка</p>
-                        <p class="application__rate_font application__rate_dashed application__rate_none">Спецпредложения</p>
-                        <p class="application__rate_font application__rate_dashed application__rate_none">Виртуальная карта</p>
-                        <p class="application__rate_font application__rate_dashed application__rate_none">Гиги за шаги</p>
+                        <a href="#" class="application__rate_font">Подбор тарифа</a>
+                        <a href="#" class="application__rate_font">Помощь и поддрежка</a>
+                        <a href="#" class="application__rate_font application__rate_none">Спецпредложения</a>
+                        <a href="#" class="application__rate_font application__rate_none">Виртуальная карта</a>
+                        <a href="#" class="application__rate_font application__rate_none">Гиги за шаги</a>
                     </form>
                     <p class="application__rate_conditions">Мгновенно оформите бесплатную карту для безопасных покупок в интернете</p>
                 </div>
@@ -515,8 +530,8 @@
                         <img src="<%=require('./images/logos.png')%>" alt="Логотипы Visa и MasterCard">
                     </div>
                     <div class="money__choice">
-                        <span class="money__choice_font money__choice_underline">Телефон</span>
-                        <span class="money__choice_font money__choice_opacity">Интернет и ТВ</span>
+                        <a href="#" class="money__choice_font">Телефон</a>
+                        <a href="#" class="money__choice_font">Интернет и ТВ</a>
                     </div>
                     <div class="money__input_two">
                         <div class="money__input">
@@ -658,34 +673,34 @@
                         <label class="footer__information_private-heading" role="heading" aria-level="4">ЧАСТНЫМ ЛИЦАМ</label>
                         <ul class="footer__information_private-ul">
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Новости</span>
+                                <a href="#" class="footer__information_private-span">Новости</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Статья клиентом Билайн</span>
+                                <a href="#" class="footer__information_private-span">Статья клиентом Билайн</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Мобильная связь</span>
+                                <a href="#" class="footer__information_private-span">Мобильная связь</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Домашний Билайн</span>
+                                <a href="#" class="footer__information_private-span">Домашний Билайн</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Для тебя, семьи и дома</span>
+                                <a href="#" class="footer__information_private-span">Для тебя, семьи и дома</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Финансы и оплата</span>
+                                <a href="#" class="footer__information_private-span">Финансы и оплата</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Помощь</span>
+                                <a href="#" class="footer__information_private-span">Помощь</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Офисы на карте</span>
+                                <a href="#" class="footer__information_private-span">Офисы на карте</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Личный кабинет</span>
+                                <a href="#" class="footer__information_private-span">Личный кабинет</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Интернет-магазаин</span>
+                                <a href="#" class="footer__information_private-span">Интернет-магазаин</a>
                             </li>
                         </ul>
                     </div>
@@ -693,22 +708,22 @@
                         <label class="footer__information_private-heading" role="heading" aria-level="4">ПАРТНЁРАМ</label>
                         <ul class="footer__information_private-ul">
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Аренда позиций</span>
+                                <a href="#" class="footer__information_private-span">Аренда позиций</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Поставщикам</span>
+                                <a href="#" class="footer__information_private-span">Поставщикам</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Владельцам недвижимости</span>
+                                <a href="#" class="footer__information_private-span">Владельцам недвижимости</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Агентам</span>
+                                <a href="#" class="footer__information_private-span">Агентам</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Операторам связи</span>
+                                <a href="#" class="footer__information_private-span">Операторам связи</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Оптовые прожажи</span>
+                                <a href="#" class="footer__information_private-span">Оптовые прожажи</a>
                             </li>
                         </ul>
                     </div>
@@ -716,10 +731,10 @@
                         <label class="footer__information_private-heading" role="heading" aria-level="4">ПРЕССЕ</label>
                         <ul class="footer__information_private-ul">
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Пресс-центр</span>
+                                <a href="#" class="footer__information_private-span">Пресс-центр</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Контакты для СМИ</span>
+                                <a href="#" class="footer__information_private-span">Контакты для СМИ</a>
                             </li>
                         </ul>
                     </div>
@@ -727,31 +742,31 @@
                         <label class="footer__information_private-heading" role="heading" aria-level="4">О КОМПАНИИ</label>
                         <ul class="footer__information_private-ul">
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Общая информация</span>
+                                <a href="#" class="footer__information_private-span">Общая информация</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Контакты</span>
+                                <a href="#" class="footer__information_private-span">Контакты</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Работа в Билайн</span>
+                                <a href="#" class="footer__information_private-span">Работа в Билайн</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Иневесторам</span>
+                                <a href="#" class="footer__information_private-span">Иневесторам</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Стратегия</span>
+                                <a href="#" class="footer__information_private-span">Стратегия</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Социальная ответственность</span>
+                                <a href="#" class="footer__information_private-span">Социальная ответственность</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Комплаенс и деловая этика</span>
+                                <a href="#" class="footer__information_private-span">Комплаенс и деловая этика</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Раскрытие информации</span>
+                                <a href="#" class="footer__information_private-span">Раскрытие информации</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Юридическая тнформация</span>
+                                <a href="#" class="footer__information_private-span">Юридическая тнформация</a>
                             </li>
                         </ul>
                     </div>
@@ -759,13 +774,13 @@
                         <label class="footer__information_private-heading" role="heading" aria-level="4">БИЗНЕСУ</label>
                         <ul class="footer__information_private-ul">
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Мобильный интернет</span>
+                                <a href="#" class="footer__information_private-span">Мобильный интернет</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Телефония</span>
+                                <a href="#" class="footer__information_private-span">Телефония</a>
                             </li>
                             <li class="footer__information_private-li">
-                                <span class="footer__information_private-span">Интернет в офис</span>
+                                <a href="#" class="footer__information_private-span">Интернет в офис</a>
                             </li>
                         </ul>
                     </div>

@@ -40,8 +40,30 @@
         padding: 10px 0;
         
         &_font {
+            position: relative;
             @extend %font-size-20;
             margin: 0 30px 0 0;
+            text-decoration: none;
+            color: $color-grey-light;
+
+            &:hover {
+                color: $color-main-black;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -11px;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: $color-main-black;
+                transition: 0.3s ease-in-out;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
         
             &:last-child {
                 margin: 0 100px 0 0;
