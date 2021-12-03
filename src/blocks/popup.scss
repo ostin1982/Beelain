@@ -1,0 +1,113 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.popup {
+    font-family: 'Golos', sans-serif;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-main-black, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s;
+
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: $color-white;
+        max-width: 434px;
+        width: 100%;
+        border-radius: 16px;
+        padding: 50px 50px 18px 50px;
+    }
+
+    &__heading {
+        @extend %font-size-32;
+        max-width: 334px;
+        margin: 0;
+    }
+
+    &__findings {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 0 0 0;
+        width: 100%;
+    }
+
+    &__text {
+        @extend %font-size-14;
+        margin: 0;
+        padding-bottom: 4px;
+    }
+
+    &__input {
+        background-color: $color-white;
+        width: 100%;
+        border: 1px solid $color-grey-light;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 50px;
+        font-family: inherit;
+        padding: 0 0 0 18px;
+
+        &::placeholder {
+            @extend %font-size-16;
+            color: $color-grey-light;
+        }
+    }
+
+    &__button {
+        background-color: $color-yellow-button;
+        width: 100%;
+        border: none;
+        margin-top: 30px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__forgot {
+        @extend %font-size-14;
+        cursor: pointer;
+
+        &:hover {
+            @include opacity();
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+
+        &:hover {
+            @include opacity();
+        }
+    }
+}
+
+.popup_is-open {
+    display: flex;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
