@@ -8,6 +8,7 @@
 * Select menu для выбора города и языка
 * Dropdown menu
 * Search bar
+* Phone Mask
 ***
 ### Используемые технологии:
 * HTML (**БЭМ Nested**)

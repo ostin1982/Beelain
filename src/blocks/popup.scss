@@ -65,6 +65,18 @@
             @extend %font-size-16;
             color: $color-grey-light;
         }
+
+        &:invalid {
+            border: 1px solid #F15858;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 0px 3px rgba(255, 62, 101, 0.2);
+        }
+
+        &:valid {
+            border: 1px solid #2AA65E;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 0px 3px rgba(42, 166, 94, 0.2);
+        }
     }
 
     &__button {
@@ -106,6 +118,8 @@
     display: flex;
     opacity: 1;
 }
+
+@include input();
 
 @keyframes fadeIn {
     from { opacity: 0; }
