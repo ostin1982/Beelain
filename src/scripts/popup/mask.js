@@ -10,6 +10,7 @@ const mask = () => {
       const input = event.target;
       const inputNumbersValue = getInputNumbersValue(input);
       const pasted = event.clipboardData || window.clipboardData;
+
       if (pasted) {
         const pastedText = pasted.getData('Text');
         if (/\D/g.test(pastedText)) {
@@ -22,6 +23,7 @@ const mask = () => {
     const onPhoneInput = (event) => {
       const input = event.target;
       const selectionStart = input.selectionStart;
+      const firstDigit = ['7', '8', '9'];
 
       let inputNumbersValue = getInputNumbersValue(input);
       let formattedInputValue = '';
@@ -37,12 +39,12 @@ const mask = () => {
         return;
       }
 
-      if (['7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
-        if (inputNumbersValue[0] == '9') {
+      if (firstDigit.includes(inputNumbersValue[0]) === true) {
+        if (inputNumbersValue[0] === '9') {
           inputNumbersValue = '7' + inputNumbersValue;
         }
 
-        const firstSymbols = (inputNumbersValue[0] == '8') ? '8' : '+7';
+        const firstSymbols = (inputNumbersValue[0] === '8') ? '8' : '+7';
         formattedInputValue = input.value = firstSymbols + ' ';
 
         if (inputNumbersValue.length > 1) {
@@ -66,7 +68,7 @@ const mask = () => {
     const onPhoneKeyDown = (event) => {
       const inputValue = event.target.value.replace(/\D/g, '');
 
-      if (event.keyCode == 8 && inputValue.length == 1) {
+      if (event.keyCode === 8 && inputValue.length === 1) {
         event.target.value = '';
       }
     };

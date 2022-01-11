@@ -9,6 +9,7 @@
 * Dropdown menu
 * Search bar
 * Phone Mask
+* Visible Password
 ***
 ### Используемые технологии:
 * HTML (**БЭМ Nested**)
