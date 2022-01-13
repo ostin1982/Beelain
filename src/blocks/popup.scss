@@ -1,0 +1,214 @@
+@import 'color';
+@import 'font';
+@import 'mixin';
+
+.popup {
+    font-family: 'Golos', sans-serif;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-main-black, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s;
+
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: $color-white;
+        max-width: 434px;
+        width: 100%;
+        border-radius: 16px;
+        padding: 50px 50px 18px 50px;
+
+        &_help {
+            max-width: 334px;
+            padding: 50px 50px 60px 50px;
+        }
+    }
+
+    &__heading {
+        @extend %font-size-32;
+        max-width: 334px;
+        margin: 0;
+    }
+
+    &__findings {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 0 0 0;
+        width: 100%;
+    }
+
+    &__text {
+        @extend %font-size-14;
+        margin: 0;
+        padding-bottom: 4px;
+    }
+
+    &__input {
+        background-color: $color-white;
+        width: 100%;
+        border: 1px solid $color-grey-light;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 50px;
+        font-family: inherit;
+        padding: 0 0 0 18px;
+
+        &::placeholder {
+            @extend %font-size-16;
+            color: $color-grey-light;
+        }
+
+        &_invalid {
+            border: 1px solid $color-red;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 0px 3px rgba(255, 62, 101, 0.2);
+        }
+
+        &_valid {
+            border: 1px solid $color-green;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 0px 3px rgba(42, 166, 94, 0.2);
+        }
+    }
+
+    &__successicon {
+        position: absolute;
+        right: 18px;
+        bottom: 10px;
+        opacity: 0;
+    }
+
+    &__input-error {
+        color: #F15858;
+        @extend %font-size-11;
+        margin: 0;
+        padding: 0;
+        display: none;
+
+        &_active {
+            display: block;
+        }
+    }
+
+
+    &__button {
+        background-color: $color-yellow-button;
+        width: 100%;
+        border: none;
+        margin-top: 30px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__forgot {
+        @extend %font-size-14;
+        cursor: pointer;
+
+        &:hover {
+            @include opacity();
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+
+        &:hover {
+            @include opacity();
+        }
+    }
+
+    &__label {
+        position: relative;
+    }
+
+    &__eye.active {
+        &::after {
+            opacity: 0;
+        }
+    }
+
+    &__eye {
+        position: absolute;
+        right: 18px;
+        bottom: 11px;
+        cursor: pointer;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 0px;
+            width: 25px;
+            height: 2px;
+            background-color: $color-black;
+            transform: rotate(145deg);
+            box-shadow: 1px -2px $color-main-white;
+            transition: .3s all ease;
+            opacity: 1;
+        }
+    }
+
+    &__back {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 20px 0;
+        padding: 0;
+        background-color: $color-white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            @include opacity();
+        }
+    }
+
+    &__text {
+        padding: 0;
+        margin: 0;
+        @extend %font-size-16;
+        color: $color-main-black;
+    }
+
+    &__message {
+        max-width: 334px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        @extend %font-size-16;
+        color: $color-grey;
+    }
+}
+
+.popup_is-open {
+    display: flex;
+    opacity: 1;
+}
+
+@include input();
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

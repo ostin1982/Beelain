@@ -8,6 +8,9 @@
 * Select menu для выбора города и языка
 * Dropdown menu
 * Search bar
+* Phone Mask
+* Visible Password
+* Validate
 ***
 ### Используемые технологии:
 * HTML (**БЭМ Nested**)
