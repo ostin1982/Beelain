@@ -28,6 +28,11 @@
         width: 100%;
         border-radius: 16px;
         padding: 50px 50px 18px 50px;
+
+        &_help {
+            max-width: 334px;
+            padding: 50px 50px 60px 50px;
+        }
     }
 
     &__heading {
@@ -66,18 +71,38 @@
             color: $color-grey-light;
         }
 
-        &:invalid {
-            border: 1px solid #F15858;
+        &_invalid {
+            border: 1px solid $color-red;
             box-sizing: border-box;
             box-shadow: 0px 0px 0px 3px rgba(255, 62, 101, 0.2);
         }
 
-        &:valid {
-            border: 1px solid #2AA65E;
+        &_valid {
+            border: 1px solid $color-green;
             box-sizing: border-box;
             box-shadow: 0px 0px 0px 3px rgba(42, 166, 94, 0.2);
         }
     }
+
+    &__successicon {
+        position: absolute;
+        right: 18px;
+        bottom: 10px;
+        opacity: 0;
+    }
+
+    &__input-error {
+        color: #F15858;
+        @extend %font-size-11;
+        margin: 0;
+        padding: 0;
+        display: none;
+
+        &_active {
+            display: block;
+        }
+    }
+
 
     &__button {
         background-color: $color-yellow-button;
@@ -126,7 +151,7 @@
     &__eye {
         position: absolute;
         right: 18px;
-        bottom: 10px;
+        bottom: 11px;
         cursor: pointer;
         
         &::after {
@@ -142,6 +167,37 @@
             transition: .3s all ease;
             opacity: 1;
         }
+    }
+
+    &__back {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 20px 0;
+        padding: 0;
+        background-color: $color-white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            @include opacity();
+        }
+    }
+
+    &__text {
+        padding: 0;
+        margin: 0;
+        @extend %font-size-16;
+        color: $color-main-black;
+    }
+
+    &__message {
+        max-width: 334px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        @extend %font-size-16;
+        color: $color-grey;
     }
 }
 

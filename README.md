@@ -10,6 +10,7 @@
 * Search bar
 * Phone Mask
 * Visible Password
+* Validate
 ***
 ### Используемые технологии:
 * HTML (**БЭМ Nested**)
