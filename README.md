@@ -7,6 +7,7 @@
 * Резиновая вёрстка сайта (**desktop first**)
 * Select menu для выбора города и языка
 * Dropdown menu
+* Сlosing by esc and pressing past popup
 * Search bar
 * Phone Mask
 * Visible Password

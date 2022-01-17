@@ -26,10 +26,15 @@ const validate = () => {
 
   const setEventListeners = (formElement) => {
     const inputList = Array.from(formElement.querySelectorAll('.popup__input'));
+    const buttonElement = formElement.querySelector('.popup__button');
+
+    toggleButtonState(inputList, buttonElement);
 
     inputList.forEach((inputElement) => {
       inputElement.addEventListener('input', () => {
         isValid(formElement, inputElement);
+
+        toggleButtonState(inputList, buttonElement);
       });
     });
   };
@@ -44,6 +49,20 @@ const validate = () => {
 
       setEventListeners(formElement);
     });
+  };
+
+  const hasInvalidInput = (formElement) => {
+    return formElement.some((inputElement) => {
+      return !inputElement.validity.valid;
+    });
+  };
+
+  const toggleButtonState = (inputList, buttonElement) => {
+    if (hasInvalidInput(inputList)) {
+      buttonElement.classList.add('popup__button_inactive');
+    } else {
+      buttonElement.classList.remove('popup__button_inactive');
+    }
   };
 
   enableValidation();
