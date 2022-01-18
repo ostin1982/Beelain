@@ -1,5 +1,5 @@
 import visiblePassword from './visiblePassword';
-import mask from './mask';
+import mask from '../mask/mask';
 import validate from './validate';
 
 const popupAll = Array.from(document.querySelectorAll('.popup'));
