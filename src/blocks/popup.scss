@@ -149,6 +149,17 @@
         position: relative;
     }
 
+    &__checkbox {
+        position: absolute;
+        right: 18px;
+        top: 58px;
+        display: none;
+
+        &_valid {
+            display: block
+        }
+    };
+
     &__eye.active {
         &::after {
             opacity: 0;
