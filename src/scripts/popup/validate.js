@@ -1,4 +1,5 @@
 const formInput = document.querySelector('.popup__input');
+const popupCheckbox = document.querySelector('.popup__checkbox');
 
 const validate = () => {
   const showInputError = (formElement, inputElement, errorMessage) => {
@@ -12,6 +13,7 @@ const validate = () => {
     const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
     inputElement.classList.remove('popup__input_invalid');
     inputElement.classList.add('popup__input_valid');
+    popupCheckbox.classList.add('popup__checkbox_valid');
     errorElement.classList.remove('popup__input-error_active');
     errorElement.textContent = '';
   };
